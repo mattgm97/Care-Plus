@@ -1,0 +1,294 @@
+{
+    "vtex.menu@2.x:menu#submenu-cat-crianças-mob": {
+        "children": [
+          "menu-item#crianças-mob1",
+          "menu-item#crianças-mob2",
+          "menu-item#crianças-mobALL"
+          // "menu-item#col1-all--mob"
+        ],
+        "props": {
+          "orientation": "vertical"
+        }
+      },
+
+      "menu-item#crianças-mob1":{
+          "props":{
+            "type": "custom",
+            "id": "",
+            "blockClass": "submenu",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": false,
+                "text": "Calçados",
+                "href": "/crianças/calçados"
+            }
+          },
+          "blocks": [
+              "vtex.menu@2.x:submenu.accordion#submenu-cat-crianças-calcados-mob"
+            ]
+      },
+
+      "vtex.menu@2.x:submenu.accordion#submenu-cat-crianças-calcados-mob": {
+        "children": ["vtex.menu@2.x:menu#submenu-cat-crianças-calcados-mob-submenu"],
+        "props": {
+          "blockClass": "sub-2-nav",
+          "width": "auto"
+        }
+      },
+    
+      "vtex.menu@2.x:menu#submenu-cat-crianças-calcados-mob-submenu":{
+          "props":{
+            "orientation": "vertical"
+          },
+          "children": [
+            "menu-item#crianças-calcados-mob1",
+            "menu-item#crianças-calcados-mob2",
+            "menu-item#crianças-calcados-mob3"
+          ]
+      },
+      "menu-item#crianças-calcados-mob1":{
+          "props":{
+            "type": "custom",
+            "id": "", 
+            "blockClass":"submenu",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": false,
+                "blockClass": "sub-cat-item",
+                "text": "Botas infantis",
+                "href": "/crianças/calçados/botas-infantis"
+            }
+          }
+      },
+
+      "menu-item#crianças-calcados-mob2":{
+        "props":{
+            "type": "custom",
+            "id": "",
+            "blockClass":"submenu",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": false,
+                "blockClass": "sub-cat-item",
+                "text": "Tênis infantis",
+                "href": "/crianças/calçados/tenis-infantis"
+            }
+        }
+    },
+
+    "menu-item#crianças-calcados-mob3":{
+        "props":{
+            "type": "custom",
+            "id": "",
+            "blockClass":"submenu",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": false,
+                "text": "Chuteiras infantis",
+                "href": "/crianças/calçados/chuteiras-infantis"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#submenu-cat-crianças-calcados-chuteiras-mob"
+          ]
+    },
+
+    "vtex.menu@2.x:submenu.accordion#submenu-cat-crianças-calcados-chuteiras-mob": {
+        "children": ["vtex.menu@2.x:menu#submenu-cat-crianças-calcados-chuteiras-mob-submenu"],
+        "props": {
+          "blockClass": "sub-2-nav",
+          "width": "auto"
+        }
+      },
+
+      "vtex.menu@2.x:menu#submenu-cat-crianças-calcados-chuteiras-mob-submenu":{
+        "props":{
+            "orientation": "vertical",
+            "blockClass":"submenu",
+            "items":[
+                {
+                    "type": "custom",
+                    "id": "",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "noFollow": false,
+                        "blockClass": "sub-cat-item",
+                        "text": "Campo",
+                        "href": "/crianças/calçados/chuteiras-infantis/campo"
+                    }
+                },
+                {
+                    "type": "custom",
+                    "id": "",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "noFollow": false,
+                        "blockClass": "sub-cat-item",
+                        "text": "Futsal",
+                        "href": "/crianças/calçados/chuteiras-infantis/futsal"
+                    }
+                },
+                {
+                    "type": "custom",
+                    "id": "",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "noFollow": false,
+                        "blockClass": "sub-cat-item",
+                        "text": "Society",
+                        "href": "/crianças/calçados/chuteiras-infantis/society"
+                    }
+                }
+            ]
+        }
+      },
+
+
+
+
+
+
+      "menu-item#crianças-mob2":{
+        "props":{
+            "type": "custom",
+            "id": "",
+            "blockClass": "submenu",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": false,
+                "text": "Roupas",
+                "href": "/crianças/roupas"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#submenu-cat-crianças-roupas-mob"
+          ]
+    },
+
+
+    "vtex.menu@2.x:submenu.accordion#submenu-cat-crianças-roupas-mob": {
+        "children": ["vtex.menu@2.x:menu#submenu-cat-crianças-roupas-mob-submenu"],
+        "props": {
+          "blockClass": "sub-2-nav",
+          "width": "auto"
+        }
+      },
+
+      "vtex.menu@2.x:menu#submenu-cat-crianças-roupas-mob-submenu":{
+        "props":{
+            "orientation": "vertical",
+            "blockClass":"submenu",
+            "items":[
+                {
+                    "type": "custom",
+                    "id": "",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "noFollow": false,
+                        "blockClass": "sub-cat-item",
+                        "text": "Agasalhos e moletons",
+                        "href": "/crianças/roupas/agasalhos-e-moletons"
+                    }
+                },
+                {
+                    "type": "custom",
+                    "id": "",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "noFollow": false,
+                        "blockClass": "sub-cat-item",
+                        "text": "Bermudas",
+                        "href": "/crianças/roupas/bermudas"
+                    }
+                },
+                {
+                    "type": "custom",
+                    "id": "",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "noFollow": false,
+                        "blockClass": "sub-cat-item",
+                        "text": "Calças",
+                        "href": "/crianças/roupas/calças"
+                    }
+                },
+                {
+                    "type": "custom",
+                    "id": "",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "noFollow": false,
+                        "blockClass": "sub-cat-item",
+                        "text": "Camisas de time",
+                        "href": "/crianças/roupas/camisas-de-time"
+                    }
+                },
+                {
+                    "type": "custom",
+                    "id": "",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "noFollow": false,
+                        "blockClass": "sub-cat-item",
+                        "text": "Camisetas infantis",
+                        "href": "/crianças/roupas/camisetas-infantis"
+                    }
+                },
+                {
+                    "type": "custom",
+                    "id": "",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "noFollow": false,
+                        "blockClass": "sub-cat-item",
+                        "text": "Meias e meiões",
+                        "href": "/crianças/roupas/meias-e-meioes"
+                    }
+                },
+                {
+                    "type": "custom",
+                    "id": "",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "noFollow": false,
+                        "blockClass": "sub-cat-item",
+                        "text": "Shorts",
+                        "href": "/crianças/roupas/shorts"
+                    }
+                }
+            ]
+        }
+      },
+
+
+
+    "menu-item#crianças-mobALL":{
+        "props":{
+          "type": "custom",
+          "id": "",
+          "blockClass": "submenu",
+          "highlight": false,
+          "itemProps": {
+              "type": "internal",
+              "noFollow": false,
+              "text": "Todos",
+              "href": "/crianças"
+          }
+        }
+    }
+}

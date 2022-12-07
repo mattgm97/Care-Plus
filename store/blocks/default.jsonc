@@ -1,0 +1,96 @@
+{
+  "store.orderplaced": {
+    "blocks": ["order-placed"]
+  },
+
+  "store.account": {
+    "blocks": ["my-account"],
+    "parent": {
+      "challenge": "challenge.profile"
+    }
+  },
+
+  "store.login": {
+    "blocks": ["login-content#default"]
+  },
+
+  "login-content#default": {
+    "props": {
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+
+  "slider-layout#shelf": {
+    "props": {
+      "blockClass": ["slider-shelf--default"],
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showPaginationDots": "never"
+    }
+  },
+  "product-summary.shelf": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-rating-inline",
+      "productStarsShelf",
+      "product-summary-space",
+      /*"product-list-price#shelf",
+      "product-selling-price#shelf",*/
+      "product-list-price-range#shelf",
+      "product-selling-price-range#shelf",  
+      "add-to-cart-button#shelf"
+    ],
+    "props":{
+      "blockClass": "default-prod-shelf"
+    }
+  },
+  "product-summary-image": {
+    "props": {
+      "showBadge": false,
+      "height": 250
+    }
+  },
+
+  "product-list-price-range#shelf":{
+    "props":{
+      "message":"{minPriceValue}",
+      "blockClass":"selling-listprice-shelf"
+    }
+  },
+
+  "product-selling-price-range#shelf":{
+    "props":{
+      "message":"{minPriceValue}",
+      "blockClass":"selling-price-shelf"
+    }
+  },
+
+
+  "product-list-price#shelf":{
+    "props":{
+      "blockClass":"selling-listprice-shelf"
+    }
+  },
+  "product-selling-price#shelf":{
+    "props":{
+      "blockClass":"selling-price-shelf"
+    }
+  },
+
+
+  "add-to-cart-button#shelf": {
+    "props": {
+      "text": "COMPRAR",
+      "blockClass": "buy-button-shelf",
+      "onClickBehavior":"go-to-product-page"
+    }
+  }
+
+}

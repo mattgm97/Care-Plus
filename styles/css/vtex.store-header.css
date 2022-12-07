@@ -1,0 +1,96 @@
+.headerRowBackground--main-menu {
+  background-color: #F2F2F2;
+  box-shadow: 0 4px 4px RGB(0 0 0/40%);
+}
+
+.headerStickyRow--main-header{
+  top: 0 !important;
+}
+
+:global(.vtex-store-header-2-x-headerStickyRow--main-menu) {
+  height: 46px;
+  background-color: #F2F2F2;
+  position: sticky;
+    top: 112px;
+    z-index: 9;
+}
+
+:global(.vtex-store-header-2-x-headerRowContainer--main-header) {
+  padding: 1em 0px;
+}
+
+:global(.vtex-menu-2-x-menuContainerNav--mainMenu) {
+  width: 100%;
+}
+
+:global(.vtex-menu-2-x-menuContainerNav--mainMenu)
+  :global(.vtex-menu-2-x-menuContainer--mainMenu) {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+
+
+:global(.vtex-reviews-and-ratings-3-x-loginLink) {
+  padding-left: 0px;
+}
+
+:global(.vtex-reviews-and-ratings-2-x-loginLink) {
+  padding-left: 0px;
+}
+
+:global(.vtex-address-form__postalCode) {
+  padding-bottom: 0px;
+  margin-bottom: 9px;
+}
+
+:global(.vtex-numeric-stepper__plus-button),
+:global(.vtex-numeric-stepper__minus-button) {
+  border-radius: 0px;
+}
+
+:global(.vtex-address-form__postalCode-forgottenURL) {
+  display: none;
+}
+
+:global(.vtex-reviews-and-ratings-2-x-reviewsHeading) {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+:global(.vtex-slider-layout-0-x-caretIcon) {
+  color: #000 !important;
+}
+
+.headerStickyRow--main-header-mobile {
+  padding: 0px 15px;
+  background-color: #fff;
+}
+
+@media (max-width: 760px) {
+  .headerStickyRow--main-header-mobile {
+    border-top: solid 18px #333; /*#0054A8;*/
+    padding-top: 1em;
+  }
+
+}
+

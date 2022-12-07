@@ -1,0 +1,127 @@
+{
+  "footer-layout.mobile": {
+    "props": {
+      "blockClass": ["footer", "mobile"]
+    },
+    "children": [
+      "vtex.menu@2.x:menu#linkList-container-mobile",
+      "vtex.menu@2.x:menu#linkList-container-mobile-2",
+      "flex-layout.row#footer-container-0-mobile",
+      "flex-layout.row#footer-container-1-mobile"
+    ]
+  },
+  "flex-layout.row#footer-container-0-mobile": {
+    "props": {
+      "blockClass": "footer__content"
+    },
+    "children": [
+     /* "flex-layout.col#footer-1-box-menu-1",
+      "flex-layout.col#footer-1-box-menu-2",*/
+      "rich-text#sobre-footer",
+      "flex-layout.col#footer-1-box-menu-3",
+      "flex-layout.col#footer-1-box-1",
+      "flex-layout.col#footer-1-box-2",
+      "flex-layout.col#footer-1-box-3"
+    ]
+  },
+
+  "flex-layout.col#footer-1-box-menu-1":{
+    "children": [
+      "vtex.menu@2.x:menu#linkList-container-mobile"
+    ],
+    "props": {
+        "blockClass": ["footer__content-col","footer__content-col--mobile-0"],
+        "verticalAlign": "top",
+        "width": "100%"
+    }
+  },
+
+
+  "flex-layout.col#footer-1-box-menu-2":{
+    "children": [
+      "vtex.menu@2.x:menu#linkList-container-mobile-2"
+    ],
+    "props": {
+        "blockClass": ["footer__content-col","footer__content-col--mobile-0"],
+        "verticalAlign": "top",
+        "width": "100%"
+    }
+  },
+
+  "rich-text#sobre-footer":{
+    "props": {
+      "text": "INSTITUCIONAL",
+      "font": "t-heading-5",
+      "textPosition": "CENTER",
+      "textAlign": "CENTER",
+      "blockClass": "footer-sobre"
+    }
+  },
+
+  "flex-layout.col#footer-1-box-menu-3":{
+    "children": [
+      "vtex.menu@2.x:menu#linkList-container-mobile-3"
+    ],
+    "props": {
+        "blockClass": ["footer__content-col","footer__content-col--mobile-0"],
+        "verticalAlign": "top",
+        "width": "100%"
+    }
+  },
+
+  "flex-layout.col#footer-1-box-1":{
+    "children": [
+      "flex-layout.row#newsletter",
+      "flex-layout.row#newsletterRow"
+    
+    ],
+    "props": {
+        "blockClass": ["footer__content-col","footer__content-col--mobile-1"],
+        "verticalAlign": "top",
+        "width": "100%"
+    }
+  },
+  "flex-layout.col#footer-1-box-2":{
+    "children": [
+      "rich-text#social-footer"
+    
+    ],
+    "props": {
+        "blockClass": ["footer__content-col","footer__content-col--mobile-2"],
+        "verticalAlign": "top",
+        "width": "100%"
+    }
+  },
+
+  "rich-text#social-footer":{
+    "props": {
+      "text": "REDES SOCIAIS \n [![Facebook]( /arquivos/facebook-dark.png 'Facebook')](https://www.facebook.com/isinaliza/) [![Instagram]( /arquivos/instagram-dark.png 'Instagram')](https://www.instagram.com/isinaliza/) [![Youtube]( /arquivos/youtube-dark.png 'Youtube')](https://www.youtube.com/channel/UCs2-MYW4YR-OuMjzJQP4lHA)",
+      "font": "t-heading-5",
+      "textPosition": "CENTER",
+      "textAlign": "CENTER",
+      "blockClass": "footer-sobre"
+    }
+  },
+  "flex-layout.col#footer-1-box-3":{
+    "children": [
+      "flex-layout.row#powered"
+    ],
+    "props": {
+        "blockClass": ["footer__content-col","footer__content-col--mobile-3"],
+        "verticalAlign": "top",
+        "width": "100%"
+    }
+  },
+
+  "flex-layout.row#footer-container-1-mobile": {
+    "props": {
+      "blockClass": "footer__copyright"
+    },
+    "children": [
+      "rich-text#copyright"
+    ]
+  } 
+
+
+ 
+}

@@ -1,0 +1,550 @@
+{
+    "vtex.menu@2.x:menu#submenu-cat-mulheres-mob": {
+      "children": [
+        "menu-item#mulheres-mob1",
+        "menu-item#mulheres-mob2",
+        "menu-item#mulheres-mob3",
+        "menu-item#mulheres-mobALL"
+        // "menu-item#col1-all--mob"
+      ],
+      "props": {
+        "orientation": "vertical"
+      }
+    },
+  
+    "menu-item#mulheres-mob1": {
+      "props": {
+        "type": "custom",
+        "id": "",
+        "blockClass": "submenu",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "noFollow": false,
+          "text": "Acessórios",
+          "href": "/mulheres/acessorios"
+        }
+      },
+      "blocks": [
+        "vtex.menu@2.x:submenu.accordion#submenu-cat-mulheres-acessorios-mob"
+      ]
+    },
+  
+    "vtex.menu@2.x:submenu.accordion#submenu-cat-mulheres-acessorios-mob": {
+      "children": [
+        "vtex.menu@2.x:menu#submenu-cat-mulheres-acessorios-mob-submenu"
+      ],
+      "props": {
+        "blockClass": "sub-2-nav",
+        "width": "auto"
+      }
+    },
+  
+    "vtex.menu@2.x:menu#submenu-cat-mulheres-acessorios-mob-submenu": {
+      "props": {
+        "orientation": "vertical",
+        "blockClass":"submenu",
+        "items": [
+            {
+                "type": "custom",
+                "id": "",
+                "blockClass":"submenu",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Bonés femininos",
+                    "href": "/mulheres/acessorios/bones-femininos"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "blockClass":"submenu",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Luvas de academia",
+                    "href": "/mulheres/acessorios/luvas-de-academia"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "blockClass":"submenu",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Luvas de goleiro",
+                    "href": "/mulheres/acessorios/luvas-de-goleiro"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "blockClass":"submenu",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Mochilas e malas",
+                    "href": "/mulheres/acessorios/mochilas-e-malas"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "blockClass":"submenu",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Óculos de natação",
+                    "href": "/mulheres/acessorios/oculos-de-natacao"
+                }
+            }
+        ]
+      }
+    },
+  
+    "menu-item#mulheres-mob2": {
+      "props": {
+        "type": "custom",
+        "id": "",
+        "blockClass": "submenu",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "noFollow": false,
+          "text": "Calçados",
+          "href": "/mulheres/calçados"
+        }
+      },
+      "blocks": [
+        "vtex.menu@2.x:submenu.accordion#submenu-cat-mulheres-calçados-mob"
+      ]
+    },
+  
+    "vtex.menu@2.x:submenu.accordion#submenu-cat-mulheres-calçados-mob": {
+      "children": ["vtex.menu@2.x:menu#submenu-cat-mulheres-calçados-mob-submenu"],
+      "props": {
+        "blockClass": "sub-2-nav",
+        "width": "auto"
+      }
+    },
+  
+    "vtex.menu@2.x:menu#submenu-cat-mulheres-calçados-mob-submenu": {
+      "props": {
+        "orientation": "vertical"
+      },
+      "children": [
+        "menu-item#mulheres-calçados-mob1",
+        "menu-item#mulheres-calçados-mob2",
+        "menu-item#mulheres-calçados-mob3",
+        "menu-item#mulheres-calçados-mob4",
+        "menu-item#mulheres-calçados-mob5",
+        "menu-item#mulheres-calçados-mob6",
+        "menu-item#mulheres-calçados-mob7"
+      ]
+    },
+    "menu-item#mulheres-calçados-mob1": {
+      "props": {
+        "type": "custom",
+        "id": "",
+        "blockClass":"submenu",
+        "highlight": false,
+        "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "blockClass": "sub-cat-item",
+            "text": "Calçados de academia",
+            "href": "/mulheres/calcados/calcados-de-academia"
+        }
+      }
+    },
+    "menu-item#mulheres-calçados-mob2": {
+      "props": {
+        "type": "custom",
+                "id": "",
+                "blockClass":"submenu",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Calçados de basquete",
+                    "href": "/mulheres/calcados/calcados-de-basquete"
+                }
+      }
+    },
+    "menu-item#mulheres-calçados-mob3": {
+      "props": {
+        "type": "custom",
+                "id": "",
+                "blockClass":"submenu",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Calçados de corrida",
+                    "href": "/mulheres/calcados/calcados-de-corrida"
+                }
+      }
+    },
+    "menu-item#mulheres-calçados-mob4": {
+      "props": {
+        "type": "custom",
+        "id": "",
+        "blockClass":"submenu",
+        "highlight": false,
+        "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "blockClass": "sub-cat-item",
+            "text": "Calçados de skate",
+            "href": "/mulheres/calcados/calcados-de-skate"
+        }
+      }
+    },
+    "menu-item#mulheres-calçados-mob5": {
+      "props": {
+        "type": "custom",
+        "id": "",
+        "blockClass":"submenu",
+        "highlight": false,
+        "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "blockClass": "sub-cat-item",
+            "text": "Chinelos de dedo e slide",
+            "href": "/mulheres/calcados/chinelos-de-dedo-e-slide"
+        }
+      }
+    },
+    "menu-item#mulheres-calçados-mob6": {
+      "props": {
+        "type": "custom",
+                "id": "",
+                "blockClass":"submenu",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Sapatênis e casual",
+                    "href": "/mulheres/calcados/sapatenis-e-casual"
+                }
+      }
+    },
+
+   
+    "menu-item#mulheres-calçados-mob7": {
+      "props": {
+        "type": "custom",
+            "id": "",
+            "blockClass": "submenu",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": false,
+                "text": "Chuteiras",
+                "href": "/mulheres/calcados/chuteiras/"
+            }
+      },
+      "blocks": [
+        "vtex.menu@2.x:submenu.accordion#submenu-cat-mulheres-calçados-chuteira-mob"
+      ]
+    },
+    "vtex.menu@2.x:submenu.accordion#submenu-cat-mulheres-calçados-chuteira-mob": {
+      "children": ["vtex.menu@2.x:menu#submenu-cat-mulheres-calçados-chuteira-mob-submenu"],
+      "props": {
+        "blockClass": "sub-2-nav",
+        "width": "auto"
+      }
+    },
+  
+    "vtex.menu@2.x:menu#submenu-cat-mulheres-calçados-chuteira-mob-submenu":{
+      "props": {
+          "orientation": "vertical",
+          "blockClass":"submenu",
+          "items": [
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Campo",
+                    "href": "/mulheres/calcados/chuteiras/campo"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Futsal",
+                    "href": "/mulheres/calcados/chuteiras/futsal"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Society",
+                    "href": "/mulheres/calcados/chuteiras/society"
+                }
+            }
+          ]
+        }
+    },
+  
+    "menu-item#mulheres-mob3": {
+      "props": {
+          "type": "custom",
+          "id": "",
+          "blockClass": "submenu",
+          "highlight": false,
+          "itemProps": {
+              "type": "internal",
+              "noFollow": false,
+              "text": "Roupas",
+              "href": "/mulheres/roupas/"
+          }
+      },
+      "blocks": [
+        "vtex.menu@2.x:submenu.accordion#submenu-cat-mulheres-roupas-mob"
+      ]
+    },
+  
+    "vtex.menu@2.x:submenu.accordion#submenu-cat-mulheres-roupas-mob": {
+      "children": [
+        "vtex.menu@2.x:menu#submenu-cat-mulheres-roupas-mob-submenu"
+      ],
+      "props": {
+        "blockClass": "sub-2-nav",
+        "width": "auto"
+      }
+    },
+  
+    "vtex.menu@2.x:menu#submenu-cat-mulheres-roupas-mob-submenu": {
+      "props": {
+        "orientation": "vertical",
+        "blockClass":"submenu",
+        "items": [
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Agasalhos",
+                    "href": "/mulheres/roupas/agasalhos"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Bermudas",
+                    "href": "/mulheres/roupas/bermudas"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Blusas cropped",
+                    "href": "/mulheres/roupas/blusas-cropped"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Body fitness",
+                    "href": "/mulheres/roupas/body-fitness"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Calças legging",
+                    "href": "/mulheres/roupas/calcas-legging"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Camisas de time",
+                    "href": "/mulheres/roupas/camisas-de-time"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Camisas polo",
+                    "href": "/mulheres/roupas/camisas-polo"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Camisetas",
+                    "href": "/mulheres/roupas/camisetas"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Corta-vento",
+                    "href": "/mulheres/roupas/corta-vento"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Maiôs e macaquinhos",
+                    "href": "/mulheres/roupas/maios-e-macaquinhos"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Meias e meiões",
+                    "href": "/mulheres/roupas/meias-e-meioes"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Moletons e jaquetas",
+                    "href": "/mulheres/roupas/moletons-e-jaquetas"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Regatas",
+                    "href": "/mulheres/roupas/regatas"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Shorts saia e shorts",
+                    "href": "/mulheres/roupas/shorts-saia-e-shorts"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Top fitness",
+                    "href": "/mulheres/roupas/top-fitness"
+                }
+            }
+        ]
+      }
+    },
+    "menu-item#mulheres-mobALL": {
+      "props": {
+        "type": "custom",
+        "id": "",
+        "highlight": false,
+        "blockClass": "submenu",
+        "itemProps": {
+          "type": "internal",
+          "noFollow": false,
+          "text": "Todos",
+          "href": "/mulheres"
+        }
+      }
+    }
+  }
+  

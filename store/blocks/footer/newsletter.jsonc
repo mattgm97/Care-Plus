@@ -1,0 +1,62 @@
+{
+  "flex-layout.row#newsletter":{
+    "children":[
+      "rich-text#newsletter"
+
+    ]
+  },
+  "flex-layout.row#newsletterRow": {
+    "children": [
+      "flex-layout.col#newsletter-proper"
+     
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "horizontalAlign": "center",
+      "blockClass": "newslettercontent"
+    }
+  },
+
+  "flex-layout.col#newsletter-title":{
+    "props":{
+      "width": "33%"
+    },
+    "children":[
+      "rich-text#newsletter"
+    ]
+  },
+  "flex-layout.col#newsletter-proper":{
+    "children":[
+      "newsletter-form"
+    ]
+      },
+  "newsletter-form": {
+    "children": [
+      "newsletter-input-email",
+      "newsletter-submit"
+    ]
+  },
+  "rich-text#newsletter": {
+    "props": {
+      "text": "DEIXE SEU EMAIL",
+      "font": "t-heading-5",
+      "textPosition": "LEFT",
+      "textAlign": "LEFT",
+      "blockClass": "footer-sobre"
+    }
+  },
+  "newsletter-input-email": {
+    "props": {
+      "placeholderText": "Deixe seu E-mail",
+      "inputLabel": " ",
+      "blockClass": "newsletterInput"
+    }
+  },
+
+  "newsletter-submit":{
+      "props":{
+        "submitButtonLabel": "ENVIAR"
+      }
+      
+  }
+}

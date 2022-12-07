@@ -1,0 +1,281 @@
+{
+    "store.custom#institutional-texts": {
+        "blocks": [
+            "responsive-layout.desktop#institutional-Content-desk",
+            "responsive-layout.mobile#institutional-Content-mob"
+        ]
+    },
+
+ 
+
+
+    "responsive-layout.desktop#institutional-Content-desk": {
+        "children": [ 
+          "flex-layout.row#institutional-Content-title",
+          "flex-layout.row#institutional-Content"]
+      },
+
+      "responsive-layout.mobile#institutional-Content-mob":{
+        "children": [ "flex-layout.row#institutional-Content-mob"]
+      },
+
+      "flex-layout.row#institutional-Content-title":{
+        "props":{
+          "marginTop": 4
+        },
+"children":[
+  "flex-layout.col#institutionalMain-title"
+]
+
+      },
+
+      "flex-layout.col#institutionalMain-title":{
+"children":[
+  "rich-text#institutionalMain-title"]
+      },
+      
+    "flex-layout.row#institutional-Content": {
+      "props":{
+        "marginTop": 2,
+        "marginBottom": 8,
+        "blockClass": "Institutionalrow"
+      },
+        "children": [
+          "flex-layout.col#menu-institucional",
+            "flex-layout.col#institutional1"
+        ]
+    },
+
+    "flex-layout.row#institutional-Content-mob": {
+        "props":{
+          "marginTop": 8,
+          "marginBottom": 8,
+          "blockClass": "Institutionalrow"
+        },
+          "children": [
+            "overlay-trigger#institucional",
+              "flex-layout.col#institutional1-mob"
+              
+          ]
+      },
+        "overlay-trigger#institucional": {
+          "children": [
+            "rich-text#institucionalMenus",
+            "overlay-layout#institucional"    
+          ]
+        },
+
+        "rich-text#institucionalMenus": {
+          "props": {
+            "text": "Menu Institucional",
+            "blockClass": "menu-institucional-dropdown",
+            "textPosition": "CENTER",
+            "textAlign": "CENTER"
+          }
+        },
+
+        "overlay-layout#institucional":{
+          "props":{
+            "blockClass":"overlayinstitucional"
+          },
+          "children":[
+            "vtex.menu@2.x:menu#menu-institucional"
+          ]
+        },
+    "flex-layout.col#menu-institucional":{
+      "props":{
+        "blockClass": "Institutionaltitleblock1",
+        "preventVerticalStretch": true,
+        "horizontalAlign": "center",
+        "width": "28%"
+      },
+      "children":[
+        "vtex.menu@2.x:menu#menu-institucional"
+
+      ]
+    },
+    "flex-layout.col#institutional1": {
+      "props":{
+        "blockClass": "Institutionaltitleblock2",
+        "preventVerticalStretch": true,
+        "paddingLeft": 2
+      },
+        "children": [
+         
+            "rich-text#institutionalMain"
+        ]
+    },
+
+    "flex-layout.col#institutional1-mob": {
+        "props":{
+          "blockClass": "Institutionaltitleblock2",
+          "preventVerticalStretch": true
+        },
+          "children": [
+            "rich-text#institutionalMain-title",
+              "rich-text#institutionalMain"
+          ]
+      },
+
+  
+
+
+
+    "rich-text#institutionalMain-title": {
+      "props": {
+          "text": "TITULO AQUI",
+          "blockClass": "InstitutionalTitle"
+      }
+  },
+
+  "vtex.menu@2.x:menu#menu-institucional":{
+    "children": [
+      "menu-item#quem-somos",
+      "menu-item#pol-privacidade",
+      "menu-item#pol-seguranca",
+      "menu-item#pol-entregas",
+      "menu-item#troca-e-dev",
+      "menu-item#formas-pagamento",
+      "menu-item#faq",
+      "menu-item#contato"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-inst"
+  }
+  },
+    "rich-text#institutionalMain": {
+        "props": {
+            "text": "SEU TEXTO AQUI",
+            "blockClass": "InstitutionalText"
+        }
+    },
+
+    "menu-item#quem-somos": {
+      "props": {
+        "id": "menu-item-quem-somos",
+        "type": "custom",
+        "highlight": false,
+        "blockClass": "submenu--inst",
+        "itemProps": {
+          "type": "internal",
+          "href": "/quem-somos",
+          "noFollow": false,
+          "tagTitle": "quem-somos",
+          "text": "Quem Somos"
+        }
+      }
+    },
+    "menu-item#troca-e-dev": {
+      "props": {
+        "id": "menu-item-troca-e-dev",
+        "type": "custom",
+        "highlight": false,
+        "blockClass": "submenu--inst",
+        "itemProps": {
+          "type": "internal",
+          "href": "/troca-e-devolucao",
+          "noFollow": false,
+          "tagTitle": "Troca e Devolução",
+          "text": "Troca e Devolução"
+        }
+      }
+    },
+    "menu-item#formas-pagamento": {
+      "props": {
+        "id": "menu-item-formas-pagamento",
+        "type": "custom",
+        "highlight": false,
+        "blockClass": "submenu--inst",
+        "itemProps": {
+          "type": "internal",
+          "href": "/politica-de-pagamento",
+          "noFollow": false,
+          "tagTitle": "Política de Pagamento",
+          "text": "Política de Pagamento"
+        }
+      }
+    },
+    "menu-item#pol-privacidade": {
+      "props": {
+        "id": "menu-item-pol-privacidade",
+        "type": "custom",
+        "highlight": false,
+        "blockClass": "submenu--inst",
+        "itemProps": {
+          "type": "internal",
+          "href": "/politica-de-privacidade",
+          "noFollow": false,
+          "tagTitle": "pol-privacidade",
+          "text": "Política de Privacidade"
+        }
+      }
+    },
+
+    "menu-item#pol-seguranca": {
+      "props": {
+        "id": "menu-item-pol-seguranca",
+        "type": "custom",
+        "highlight": false,
+        "blockClass": "submenu--inst",
+        "itemProps": {
+          "type": "internal",
+          "href": "/politica-de-seguranca",
+          "noFollow": false,
+          "tagTitle": "pol-seguranca",
+          "text": "Política de Segurança"
+        }
+      }
+    },
+
+    "menu-item#pol-entregas": {
+      "props": {
+        "id": "menu-item-pol-entregas",
+        "type": "custom",
+        "highlight": false,
+        "blockClass": "submenu--inst",
+        "itemProps": {
+          "type": "internal",
+          "href": "/politica-de-entregas",
+          "noFollow": false,
+          "tagTitle": "pol-entregas",
+          "text": "Política de Entregas"
+        }
+      }
+    },
+
+
+
+    "menu-item#faq": {
+      "props": {
+        "id": "menu-item-faq",
+        "type": "custom",
+        "highlight": false,
+        "blockClass": "submenu--inst",
+        "itemProps": {
+          "type": "internal",
+          "href": "/faq",
+          "noFollow": false,
+          "tagTitle": "faq",
+          "text": "Dúvidas Frequentes"
+        }
+      }
+    },
+    "menu-item#contato": {
+      "props": {
+        "id": "menu-item-contato",
+        "type": "custom",
+        "highlight": false,
+        "blockClass": "submenu--inst",
+        "itemProps": {
+          "type": "internal",
+          "href": "/contato",
+          "noFollow": false,
+          "tagTitle": "contato",
+          "text": "Contato"
+        }
+      }
+    }
+
+    
+}

@@ -1,0 +1,8 @@
+{
+  "rich-text#copyright": {
+    "props": {
+      "text": "**J7S SINALIZAÇÃO IND. E COM. LTDA** \n R. Ottokar Doerffel, 1112 – Galpão D02 B Atiradores – Joinville/SC | CEP 89203-212 \n Copyright 2021 – Todos os direitos reservados",
+      "blockClass": "copyright__text"
+    }
+  }
+}

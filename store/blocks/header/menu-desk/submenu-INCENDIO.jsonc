@@ -1,0 +1,165 @@
+{
+    "vtex.menu@2.x:menu#submenu-cat-INCENDIO":{
+        "props":{
+            "orientation": "vertical",
+            "blockClass":["row-menu-col","row-menu-col-incendio"],
+            "items": [
+              {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Alarme",
+                    "href": "/combate-a-incendio/alarme"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Bomba de Incêndio",
+                    "href": "/combate-a-incendio/bomba-de-incendio"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Detectores Fumo",
+                    "href": "/combate-a-incendio/detectores-fumo"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Elevador",
+                    "href": "/combate-a-incendio/elevador"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Extintor",
+                    "href": "/combate-a-incendio/extintor"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Gerais",
+                    "href": "/combate-a-incendio/gerais"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Hidrante",
+                    "href": "/combate-a-incendio/hidrante"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Mangueira",
+                    "href": "/combate-a-incendio/mangueira"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Parada Emergência",
+                    "href": "/combate-a-incendio/parada-emergencia"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Ponto de Encontro",
+                    "href": "/combate-a-incendio/ponto-de-encontro"
+                }
+            }
+              
+            ]
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-cat-INCENDIO2":{
+        "props":{
+            "orientation": "vertical",
+            "blockClass":["row-menu-col","row-menu-col-incendio"],
+            "items": [
+          
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Porta Corta Fogo",
+                    "href": "/combate-a-incendio/porta-corta-fogo"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Rota de Fuga",
+                    "href": "/combate-a-incendio/rota-de-fuga"
+                }
+            }
+              
+            ]
+        }
+    }
+}

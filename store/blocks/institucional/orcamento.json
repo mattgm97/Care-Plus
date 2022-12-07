@@ -1,0 +1,220 @@
+{
+  "store.custom#orcamento": {
+    "blocks": [
+      "flex-layout.row#orcamento1",
+      "flex-layout.row#orcamento2",
+      "flex-layout.row#orcamento3"
+    ]
+  },
+
+  "flex-layout.row#orcamento1": {
+    "children": ["flex-layout.col#orcamento1", "flex-layout.col#orcamento2"],
+    "props": {
+      "marginTop": 7,
+      "blockClass":"orcamento-row"
+    }
+  },
+  "flex-layout.col#orcamento1": {
+    "children": ["rich-text#orcamento-title", "rich-text#orcamento-intro"],
+    "props": {
+      "width": "33%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#orcamento-title": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Atendimento Corporativo",
+      "font": "t-heading-4",
+      "blockClass": "sectionRichTitleCorporate"
+    }
+  },
+  "rich-text#orcamento-intro": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Sabemos que suas necessidades de compra são diferentes e, para atender as expectativa, disponibilizamos atendimento personalizado, equipe consultiva, orçamento online e condições especiais para sua empresa. Solicite agora mesmo seu orçamento e descubra nosso diferencial!",
+      "blockClass": "sectionRichText"
+    }
+  },
+  "flex-layout.col#orcamento2": {
+    "children": ["image#orcamento"],
+    "props": {
+      "width": "66%",
+      "horizontalAlign": "center"
+    }
+  },
+
+  "image#orcamento": {
+    "props": {
+      "src": "assets/banners/corporate-service.png"
+    }
+  },
+
+  "flex-layout.row#orcamento2": {
+    "children": [
+      "info-card#orcamentoCondition1",
+      "info-card#orcamentoCondition2",
+      "info-card#orcamentoCondition3",
+      "info-card#orcamentoCondition4"
+    ],
+    "props": {
+      "blockClass": ["orcamentos-points", "orcamento-row"]
+    }
+  },
+  "info-card#orcamentoCondition1": {
+    "props": {
+      "isFullModeStyle": false,
+      "imageUrl": "assets/icons/atendimento.svg",
+      "headline": "ATENDIMENTO E ACOMPANHAMENTO PERSONALIZADO",
+      "subhead": "Te ajudamos a encontrar os melhores produtos de acordo com a sua demanda.",
+      "textPosition": "right",
+      "callToActionMode": "none",
+      "textMode": "rich-text",
+      "blockClass": ["sellerConditionCard", "orcamento-cards"],
+      "textAlignment": "left"
+    }
+  },
+  "info-card#orcamentoCondition2": {
+    "props": {
+      "isFullModeStyle": false,
+      "imageUrl": "assets/icons/orcamento-ex.svg",
+      "headline": "ORÇAMENTOS EXCLUSIVOS",
+      "subhead": "Geramos um orçamento personalizado de acordo com sua necessidade, disponibilizando condições comerciais que melhor te atenda.",
+      "textPosition": "right",
+      "callToActionMode": "none",
+      "textMode": "rich-text",
+      "blockClass": ["sellerConditionCard", "orcamento-cards"],
+      "textAlignment": "left"
+    }
+  },
+  "info-card#orcamentoCondition3": {
+    "props": {
+      "isFullModeStyle": false,
+      "imageUrl": "assets/icons/dinheirinhos.png",
+      "headline": "DESCONTOS DIFERENCIADOS",
+      "subhead": "Nossos produtos são produzidos em fábricas próprias no Brasil e por isso conseguimos te oferecer descontos diferenciados e agilidade na entrega.",
+      "textPosition": "right",
+      "callToActionMode": "none",
+      "textMode": "rich-text",
+      "blockClass": ["sellerConditionCard", "orcamento-cards"],
+      "textAlignment": "left"
+    }
+  },
+  "info-card#orcamentoCondition4": {
+    "props": {
+      "isFullModeStyle": false,
+      "imageUrl": "assets/icons/medalha.png",
+      "headline": "PRODUTOS TÉCNICOS, INOVADORES E COM TESTE DE QUALIDADE",
+      "subhead": "Realizamos inúmeros testes para garantir que nossos produtos atinjam altos níveis de qualidade de acordo com as principais propriedades.",
+      "textPosition": "right",
+      "callToActionMode": "none",
+      "textMode": "rich-text",
+      "blockClass": ["sellerConditionCard", "orcamento-cards"],
+      "textAlignment": "left"
+    }
+  },
+
+  "flex-layout.row#orcamento3": {
+    "children": ["flex-layout.col#orcamento3", "flex-layout.col#orcamento4"],
+    "props": {
+      "marginTop": 7,
+      "marginBottom": 7,
+      "blockClass":"orcamento-row"
+    }
+  },
+
+  "flex-layout.col#orcamento3":{
+"children":["image#orcamento2"],
+"props":{
+    "width": "50%",
+    "horizontalAlign": "left"
+}
+  },
+
+  "image#orcamento2": {
+    "props": {
+      "src": "assets/banners/corporate-service-form.png"
+    }
+  },
+
+  "flex-layout.col#orcamento4": {
+    "children": ["form#orcamento"],
+    "props":{
+        "width": "33%",
+        "horizontalAlign": "left",
+        "blockClass":"orcamentoForm"
+    }
+    
+  },
+
+  "form#orcamento": {
+    "props": {
+      "entity": "OC",
+      "schema": "orcamentoio"
+    },
+    "children": [
+      "form-input.text#nomeOrc",
+      "form-input.text#emailOrc",
+      "form-input.text#CNPJOrc",
+      "form-input.text#telefoneOrc",
+      "form-input.upload#arquivo",
+      "form-input.textarea#mensagemOrc",
+      "form-submit"
+    ],
+    "blocks": ["form-success#orc"]
+  },
+  "form-success#orc": {
+    "children": ["rich-text#successSubmitOrc"]
+  },
+  "form-input.text#nomeOrc": {
+    "props": {
+      "pointer": "#/properties/name",
+      "label": "Nome*"
+    }
+  },
+  "form-input.text#emailOrc": {
+    "props": {
+      "pointer": "#/properties/email",
+      "label": "E-mail*"
+    }
+  },
+  "form-input.text#CNPJOrc": {
+    "props": {
+      "pointer": "#/properties/cnpj",
+      "label": "CNPJ*"
+    }
+  },
+  "form-input.text#telefoneOrc": {
+    "props": {
+      "pointer": "#/properties/telefone",
+      "label": "Telefone*"
+    }
+  },
+
+  "form-input.upload#arquivo": {
+    "props": {
+      "pointer": "#/properties/anexoFile",
+      "accept":"image/*,.pdf,.doc,.xlsx,.csv"
+    }
+  },
+
+  "form-input.textarea#mensagemOrc": {
+    "props": {
+      "pointer": "#/properties/mensagem",
+      "label": "Mensagem*"
+    }
+  },
+
+  "rich-text#successSubmitOrc": {
+    "props": {
+      "text": "Solicitação de orçamento enviado com sucesso!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "subit-success",
+      "font": "t-heading-3"
+    }
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "vtex.menu@2.x:menu#submenu-cat-roupas-mob": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "submenu",
+      "items": [
+        {
+          "type": "custom",
+          "id": "",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "blockClass": "sub-cat-item",
+            "text": "Agasalhos",
+            "href": "/roupas/agasalhos"
+          }
+        },
+        {
+          "type": "custom",
+          "id": "",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "blockClass": "sub-cat-item",
+            "text": "Bermudas",
+            "href": "/roupas/bermudas"
+          }
+        },
+        {
+          "type": "custom",
+          "id": "",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "blockClass": "sub-cat-item",
+            "text": "Calças",
+            "href": "/roupas/calças"
+          }
+        },
+        {
+          "type": "custom",
+          "id": "",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "blockClass": "sub-cat-item",
+            "text": "Camisas de time",
+            "href": "/roupas/camisas-de-time"
+          }
+        },
+        {
+          "type": "custom",
+          "id": "",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "blockClass": "sub-cat-item",
+            "text": "Camisas polo",
+            "href": "/roupas/camisas-polo"
+          }
+        },
+        {
+          "type": "custom",
+          "id": "",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "blockClass": "sub-cat-item",
+            "text": "Camisetas e regatas",
+            "href": "/roupas/camisetas-e-regatas"
+          }
+        },
+        {
+          "type": "custom",
+          "id": "",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "blockClass": "sub-cat-item",
+            "text": "Camisetas manga longa",
+            "href": "/roupas/camisetas-manga-longa"
+          }
+        },
+        {
+          "type": "custom",
+          "id": "",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "blockClass": "sub-cat-item",
+            "text": "Conjuntos",
+            "href": "/roupas/conjuntos"
+          }
+        },
+        {
+          "type": "custom",
+          "id": "",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "blockClass": "sub-cat-item",
+            "text": "Camisetas e regatas",
+            "href": "/roupas/camisetas-e-regatas"
+          }
+        },
+        {
+          "type": "custom",
+          "id": "",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "blockClass": "sub-cat-item",
+            "text": "Cuecas e sungas",
+            "href": "/roupas/cuecas-e-sungas"
+          }
+        },
+        {
+          "type": "custom",
+          "id": "",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "blockClass": "sub-cat-item",
+            "text": "Maiôs",
+            "href": "/roupas/maios"
+          }
+        },
+        {
+          "type": "custom",
+          "id": "",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "blockClass": "sub-cat-item",
+            "text": "Meias e meiões",
+            "href": "/roupas/meias-e-meiões"
+          }
+        },
+        {
+          "type": "custom",
+          "id": "",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "blockClass": "sub-cat-item",
+            "text": "Moletons e jaquetas",
+            "href": "/roupas/moletons-e-jaquetas"
+          }
+        },
+        {
+          "type": "custom",
+          "id": "",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "blockClass": "sub-cat-item",
+            "text": "Roupas para academia",
+            "href": "/roupas/roupas-para-academia"
+          }
+        },
+        {
+          "type": "custom",
+          "id": "",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "blockClass": "sub-cat-item",
+            "text": "Todos",
+            "href": "/roupas"
+          }
+        }
+      ]
+    }
+  }
+}

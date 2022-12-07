@@ -1,0 +1,41 @@
+.emailInputContainer--newsletterInput :global(.vtex-styleguide-9-x-input){
+    background-color: #CECECE;
+    border: none;
+    border-radius: 100px;
+
+}
+
+.emailInputContainer--newsletterInput :global(.vtex-input-prefix__group){
+    border: none;
+    margin-bottom: 1em;
+}
+
+::placeholder { 
+    color: #3C3C3C;
+    opacity: 1;
+  }
+
+  .formSubmitContainer{
+      text-align: center;
+  }
+
+  .formSubmitContainer :global(.vtex-button){
+    background-color: #F5F5F5;
+    border-color: #F5F5F5;
+    color: #3C3C3C;
+}
+
+@media (max-width: 760px) {
+    .emailInputContainer--newsletterInput :global(.vtex-input-prefix__group){
+        justify-content: center;
+        height: 55px;
+    }
+
+    .emailInputContainer--newsletterInput :global(.vtex-styleguide-9-x-input){
+       width: 85%;
+       height: 55px;
+    
+    }
+
+}
+

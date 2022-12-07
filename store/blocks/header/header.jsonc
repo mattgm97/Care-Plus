@@ -1,0 +1,352 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "CSSWorkaround",
+      "wpp-btn",
+      "responsive-layout.desktop#topbar",
+      "header-row#1-desktop",
+      "header-row#2-desktop",
+      "flex-layout.row#mega-menu"
+    ]
+  },
+  "responsive-layout.desktop#topbar": {
+    "children": ["flex-layout.row#topbar-desktop"]
+  },
+
+  "flex-layout.row#topbar-desktop": {
+    "children": ["flex-layout.col#topbar-1", "flex-layout.col#topbar-2"],
+    "props":{
+      "blockClass":"topbar",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#topbar-1": {
+    "children": ["info-card#headerTelefone"],
+    "props":{
+      "width": "70%",
+      "horizontalAlign": "left"
+    }
+  },
+
+  "info-card#headerTelefone": {
+    "props": {
+      "isFullModeStyle": false,
+      "imageUrl": "assets/icons/telefone.png",
+      "headline": "**ENTRE** EM CONTATO **(47) 3441-0022**",
+      "textPosition": "right",
+      "callToActionMode": "none",
+      "textMode": "rich-text",
+      "blockClass": "TelefoneCard",
+      "textAlignment": "left"
+    }
+  },
+
+  "flex-layout.col#topbar-2": {
+    "children": ["flex-layout.row#topbar-row-links"],
+    "props":{
+      "width": "30%",
+      "horizontalAlign": "right",
+      "blockClass":"orcamento-e-social"
+    }
+  },
+
+  "flex-layout.row#topbar-row-links":{
+    "children": ["flex-layout.col#topbar-col-links1", "flex-layout.col#topbar-col-links2"],
+    "props":{
+      "preventVerticalStretch": true,
+      "horizontalAlign": "right",
+      "blockClass": "header-links"
+    }
+  },
+
+  "flex-layout.col#topbar-col-links1":{
+    "children": ["rich-text#orcamento-text"],
+    "props":{
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    }
+  },
+
+  "flex-layout.col#topbar-col-links2":{
+    "children": ["rich-text#orcamento-text2"],
+    "props":{
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    }
+  },
+
+  "rich-text#orcamento-text": {
+    "props": {
+      "text": "[**PEÇA** UM ORÇAMENTO](/orcamento)",
+      "blockClass":"orcamento-text"
+    }
+  },
+
+  "rich-text#orcamento-text2": {
+    "props": {
+      "text": "**REDES SOCIAIS**  [![Facebook]( /arquivos/facebook-white.png 'Facebook')](https://www.facebook.com/isinaliza/) [![Instagram]( /arquivos/instagram-white.png 'Instagram')](https://www.instagram.com/isinaliza/) [![Youtube]( /arquivos/youtube-white.png 'Youtube')](https://www.youtube.com/channel/UCs2-MYW4YR-OuMjzJQP4lHA)",
+      "blockClass":"socialmedia-text"
+    }
+  },
+
+  "header-row#1-desktop": {
+    "children": [
+      "logo#desktop",
+      "header-spacer",
+      "search-bar",
+      "header-spacer",
+
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "main-header"
+    }
+  },
+
+  "logo#desktop": {
+    "props": {
+      //"title": "Logo",
+      "href": "/",
+      "url": "assets/icons/logo.svg",
+      "width": "196"
+    }
+  },
+  /*     "minicart": {
+          "blocks": ["product-summary"],
+          "props": {
+              "type": "popup",
+              "showRemoveButton": true,
+              "showDiscount": true,
+              "showSku": true,
+              "iconLabel": "Carrinho",
+              "labelMiniCartEmpty": "",
+              "labelButtonFinishShopping": "Go to checkout",
+              "enableQuantitySelector": true,
+              "maxQuantity": 10,
+              "labelClasses": "gray"
+          }
+      }, */
+  "header-row#2-desktop": {
+    "children": ["mega-menu-trigger-btn", "vtex.menu@2.x:menu#category-menu-01"],
+    "props": {
+      /*"sticky": true,*/
+      "blockClass": "main-menu"
+    }
+  },
+
+  "mega-menu-trigger-btn":{
+    "props":{
+      "id":"everything-menu"
+    }
+  },
+
+  "flex-layout.row#mega-menu":{
+    "children":["mega-menu"],
+    "props":{
+      "blockClass":"mega-menu-container"
+    }
+  },
+  "mega-menu":{
+    "props":{
+      "title":"Departamentos",
+      "blockClass":"mega-menu"
+    }
+  },
+
+  /* MOBILE */
+  "header-layout.mobile": {
+    // "children": ["header-row#1-mobile", "header-row#2mobile"]
+    "children": ["header-row#1-mobile", "header-row#2mobile"]
+  },
+  "header-row#1-mobile": {
+    "children": [
+      "CSSWorkaround",
+      "wpp-btn",
+      "drawer#menu-mobile",
+      "header-spacer",
+      "logo#mobile",
+      "header-spacer",
+      /*  "drawer#search-bar",
+        /*"rich-text#icon-link-natal",
+        "image#icon-link-black-friday",*/
+      "minicart.v2"
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "main-header-mobile"
+    }
+  },
+  "header-row#2mobile": {
+    "children": ["search-bar"],
+    "props": {
+      "blockClass": "main-header-mobile-search-box"
+    }
+  },
+  "drawer#search-bar": {
+    "children": ["search-bar"],
+    "blocks": ["drawer-trigger#search-bar"],
+    "props": {
+      "slideDirection": "vertical",
+      "blockClass": "drawner__search-bar"
+    }
+  },
+  "drawer-trigger#search-bar": {
+    "children": ["image#search--icon"]
+  },
+  "image#search--icon": {
+    "props": {
+      "src": "/arquivos/icon-search-black.svg",
+      "blockClass": "image-search",
+      "maxWidth": "20px",
+      "maxHeight": "18px"
+    }
+  },
+  "menu#drawer": {
+    "children": [],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "drawer#menu-mobile": {
+    "children": [
+      "login#mob",
+      "mega-menu-go-back-btn",
+      "mega-menu"
+    ],
+    "props": {
+      "blockClass": "menu-mobile"
+    }
+  },
+
+
+
+  /*   "drawer": {
+          "children": ["flex-layout.row#drawer"],
+          "props": {
+              "isFullWidth": true
+          }
+      }, */
+  "flex-layout.row#drawer": {
+    "children": [
+      "vtex.menu@2.x:menu#category-menu-01--mob"
+      //"flex-layout.row#header-atendimento"
+    ],
+    "props": {
+      "blockClass": "drawer__options",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "login#mob": {
+    "props": {
+      //"optionsTitle": "Elija una de las opciones para confirmar su identidad",
+      // "providerPasswordButtonLabel": "Ingresar con mail y contraseña",
+      "showIconProfile": true,
+      "mirrorTooltipToRight": true,
+      "iconLabel": "ENTRE OU CADASTRE-SE",
+      "labelClasses": "login__header"
+      /* "accountOptionLinks": [
+                  {
+                      "label": "Mi Cuenta",
+                      "path": "/account",
+                      "cssClass": "myAccountLink"
+                  },                {
+                      "label": "Mis Pedidos",
+                      "path": "/account#/orders",
+                      "cssClass": "myAccountLink"
+                  }
+              ] */
+    }
+  },
+
+  "login": {
+    "props": {
+      //"optionsTitle": "Elija una de las opciones para confirmar su identidad",
+      // "providerPasswordButtonLabel": "Ingresar con mail y contraseña",
+      "showIconProfile": false,
+      "iconLabel": "LOGIN OU CADASTRE-SE",
+      "labelClasses": "login__header",
+      "accountOptionLinks":[
+        {
+          "label": "Meus Dados",
+          "path":"/account"
+        },
+        {
+          "label": "Meus Pedidos",
+          "path":"/account#/orders"
+        },
+        {
+          "label": "Alterar senha",
+          "path":"/account#/authentication"
+        }
+      ]
+    }
+  },
+  "logo#mobile": {
+    "props": {
+      // "title": "Logo",
+      "href": "/",
+      "url": "assets/icons/logo.svg",
+      "width": "144"
+    }
+  },
+
+  "autocomplete-result-list.v2": {
+    "props": {
+      "productLayout": "VERTICAL",
+      "maxSuggestedProducts": 2
+    },
+    "blocks": ["product-summary.shelf"]
+  },
+
+
+  "product-summary-image#shelf": {
+    "props": {
+      "showBadge": true,
+      "aspectRatio": "1:1",
+      "maxHeight": 220,
+      "badgeText": "off"
+    }
+  },
+
+  "product-summary-price#search": {
+    "props": {
+      "showInstallments": false
+    }
+  },
+
+  "product-summary-buy-button#search": {
+    "props": {
+      "buyButtonText": "comprar"
+    }
+  },
+
+  "product-summary-name#search": {
+    "props": {
+      "blockClass": ["search"]
+    }
+  },
+
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "productLayout": "VERTICAL",
+      "iconClasses": "hpa-search",
+      "placeholder": "O que você está procurando?",
+      "maxWidth": 680,
+      "displayMode": "search-and-clear-buttons",
+      "autocompleteAlignment": "left",
+      "openAutocompleteOnFocus": true
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.childrenContainer--menu-mobile{
+    display: block;
+}
+
+.openIconContainer--menu-mobile{
+    padding-top: 1.5em;
+}
+
+.openIconContainer {
+    padding: 0px;
+}
+
+.drawer--menu-mobile{
+    background-color: #0054A8 !important;
+}
+
+.closeIconContainer--menu-mobile{
+    justify-content: end;
+}
+
+.menuIcon--menu-mobile {
+    overflow: visible !important;
+}
+
+.openIconContainer--menu-mobile {
+    padding-right: 16px;
+}

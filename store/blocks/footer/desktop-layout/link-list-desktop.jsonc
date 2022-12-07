@@ -1,0 +1,57 @@
+{
+
+
+
+
+  "vtex.menu@2.x:menu#contacts": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": ["menu-footer", "contacts-menu-footer"],
+      "items": [
+        {
+          "id": "footer-item-0",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "external",
+            "href": "tel:11930041270",
+            "noFollow": false,
+            "tagTitle": "Telefone: (11) 93004-1270",
+            "text": "Telefone: (11) 93004-1270"
+          }
+        },
+
+        {
+          "id": "footer-item-2",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "external",
+            "href": "https://wa.me/5511930041270",
+            "noFollow": false,
+            "tagTitle": " Whatsapp: (11) 93004-1270",
+            "text": " Whatsapp: (11) 93004-1270"
+          }
+        },
+        {
+          "id": "footer-item-3",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "external",
+            "href": "mailto:contato@isinaliza.com",
+            "noFollow": false,
+            "tagTitle": "contato@isinaliza.com",
+            "text": "contato@isinaliza.com"
+          }
+        }
+      ]
+    }
+  }
+}

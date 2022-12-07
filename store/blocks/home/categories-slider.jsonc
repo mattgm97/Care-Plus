@@ -1,0 +1,165 @@
+{
+    "slider-layout#categories-circle-slider": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 6,
+            "tablet": 3,
+            "phone": 2
+          },
+          "infinite": true,
+          "showNavigationArrows": "desktopOnly",
+          "blockClass": "carousel-sliders-categories"
+        },
+        "children": ["info-card#categorie01", "info-card#categorie02", "info-card#categorie03",
+          "info-card#categorie04", "info-card#categorie05", "info-card#categorie06"
+        ]
+      },
+      "info-card#categorie01": {
+        "props": {
+          "imageUrl": "assets/banners/cavaletes.png",
+          "callToActionText": "CAVALETE DE SINALIZAÇÃO",
+          "callToActionUrl": "/cavalete-de-sinalizacao",
+          "textPosition": "right",
+          "callToActionMode": "link",
+          "blockClass": "circle-menu-option"
+        }
+      },
+      "info-card#categorie02": {
+        "props": {
+          "imageUrl": "assets/banners/incendio.png",
+          "callToActionText": "COMBATE À INCÊNDIO",
+          "callToActionUrl": "/combate-a-incendio",
+          "textPosition": "right",
+          "callToActionMode": "link",
+          "blockClass": "circle-menu-option"
+        }
+      },
+      "info-card#categorie03": {
+        "props": {
+          "imageUrl": "assets/banners/transito.png",
+          "callToActionText": "TRÂNSITO",
+          "callToActionUrl": "/sinalizacao-de-transito",
+          "textPosition": "right",
+          "callToActionMode": "link",
+          "blockClass": "circle-menu-option"
+        }
+      },
+      "info-card#categorie04": {
+        "props": {
+          "imageUrl": "assets/banners/seguranca.png",
+          "callToActionText": "ADESIVOS DE SEGURANÇA",
+          "callToActionUrl": "/adesivos-de-seguranca",
+          "textPosition": "right",
+          "callToActionMode": "link",
+          "blockClass": "circle-menu-option"
+        }
+      },
+      "info-card#categorie05": {
+        "props": {
+          "imageUrl": "assets/banners/condominio.png",
+          "callToActionText": "CONDOMÍNIO",
+          "callToActionUrl": "/condominios",
+          "textPosition": "right",
+          "callToActionMode": "link",
+          "blockClass": "circle-menu-option"
+        }
+      },
+      "info-card#categorie06": {
+        "props": {
+          "imageUrl": "assets/banners/braille.png",
+          "callToActionText": "BRAILLE TÁTIL",
+          "callToActionUrl": "/braille-tatil",
+          "textPosition": "right",
+          "callToActionMode": "link",
+          "blockClass": "circle-menu-option"
+        }
+      },
+
+
+  "slider-layout#cat-rectangle": {
+    "children": [
+      "image#brand1",
+      "image#brand2",
+      "image#brand3",
+      "image#brand4",
+      "image#brand5"
+    ],
+    "props": {
+      "blockClass": ["cat-rectangle-slider"],
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots": "never"
+    }
+  },
+  "image#brand1": {
+    "props": {
+      "src": "assets/banners/braille-rec.png",
+  
+      "link":{
+        "properties":{
+          "attributeNofollow": false,
+          "newtab": false,
+          "url": "/braille-tatil"
+        }
+      }
+    }
+  },
+  "image#brand2": {
+    "props": {
+        "src": "assets/banners/acessibilidade-rec.png",
+  
+        "link":{
+          "properties":{
+            "attributeNofollow": false,
+            "newtab": false,
+            "url": "/acessibilidade"
+          }
+        }
+    }
+  },
+  "image#brand3": {
+    "props": {
+        "src": "assets/banners/totem-rec.png",
+  
+        "link":{
+          "properties":{
+            "attributeNofollow": false,
+            "newtab": false,
+            "url": "/totem"
+          }
+        }
+    }
+  },
+  "image#brand4": {
+    "props": {
+        "src": "assets/banners/sinalizacao-rec.png",
+      
+        "link":{
+          "properties":{
+            "attributeNofollow": false,
+            "newtab": false,
+            "url": "/sinalizacao-de-transito"
+          }
+        }
+    }
+  },
+  "image#brand5": {
+    "props": {
+        "src": "assets/banners/etiquetas-rec.png",
+      
+        "link":{
+          "properties":{
+            "attributeNofollow": false,
+            "newtab": false,
+            "url": "/etiqueta-de-bloqueio"
+          }
+        }
+    }
+  }
+}
+

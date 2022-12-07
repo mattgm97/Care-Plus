@@ -1,0 +1,283 @@
+{
+    "vtex.menu@2.x:menu#category-menu-01--mob": {
+        "children": [
+            "menu-item#calcados-mob",
+            "menu-item#roupas-mob",
+            "menu-item#homens-mob",
+            "menu-item#mulheres-mob",
+            "menu-item#crianças-mob",
+            "menu-item#acessorios-mob",
+            "menu-item#marcas-mob",
+            "menu-item#peças-unicas-mob",
+            "menu-item#outlet-mob"
+        ],
+        "props": {
+            "blockClass": "category-menu-mobile",
+            "orientation": "vertical"
+        }
+    },
+
+
+ // ----------------- ACESSORIOS ITEM -------------------
+ "menu-item#acessorios-mob": {
+    "props": {
+        "id": "toplevel-1-mob",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "mob__toplevel1",
+
+        "itemProps": {
+            "type": "internal",
+            "href": "/acessorios",
+            "noFollow": true,
+            "tagTitle": "ACESSÓRIOS",
+            "text": "ACESSÓRIOS"
+        }
+    },
+    "blocks": [
+        "vtex.menu@2.x:submenu.accordion#acessorios-submenu-block-mob"
+    ]
+},
+
+"vtex.menu@2.x:submenu.accordion#acessorios-submenu-block-mob": {
+    "children": ["vtex.menu@2.x:menu#submenu-cat-acessorios-mob"],
+    "props": {
+        "blockClass": "allSubmenuBlock"
+        // "width": "230"
+    }
+},
+
+
+
+
+ // ----------------- CALÇADOS ITEM -------------------
+ "menu-item#calcados-mob": {
+    "props": {
+        "id": "toplevel-1-mob",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "mob__toplevel1",
+
+        "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": true,
+            "tagTitle": "CALÇADOS",
+            "text": "CALÇADOS"
+        }
+    },
+    "blocks": [
+        "vtex.menu@2.x:submenu.accordion#calcados-submenu-block-mob"
+    ]
+},
+
+"vtex.menu@2.x:submenu.accordion#calcados-submenu-block-mob": {
+    "children": ["vtex.menu@2.x:menu#submenu-cat-calcados-mob"],
+    "props": {
+        "blockClass": "allSubmenuBlock"
+        // "width": "230"
+    }
+},
+
+ // ----------------- CRIANÇAS ITEM -------------------
+ "menu-item#crianças-mob": {
+    "props": {
+        "id": "toplevel-1-mob",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "mob__toplevel1",
+
+        "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": true,
+            "tagTitle": "CRIANÇAS",
+            "text": "CRIANÇAS"
+        }
+    },
+    "blocks": [
+        "vtex.menu@2.x:submenu.accordion#crianças-submenu-block-mob"
+    ]
+},
+
+"vtex.menu@2.x:submenu.accordion#crianças-submenu-block-mob": {
+    "children": ["vtex.menu@2.x:menu#submenu-cat-crianças-mob"],
+    "props": {
+        "blockClass": "allSubmenuBlock"
+        // "width": "230"
+    }
+},
+
+
+ // ----------------- HOMENS ITEM -------------------
+ "menu-item#homens-mob": {
+    "props": {
+        "id": "toplevel-1-mob",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "mob__toplevel1",
+
+        "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": true,
+            "tagTitle": "HOMENS",
+            "text": "HOMENS"
+        }
+    },
+    "blocks": [
+        "vtex.menu@2.x:submenu.accordion#homens-submenu-block-mob"
+    ]
+},
+
+"vtex.menu@2.x:submenu.accordion#homens-submenu-block-mob": {
+    "children": ["vtex.menu@2.x:menu#submenu-cat-homens-mob"],
+    "props": {
+        "blockClass": "allSubmenuBlock"
+        // "width": "230"
+    }
+},
+
+
+
+// ----------------- MARCAS ITEM -------------------
+"menu-item#marcas-mob": {
+    "props": {
+        "id": "toplevel-1-mob",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "mob__toplevel1",
+
+        "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": true,
+            "tagTitle": "MARCAS",
+            "text": "MARCAS"
+        }
+    },
+    "blocks": [
+        "vtex.menu@2.x:submenu.accordion#marcas-submenu-block-mob"
+    ]
+},
+
+"vtex.menu@2.x:submenu.accordion#marcas-submenu-block-mob": {
+    "children": ["vtex.menu@2.x:menu#submenu-cat-marcas-mob"],
+    "props": {
+        "blockClass": "allSubmenuBlock"
+        // "width": "230"
+    }
+},
+
+
+
+// ----------------- MULHERES ITEM -------------------
+"menu-item#mulheres-mob": {
+    "props": {
+        "id": "toplevel-1-mob",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "mob__toplevel1",
+
+        "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": true,
+            "tagTitle": "MULHERES",
+            "text": "MULHERES"
+        }
+    },
+    "blocks": [
+        "vtex.menu@2.x:submenu.accordion#mulheres-submenu-block-mob"
+    ]
+},
+
+"vtex.menu@2.x:submenu.accordion#mulheres-submenu-block-mob": {
+    "children": ["vtex.menu@2.x:menu#submenu-cat-mulheres-mob"],
+    "props": {
+        "blockClass": "allSubmenuBlock"
+        // "width": "230"
+    }
+},
+
+
+// ----------------- ROUPAS ITEM -------------------
+"menu-item#roupas-mob": {
+    "props": {
+        "id": "toplevel-1-mob",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "mob__toplevel1",
+
+        "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": true,
+            "tagTitle": "ROUPAS",
+            "text": "ROUPAS"
+        }
+    },
+    "blocks": [
+        "vtex.menu@2.x:submenu.accordion#roupas-submenu-block-mob"
+    ]
+},
+
+"vtex.menu@2.x:submenu.accordion#roupas-submenu-block-mob": {
+    "children": ["vtex.menu@2.x:menu#submenu-cat-roupas-mob"],
+    "props": {
+        "blockClass": "allSubmenuBlock"
+        // "width": "230"
+    }
+},
+
+
+
+// ----------------- PEÇAS ÚNICAS ITEM -------------------
+"menu-item#peças-unicas-mob": {
+    "props": {
+        "id": "toplevel-1-mob",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "mob__toplevel1",
+
+        "itemProps": {
+            "type": "internal",
+            "href": "/pecas-unicas",
+            "noFollow": true,
+            "tagTitle": "PEÇAS ÚNICAS",
+            "text": "PEÇAS ÚNICAS"
+        }
+    }
+},
+
+// ----------------- OUTLET ITEM -------------------
+"menu-item#outlet-mob": {
+    "props": {
+        "id": "toplevel-1-mob",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "mob__toplevel1",
+
+        "itemProps": {
+            "type": "internal",
+            "href": "/outlet",
+            "noFollow": true,
+            "tagTitle": "OUTLET",
+            "text": "OUTLET"
+        }
+    }
+}
+
+
+ 
+
+}

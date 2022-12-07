@@ -1,0 +1,125 @@
+.paragraph--sectionRichTitle, .paragraph--sectionRichTitleCorporate {
+    color: #1E7BC4;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    display: flex;
+}
+
+.paragraph--sectionRichTitle::before{
+    content:url('/arquivos/line-title.png');
+    position:relative; 
+    left:-50px;
+    top: -7px;
+}
+
+.paragraph--sectionRichTitle::after {
+    content:url('/arquivos/line-title.png');
+    position:relative;
+    right: -50px;
+    top: -7px;
+}
+
+.link--orcamento-text, .strong--socialmedia-text {
+    font-size: 11px;
+    color: white;
+    text-decoration: none;
+}
+
+.link--orcamento-text {
+    font-weight: 200;
+}
+
+.paragraph--socialmedia-text {
+    align-items: center;
+    display: flex;
+}
+
+.link--socialmedia-text {
+    margin: 0px 2px 0px 2px;
+}
+
+.strong--socialmedia-text {
+    margin-right: 2px;
+}
+
+.wrapper--payment__image {
+    padding: 0px 2px;
+}
+
+.image--payment__image {
+    width: 56px;
+}
+
+.paragraph--payment__image {
+    margin: 0;
+}
+
+.wrapper--security__image {
+    margin: 0px 10px;
+}
+
+.paragraph--InstitutionalTitle {
+    text-transform: uppercase;
+    color: #515151;
+    font-size: 28px;
+}
+
+.container--menu-institucional-dropdown {
+    border: 2px solid #ED6F00;
+    border-radius: 2px;
+    color: #ED6F00;
+}
+
+.paragraph--menu-institucional-dropdown {
+    margin: 10px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.container--menu-institucional-dropdown {
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12' fill='none'%3E%3Cpath d='M2 2L8.74072 9.44704L15 2' stroke='%23ED6F00' stroke-width='3'/%3E%3C/svg%3E");
+}
+
+.paragraph--subit-success {
+    color: #7AE462
+}
+
+
+.container--InstitutionalText {
+    padding-left: 40px;
+}
+
+.image--vtex-icon{
+    width: 80px;
+    height: auto;
+}
+
+@media (max-width: 760px) {
+    .container--footer-sobre {
+        justify-content: center;
+        margin-top: 1.5em;
+        text-align: center;
+    }
+
+    .paragraph--sectionRichTitle::before{
+        content:url('/arquivos/line-title.png');
+        position:relative; 
+        left: -24px;
+        top: -7px;
+        width: 65px;
+        overflow: hidden;
+    }
+    
+    .paragraph--sectionRichTitle::after{
+        content:url('/arquivos/line-title.png');
+        position:relative;
+        right: -24px;
+        top: -7px;
+        width: 65px;
+        overflow: hidden;
+    }
+}

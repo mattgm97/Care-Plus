@@ -1,0 +1,199 @@
+.styles_modal__gNwvD{
+    max-width: 90% !important;
+}
+
+.slick-prev:before {
+  content: url(/arquivos/slick-arrow-left-orange.svg) !important;
+  width: 11px;
+  height: 17px;
+}
+
+.slick-next:before {
+  content: url(/arquivos/slick-arrow-right-orange.svg) !important;
+  width: 11px;
+  height: 17px;
+}
+
+
+@media (min-width: 700px) {
+
+  .buy-area-modal{
+    align-items: center !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+  }
+}
+
+.placaCustomBtnBuy{
+  margin-top: 1em;
+  text-align: center;
+}
+
+
+
+.placaCustomBtnBuy button{
+  border-radius: 100px;
+  padding-left: 5em;
+  padding-right: 5em;
+    background-color: #fe5000!important;
+    box-shadow: 1px 2px 4px 0 rgb(0 0 0 / 30%);
+}
+
+.placaCustomBtn button{
+  border-radius: 100px;
+    padding: 12px 8px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.custom-prod-interface{
+    width: 50%;
+}
+.productName{
+    font-size: 30px;
+    letter-spacing: 0.03em;
+}
+.customTextForm{
+    padding: 1em;
+    border: 1px solid #D9D9D9;
+    width: 100%;
+}
+
+
+  #select-pictograma{
+    padding: 6px;
+    margin-bottom: 2em;
+    float: right;
+  }
+
+  .list-pictograma{
+    clear: both;
+  }
+
+  .list-pictograma fieldset{
+    width: 75% !important;
+    border: none;
+  }
+  .list-pictograma fieldset label img{
+   padding: 1em;
+   border: 3px solid transparent;
+  }
+
+  .list-pictograma fieldset input{
+    display: none;
+  }
+
+  .list-item input:checked + label img {
+    border: 3px solid #ed6f00;
+    border-radius: 15px;
+}
+
+.custom-prod-img {
+    position: relative;
+}
+.custom-text-simulation span{
+    position: absolute;
+    left: -21px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 88%;
+    font-size: 4vw;
+    font-family: "HelveticaLTS";
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    overflow-wrap: break-word;
+    margin-top: 32%;
+}
+
+.custom-text-simulation span.has-pictogram{
+    margin-top: 29%;
+    margin-left: 7%;
+    width: 66%;
+}
+
+
+
+.buy-area-modal .vtex-product-quantity-1-x-quantitySelectorContainer{
+margin-top: -1%;
+}
+
+
+
+
+
+
+
+.custom-text-simulation img{
+  width: 7.8vw;
+    position: absolute;
+    left: -21px;
+    right: 0;
+    margin-left: 75%;
+    margin-right: auto;
+    font-size: 4vw;
+    text-align: center;
+    overflow-wrap: break-word;
+    margin-top: 32%;
+}
+
+.fewer-options{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.fewer-options fieldset label img {
+width: 126px;
+}
+
+.fewer-options fieldset{
+    width: 25% !important;
+}
+
+@media (min-width: 1200px)  and (max-width: 1700px){
+  .custom-text-simulation img{
+    margin-left: 77%;
+    width: 7vw;
+  }
+
+  .custom-text-simulation span.has-pictogram{
+    width: 68%;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .styles_modal__gNwvD{
+    max-width: 96% !important;
+}
+
+
+  .custom-text-simulation img{
+    margin-left: 80%;
+    width: 14.8vw;
+  }
+  
+  .modal-custom-body{
+    display: block !important;
+  }
+  .custom-prod-img, .custom-prod-interface{
+    width: 100%;
+    margin: 1px;
+  }
+
+  .productName {
+    font-size: 22px;
+}
+
+.custom-text-simulation span{
+  left: -9px;
+}
+
+.buy-area-modal .vtex-product-quantity-1-x-quantitySelectorContainer{
+  margin-bottom: 6%;
+  }
+
+
+}

@@ -1,0 +1,555 @@
+{
+  "vtex.menu@2.x:menu#submenu-cat-homens-mob": {
+    "children": [
+      "menu-item#homens-mob1",
+      "menu-item#homens-mob2",
+      "menu-item#homens-mob3",
+      "menu-item#homens-mobALL"
+      // "menu-item#col1-all--mob"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "menu-item#homens-mob1": {
+    "props": {
+      "type": "custom",
+      "id": "",
+      "blockClass": "submenu",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "text": "Acessórios",
+        "href": "/homens/acessorios"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#submenu-cat-homens-acessorios-mob"
+    ]
+  },
+
+  "vtex.menu@2.x:submenu.accordion#submenu-cat-homens-acessorios-mob": {
+    "children": [
+      "vtex.menu@2.x:menu#submenu-cat-homens-acessorios-mob-submenu"
+    ],
+    "props": {
+      "blockClass": "sub-2-nav",
+      "width": "auto"
+    }
+  },
+
+  "vtex.menu@2.x:menu#submenu-cat-homens-acessorios-mob-submenu": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass":"submenu",
+      "items": [
+        {
+          "type": "custom",
+          "id": "",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "blockClass": "sub-cat-item",
+            "text": "Bonés aba curva",
+            "href": "/homens/acessorios/bones-aba-curva"
+          }
+        },
+        {
+          "type": "custom",
+          "id": "",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "blockClass": "sub-cat-item",
+            "text": "Bonés aba reta",
+            "href": "/homens/acessorios/bones-aba-reta"
+          }
+        },
+        {
+          "type": "custom",
+          "id": "",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "blockClass": "sub-cat-item",
+            "text": "Luvas de goleiro",
+            "href": "/homens/acessorios/luvas-de-goleiro"
+          }
+        },
+        {
+          "type": "custom",
+          "id": "",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "blockClass": "sub-cat-item",
+            "text": "Mochilas e malas",
+            "href": "/homens/acessorios/mochilas-e-malas"
+          }
+        },
+        {
+          "type": "custom",
+          "id": "",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "blockClass": "sub-cat-item",
+            "text": "Óculos de natação",
+            "href": "/homens/acessorios/oculos-de-natacao"
+          }
+        }
+      ]
+    }
+  },
+
+  "menu-item#homens-mob2": {
+    "props": {
+      "type": "custom",
+      "id": "",
+      "blockClass": "submenu",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "text": "Calçados",
+        "href": "/homens/calçados"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#submenu-cat-homens-calçados-mob"
+    ]
+  },
+
+  "vtex.menu@2.x:submenu.accordion#submenu-cat-homens-calçados-mob": {
+    "children": ["vtex.menu@2.x:menu#submenu-cat-homens-calçados-mob-submenu"],
+    "props": {
+      "blockClass": "sub-2-nav",
+      "width": "auto"
+    }
+  },
+
+  "vtex.menu@2.x:menu#submenu-cat-homens-calçados-mob-submenu": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass":"submenu"
+    },
+    "children": [
+      "menu-item#homens-calçados-mob1",
+      "menu-item#homens-calçados-mob2",
+      "menu-item#homens-calçados-mob3",
+      "menu-item#homens-calçados-mob4",
+      "menu-item#homens-calçados-mob5",
+      "menu-item#homens-calçados-mob6",
+      "menu-item#homens-calçados-mob7",
+      "menu-item#homens-calçados-mob8",
+      "menu-item#homens-calçados-mob9",
+      "menu-item#homens-calçados-mob10"
+    ]
+  },
+  "menu-item#homens-calçados-mob1": {
+    "props": {
+      "type": "custom",
+      "id": "",
+      "blockClass":"submenu",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "blockClass": "sub-cat-item",
+        "text": "Botas de trilha",
+        "href": "/homens/calcados/botas-de-trilha"
+      }
+    }
+  },
+  "menu-item#homens-calçados-mob2": {
+    "props": {
+      "type": "custom",
+      "id": "",
+      "blockClass":"submenu",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "blockClass": "sub-cat-item",
+        "text": "Calçados de academia",
+        "href": "/homens/calcados/calcados-de-academia"
+      }
+    }
+  },
+  "menu-item#homens-calçados-mob3": {
+    "props": {
+      "type": "custom",
+      "id": "",
+      "blockClass":"submenu",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "blockClass": "sub-cat-item",
+        "text": "Calçados de basquete",
+        "href": "/homens/calcados/calcados-de-basquete"
+      }
+    }
+  },
+  "menu-item#homens-calçados-mob4": {
+    "props": {
+      "type": "custom",
+      "id": "",
+      "blockClass":"submenu",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "blockClass": "sub-cat-item",
+        "text": "Calçados de corrida",
+        "href": "/homens/calcados/calcados-de-corrida"
+      }
+    }
+  },
+  "menu-item#homens-calçados-mob5": {
+    "props": {
+      "type": "custom",
+      "id": "",
+      "blockClass":"submenu",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "blockClass": "sub-cat-item",
+        "text": "Calçados de skate",
+        "href": "/homens/calcados/calcados-de-skate"
+      }
+    }
+  },
+  "menu-item#homens-calçados-mob6": {
+    "props": {
+      "type": "custom",
+      "id": "",
+      "blockClass":"submenu",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "blockClass": "sub-cat-item",
+        "text": "Calçados de tênis",
+        "href": "/homens/calcados/calcados-de-tênis"
+      }
+    }
+  },
+  "menu-item#homens-calçados-mob7": {
+    "props": {
+      "type": "custom",
+      "id": "",
+      "blockClass":"submenu",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "blockClass": "sub-cat-item",
+        "text": "Chinelos de dedo e slide",
+        "href": "/homens/calcados/chinelos-de-dedo-e-slide"
+      }
+    }
+  },
+  "menu-item#homens-calçados-mob8": {
+    "props": {
+      "type": "custom",
+      "id": "",
+      "blockClass":"submenu",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "blockClass": "sub-cat-item",
+        "text": "Papetes",
+        "href": "/homens/calcados/papetes"
+      }
+    }
+  },
+  "menu-item#homens-calçados-mob9": {
+    "props": {
+      "type": "custom",
+      "id": "",
+      "blockClass":"submenu",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "blockClass": "sub-cat-item",
+        "text": "Sapatênis e casual",
+        "href": "/homens/calcados/sapatenis-e-casual"
+      }
+    }
+  },
+  "menu-item#homens-calçados-mob10": {
+    "props": {
+      "type": "custom",
+      "id": "",
+      "blockClass":"submenu",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "text": "Chuteiras",
+        "href": "/homens/calcados/chuteiras/"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#submenu-cat-homens-calçados-chuteira-mob"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#submenu-cat-homens-calçados-chuteira-mob": {
+    "children": ["vtex.menu@2.x:menu#submenu-cat-homens-calçados-chuteira-mob-submenu"],
+    "props": {
+      "blockClass": "sub-2-nav",
+      "width": "auto"
+    }
+  },
+
+  "vtex.menu@2.x:menu#submenu-cat-homens-calçados-chuteira-mob-submenu":{
+    "props": {
+        "orientation": "vertical",
+        "blockClass":"submenu",
+        "items": [
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Campo",
+                    "href": "/homens/calcados/chuteiras/campo"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Futsal",
+                    "href": "/homens/calcados/chuteiras/futsal"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Society",
+                    "href": "/homens/calcados/chuteiras/society"
+                }
+            }
+        ]
+      }
+  },
+
+  "menu-item#homens-mob3": {
+    "props": {
+        "type": "custom",
+        "id": "",
+        "blockClass": "submenu",
+        "highlight": false,
+        "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "text": "Roupas",
+            "href": "/homens/roupas/"
+        }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#submenu-cat-homens-roupas-mob"
+    ]
+  },
+
+  "vtex.menu@2.x:submenu.accordion#submenu-cat-homens-roupas-mob": {
+    "children": [
+      "vtex.menu@2.x:menu#submenu-cat-homens-roupas-mob-submenu"
+    ],
+    "props": {
+      "blockClass": "sub-2-nav",
+      "width": "auto"
+    }
+  },
+
+  "vtex.menu@2.x:menu#submenu-cat-homens-roupas-mob-submenu": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass":"submenu",
+      "items": [
+        {
+            "type": "custom",
+            "id": "",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": false,
+                "blockClass": "sub-cat-item",
+                "text": "Agasalhos",
+                "href": "/homens/roupas/agasalhos"
+            }
+        },
+        {
+            "type": "custom",
+            "id": "",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": false,
+                "blockClass": "sub-cat-item",
+                "text": "Bermudas",
+                "href": "/homens/roupas/bermudas"
+            }
+        },
+        {
+            "type": "custom",
+            "id": "",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": false,
+                "blockClass": "sub-cat-item",
+                "text": "Calças",
+                "href": "/homens/roupas/calcas"
+            }
+        },
+        {
+            "type": "custom",
+            "id": "",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": false,
+                "blockClass": "sub-cat-item",
+                "text": "Camisas de time",
+                "href": "/homens/roupas/camisas-de-time"
+            }
+        },
+        {
+            "type": "custom",
+            "id": "",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": false,
+                "blockClass": "sub-cat-item",
+                "text": "Camisas polo",
+                "href": "/homens/roupas/camisas-polo"
+            }
+        },
+        {
+            "type": "custom",
+            "id": "",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": false,
+                "blockClass": "sub-cat-item",
+                "text": "Camisetas",
+                "href": "/homens/roupas/camisetas"
+            }
+        },
+        {
+            "type": "custom",
+            "id": "",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": false,
+                "blockClass": "sub-cat-item",
+                "text": "Corta-vento",
+                "href": "/homens/roupas/corta-vento"
+            }
+        },
+        {
+            "type": "custom",
+            "id": "",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": false,
+                "blockClass": "sub-cat-item",
+                "text": "Cuecas e sungas",
+                "href": "/homens/roupas/cuecas-e-sungas"
+            }
+        },
+        {
+            "type": "custom",
+            "id": "",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": false,
+                "blockClass": "sub-cat-item",
+                "text": "Meias",
+                "href": "/homens/roupas/meias"
+            }
+        },
+        {
+            "type": "custom",
+            "id": "",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": false,
+                "blockClass": "sub-cat-item",
+                "text": "Moletons e jaquetas",
+                "href": "/homens/roupas/moletons-e-jaquetas"
+            }
+        },
+        {
+            "type": "custom",
+            "id": "",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": false,
+                "blockClass": "sub-cat-item",
+                "text": "Regatas",
+                "href": "/homens/roupas/regatas"
+            }
+        },
+        {
+            "type": "custom",
+            "id": "",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": false,
+                "blockClass": "sub-cat-item",
+                "text": "Shorts",
+                "href": "/homens/roupas/shorts"
+            }
+        }
+      ]
+    }
+  },
+  "menu-item#homens-mobALL": {
+    "props": {
+      "type": "custom",
+      "id": "",
+      "highlight": false,
+      "blockClass": "submenu",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "text": "Todos",
+        "href": "/homens"
+      }
+    }
+  }
+}

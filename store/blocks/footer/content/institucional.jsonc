@@ -1,0 +1,77 @@
+{
+  "flex-layout.col#contact-container": {
+    "children": [
+      "flex-layout.row#contact-title",
+      "vtex.menu@2.x:menu#contact-footer-desktop-1"
+    ],
+    "props": {
+      "blockClass": "linkList-container",
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#contact-title": {
+    "children": ["rich-text#contact-title-0"]
+  },
+
+  "rich-text#contact-title-0": {
+    "props": {
+      "font": "t-heading-5",
+      "textPosition": "LEFT",
+      "textAlign": "LEFT",
+      "blockClass": "footer-sobre",
+      "text": "INSTITUCIONAL"
+    }
+  },
+
+  "vtex.menu@2.x:menu#contact-footer-desktop-1": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-footer",
+      "items": [
+        {
+          "id": "footer-item-acc-0",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/quem-somos",
+            "noFollow": false,
+            "tagTitle": "Quem somos",
+            "text": "Quem somos"
+          }
+        },
+        {
+          "id": "footer-item-acc-1",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/contato",
+            "noFollow": false,
+            "tagTitle": "Contato",
+            "text": "Contato"
+          }
+        },
+        {
+          "id": "footer-item-acc-2",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/orcamento",
+            "noFollow": false,
+            "tagTitle": "Orçamento",
+            "text": "Orçamento"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,285 @@
+{
+    "vtex.menu@2.x:menu#submenu-cat-ADESIVOS-DE-SEGURANÇA":{
+        "props":{
+            "orientation": "vertical",
+            "blockClass":["row-menu-col", "row-menu-col-adesivos"],
+            "items": [
+              {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Acidente Cortante",
+                    "href": "/adesivos-de-seguranca/acidente-cortante"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Advertência",
+                    "href": "/adesivos-de-seguranca/advertencia"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Aviso",
+                    "href": "/adesivos-de-seguranca/aviso"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Choque Elétrico",
+                    "href": "/adesivos-de-seguranca/choque-eletrico"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Colisão",
+                    "href": "/adesivos-de-seguranca/colisao"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Congelamento",
+                    "href": "/adesivos-de-seguranca/congelamento"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Corrosivo",
+                    "href": "/adesivos-de-seguranca/corrosivo"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Emergência",
+                    "href": "/adesivos-de-seguranca/emergencia"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Esmagamento",
+                    "href": "/adesivos-de-seguranca/esmagamento"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Explosivo",
+                    "href": "/adesivos-de-seguranca/explosivo"
+                }
+            }
+              
+            ]
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-cat-ADESIVOS-DE-SEGURANÇA2":{
+        "props":{
+            "orientation": "vertical",
+            "blockClass":["row-menu-col", "row-menu-col-adesivos"],
+            "items": [
+             
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "GHS",
+                    "href": "/adesivos-de-seguranca/ghs"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "NR 12 Equipamentos e Máquinas",
+                    "href": "/adesivos-de-seguranca/nr-12-equipamentos-e-maquinas"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Oxidante",
+                    "href": "/adesivos-de-seguranca/oxidante"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Perigo",
+                    "href": "/adesivos-de-seguranca/perigo"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Proibido",
+                    "href": "/adesivos-de-seguranca/proibido"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Químico",
+                    "href": "/adesivos-de-seguranca/quimico"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Radiação",
+                    "href": "/adesivos-de-seguranca/radiacao"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Risco Biológico",
+                    "href": "/adesivos-de-seguranca/risco-biologico"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Tensão Elétrica",
+                    "href": "/adesivos-de-seguranca/tensao-eletrica"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Tóxico",
+                    "href": "/adesivos-de-seguranca/toxico"
+                }
+            }
+              
+            ]
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-cat-ADESIVOS-DE-SEGURANÇA3":{
+        "props":{
+            "orientation": "vertical",
+            "blockClass":["row-menu-col", "row-menu-col-adesivos"],
+            "items": [
+             
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Uso Obrigatório",
+                    "href": "/adesivos-de-seguranca/uso-obrigatorio"
+                }
+            }
+              
+            ]
+        }
+    }
+
+
+}

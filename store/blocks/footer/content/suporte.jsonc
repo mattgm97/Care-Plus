@@ -1,0 +1,119 @@
+{
+  "flex-layout.col#servicos-container": {
+    "children": [
+      "flex-layout.row#servicos-title",
+      "vtex.menu@2.x:menu#servicos-footer-desktop-1"
+    ],
+    "props": {
+      "blockClass": "linkList-container",
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#servicos-title": {
+    "children": ["rich-text#servicos-title-0"]
+  },
+
+  "rich-text#servicos-title-0": {
+    "props": {
+      "font": "t-heading-5",
+      "textPosition": "LEFT",
+      "textAlign": "LEFT",
+      "blockClass": "footer-sobre",
+      "text": "SUPORTE AO CLIENTE"
+    }
+  },
+
+  "vtex.menu@2.x:menu#servicos-footer-desktop-1": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-footer",
+      "items": [
+        {
+          "id": "footer-item-acc-6",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/politica-de-privacidade",
+            "noFollow": false,
+            "tagTitle": "Política de Privacidade",
+            "text": "Política de Privacidade"
+          }
+        },
+        {
+          "id": "footer-item-acc-7",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/politica-de-seguranca",
+            "noFollow": false,
+            "tagTitle": "Política de Segurança",
+            "text": "Política de Segurança"
+          }
+        },
+        {
+          "id": "footer-item-acc-8",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/politica-de-entregas",
+            "noFollow": false,
+            "tagTitle": "Política de Entregas",
+            "text": "Política de Entregas"
+          }
+        },
+        {
+          "id": "footer-item-acc-9",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/troca-e-devolucao",
+            "noFollow": false,
+            "tagTitle": "Política de Troca e Devolução",
+            "text": "Política de Troca e Devolução"
+          }
+        },
+        {
+          "id": "footer-item-acc-10",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/politica-de-pagamento",
+            "noFollow": false,
+            "tagTitle": "Política de Pagamento",
+            "text": "Política de Pagamento"
+          }
+        },
+        {
+          "id": "footer-item-acc-11",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/faq",
+            "noFollow": false,
+            "tagTitle": "Dúvidas Frequentes",
+            "text": "Dúvidas Frequentes"
+          }
+        }
+      ]
+    }
+  }
+}

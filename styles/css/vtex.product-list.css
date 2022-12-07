@@ -1,0 +1,33 @@
+.inputContainer {
+    font-size: 11px;
+    border-color: #53A1EF !important;
+    color: white !important;
+    padding-left: 6px;
+    background-color: #53A1EF !important;
+}
+
+.quantitySelectorButton {
+    background-color: #53A1EF !important;
+    border-color: #53A1EF !important;
+}
+
+.productName {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 50px;
+    color: #727272;
+}
+
+.productVariationsContainer{
+    color: #727273;
+}
+
+.productBrandName{
+display: none;
+}
+
+.quantitySelectorButton{
+    color: white !important
+}

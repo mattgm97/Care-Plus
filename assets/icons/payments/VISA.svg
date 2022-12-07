@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64 Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="131.498mm" height="85.725mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 884.3 576.48"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:#FEFEFE}
+    .fil0 {fill:#101974}
+   ]]>
+  </style>
+ </defs>
+ <g id="Camada_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2187317647216">
+   <rect class="fil0" x="-0" width="884.3" height="576.48" rx="65.83" ry="65.83"/>
+   <g id="VISA.cdr">
+    <polygon class="fil1" points="356.33,374.53 385.81,202.19 432.88,202.19 403.4,374.53 "/>
+    <path class="fil1" d="M573.85 206.47c-9.27,-3.33 -24.01,-7.13 -42.08,-7.13 -46.59,0 -79.16,23.3 -79.4,56.82 -0.24,24.72 23.3,38.51 41.13,46.83 18.3,8.56 24.49,13.79 24.25,21.39 0,11.65 -14.5,16.88 -28.05,16.88 -18.78,0 -28.76,-2.62 -44.22,-9.03l-6.18 -2.85 -6.42 38.51c10.94,4.99 31.14,9.03 52.3,9.27 49.45,0 81.3,-23.06 81.78,-58.96 0.24,-19.49 -12.36,-34.47 -39.46,-46.83 -16.4,-7.84 -26.39,-13.07 -26.39,-21.16 0,-7.37 8.56,-14.98 26.86,-14.98 15.45,-0.24 26.62,3.09 35.18,6.66l4.28 1.9 6.42 -37.32z"/>
+    <path class="fil1" d="M694.37 202.42l-36.37 0c-11.17,0 -19.73,3.09 -24.72,14.26l-69.65 158.08 49.21 0c0,0 8.08,-21.39 9.98,-25.91 5.47,0 53.25,0 60.14,0 1.43,5.94 5.71,25.91 5.71,25.91l43.5 0 -37.8 -172.35zm-58 111.02c3.8,-9.75 18.78,-48.02 18.78,-48.02 -0.48,0.48 3.8,-9.98 6.18,-16.4l3.09 14.74c0,0 9.03,41.13 10.94,49.68l-38.99 0z"/>
+    <path class="fil1" d="M317.11 202.42l-46.12 117.43 -4.75 -23.77c-8.56,-27.58 -35.42,-57.29 -65.14,-72.27l42.08 150.72 49.68 0 73.93 -172.11 -49.68 0z"/>
+    <path class="fil1" d="M228.44 202.19l-75.83 0 -0.48 3.8c58.72,14.26 97.94,48.73 114.11,90.1l-16.64 -79.16c-2.85,-10.94 -10.94,-14.26 -21.16,-14.74z"/>
+   </g>
+  </g>
+ </g>
+</svg>

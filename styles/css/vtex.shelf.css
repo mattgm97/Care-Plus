@@ -1,0 +1,43 @@
+.title--related--shelf{
+    text-align: center;
+    color: #1E7BC4;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+    font-size: 1.25rem;
+}
+
+
+.title--related--shelf::after {
+    content:url('/arquivos/line-title.png');
+    position:relative;
+    right: -50px;
+    top: -7px;
+}
+
+.title--related--shelf::before{
+    content:url('/arquivos/line-title.png');
+    position:relative; 
+    left:-50px;
+    top: -7px;
+}
+
+@media (max-width: 760px) {
+
+    .title--related--shelf::before{
+        content:url('/arquivos/line-title.png');
+        position:relative; 
+        left: -24px;
+        top: -7px;
+        width: 65px;
+        overflow: hidden;
+    }
+    
+    .title--related--shelf::after{
+        content:url('/arquivos/line-title.png');
+        position:relative;
+        right: -24px;
+        top: -7px;
+        width: 65px;
+        overflow: hidden;
+    }
+}

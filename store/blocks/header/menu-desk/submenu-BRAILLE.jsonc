@@ -1,0 +1,25 @@
+{
+    "vtex.menu@2.x:menu#submenu-cat-BRAILLE":{
+        "props":{
+            "orientation": "vertical",
+            "blockClass":["row-menu-col","row-menu-col-braille"],
+            "items": [
+              {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Placa Braille",
+                    "href": "/braille-tatil/placa-braille"
+                }
+            }
+            ]
+        }
+    }
+
+
+    
+}

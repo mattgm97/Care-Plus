@@ -1,0 +1,112 @@
+{
+  "flex-layout.col#payment-container":{
+    "children": [
+      "flex-layout.row#payment-0",
+      "flex-layout.row#payment-1"
+    ],
+    "props": {
+      "blockClass": "payment-container",
+      "preventHorizontalStretch": true,
+       "fullWidth": true
+    }
+  },
+  "flex-layout.row#payment-0":{
+    "children": [
+      "rich-text#payment"    
+    ]
+  },
+  "flex-layout.row#payment-1":{
+    "children": [
+      "rich-text#paymentImage-0",
+      "rich-text#paymentImage-1",
+      "rich-text#paymentImage-2",
+      "rich-text#paymentImage-3",
+      "rich-text#paymentImage-4",
+      "rich-text#paymentImage-5",
+      "rich-text#paymentImage-6",
+      "rich-text#paymentImage-7",
+      "rich-text#paymentImage-8",
+      "rich-text#paymentImage-9"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": "flags__list"
+    }
+  },
+
+  "rich-text#payment": {
+    "props": {
+      "font": "t-heading-5",
+      "textPosition": "LEFT",
+      "textAlign": "LEFT",
+      "blockClass": "footer-sobre",
+      "text": "PAGAMENTO"
+    } 
+  },
+
+  "rich-text#paymentImage-0": {
+    "props": {
+      "text": "![Bandeira Visa](/arquivos/VISA.svg 'Bandeira Visa')",
+      "blockClass": ["payment__image","visa"]
+     
+    }
+  },
+
+  "rich-text#paymentImage-1": {
+    "props": {
+      "text": "![Bandeira Mastercard](/arquivos/MASTER.svg 'Bandeira Mastercard')",
+      "blockClass": ["payment__image","mastercard"]
+    }
+  },
+  "rich-text#paymentImage-2": {
+    "props": {
+      "text": "![Bandeira AMEX](/arquivos/AMEX.svg 'Bandeira AMEX')",
+      "blockClass": ["payment__image","amex"]
+    }
+  },
+
+  "rich-text#paymentImage-3": {
+    "props": {
+      "text": "![Bandeira DINERS](/arquivos/DINERS.svg 'Bandeira DINERS')",
+      "blockClass": ["payment__image","diners"]
+    }
+  },
+
+  "rich-text#paymentImage-4": {
+    "props": {
+      "text": "![Bandeira HIPERCARD](/arquivos/HIPERCARD.svg 'Bandeira HIPERCARD')",
+      "blockClass": ["payment__image","hipercard"]
+    }
+  },
+
+  "rich-text#paymentImage-5": {
+    "props": {
+      "text": "![Bandeira Hiper](/arquivos/HIPER.svg 'Bandeira HIPER')",
+      "blockClass": ["payment__image","hiper"]
+    }
+  },
+  "rich-text#paymentImage-6": {
+    "props": {
+      "text": "![Bandeira ELO](/arquivos/ELO.svg 'Bandeira ELO')",
+      "blockClass": ["payment__image","elo"]
+    }
+  },
+  "rich-text#paymentImage-7": {
+    "props": {
+      "text": "![Bandeira Paypal](/arquivos/BANCO-DO-BRASIL.svg 'Bandeira Paypal')",
+      "blockClass": ["payment__image","Paypal"]
+    }
+  },
+  "rich-text#paymentImage-8": {
+    "props": {
+      "text": "![Bandeira PIX](/arquivos/PIX.svg 'Bandeira PIX')",
+      "blockClass": ["payment__image","PIX"]
+    }
+  },
+  "rich-text#paymentImage-9": {
+    "props": {
+      "text": "![Bandeira BOLETO](/arquivos/BOLETO.svg 'Bandeira BOLETO')",
+      "blockClass": ["payment__image","BOLETO"]
+    }
+  }
+}

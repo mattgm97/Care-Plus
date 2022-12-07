@@ -1,0 +1,6 @@
+{
+  "placa-customizada":{
+    "component":"PlacasCustom",
+    "allowed":["sku-selector","product-quantity", "product-price"]
+  }
+}

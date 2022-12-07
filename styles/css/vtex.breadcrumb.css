@@ -1,0 +1,16 @@
+@media (max-width: 760px) {
+    .container{
+        display: none;
+    }
+
+}
+
+
+.term, .link{
+    font-size: 11px;
+}
+
+.homeIcon{
+    width: 16px;
+    margin-top: 4px;
+}

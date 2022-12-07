@@ -1,0 +1,321 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#bannersprincipais",
+      "flex-layout.row#sellingConditions",
+      //"__fold__",
+      "flex-layout.row#firstContent",
+      "flex-layout.row#banners-home",
+     
+     // "__fold__",
+      "flex-layout.row#secondContent",
+      "flex-layout.row#reviews-home",
+      /*COMMENT SECTION*/
+      "flex-layout.row#banners-home2"
+    ]
+  },
+  "list-context.image-list#bannersprincipais": {
+    "title": "banner principal",
+    "children": ["slider-layout#bannersprincipais"],
+    "props": {
+      "height": 484,
+      "images": [
+        {
+          "image": "https://isinaliza.vteximg.com.br/arquivos/ids/239091/isn-indicativas-banner-desktop.png",
+          "mobileImage": "https://isinaliza.vteximg.com.br/arquivos/ids/239092/isn-indicativas-banner-mobile.png"
+        },
+        {
+          "image": "https://isinaliza.vteximg.com.br/arquivos/ids/239095/isn-transito-refletivo-banner-desktop-2.png",
+          "mobileImage": "https://isinaliza.vteximg.com.br/arquivos/ids/239104/isn-transito-refletivo-banner-mobile-2.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#bannersprincipais": {
+    "title": "Slider principal",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      },
+      "blockClass": "mainCarousel"
+    }
+  },
+
+  "flex-layout.row#sellingConditions": {
+    "children": ["slider-layout#sellingConditions"],
+    "props": {
+      "marginTop": 6
+    }
+  },
+  "slider-layout#sellingConditions": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": "carousel-sellingConditions",
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      }
+    },
+    "children": [
+      "info-card#sellerCondition1",
+      "info-card#sellerCondition2",
+      "info-card#sellerCondition3",
+      "info-card#sellerCondition4"
+    ]
+  },
+  "info-card#sellerCondition1": {
+    "props": {
+      "isFullModeStyle": false,
+      "imageUrl": "assets/icons/truck.png",
+      "headline": "Frete grátis acima de R$ 250,00 para o Sul e o Sudeste",
+      "textPosition": "right",
+      "callToActionMode": "none",
+      "textMode": "rich-text",
+      "blockClass": "sellerConditionCard",
+      "textAlignment": "left"
+    }
+  },
+  "info-card#sellerCondition2": {
+    "props": {
+      "isFullModeStyle": false,
+      "imageUrl": "assets/icons/shield.png",
+      "headline": "5 anos de garantia.",
+      "textPosition": "right",
+      "callToActionMode": "none",
+      "textMode": "rich-text",
+      "blockClass": "sellerConditionCard",
+      "textAlignment": "left"
+    }
+  },
+  "info-card#sellerCondition3": {
+    "props": {
+      "isFullModeStyle": false,
+      "imageUrl": "assets/icons/note.png",
+      "headline": "Boleto faturado para compras acima de R$300,00",
+      "textPosition": "right",
+      "callToActionMode": "none",
+      "textMode": "rich-text",
+      "blockClass": "sellerConditionCard",
+      "textAlignment": "left"
+    }
+  },
+  "info-card#sellerCondition4": {
+    "props": {
+      "isFullModeStyle": false,
+      "imageUrl": "assets/icons/discountStar.png",
+      "headline": "Ganhe até 30% OFF para atacado com mais de 10 unidades iguais",
+      "textPosition": "right",
+      "callToActionMode": "none",
+      "textMode": "rich-text",
+      "blockClass": "sellerConditionCard",
+      "textAlignment": "left"
+    }
+  },
+
+  "flex-layout.row#firstContent": {
+    "children": ["flex-layout.col#firstContent"]
+  },
+
+  "flex-layout.col#firstContent": {
+    "children": [
+      "rich-text#novidades",
+      "list-context.product-list#novidades",
+      "slider-layout#categories-circle-slider"
+    ]
+  },
+  "rich-text#novidades": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "NOVIDADES",
+      "font": "t-heading-4",
+      "blockClass": "sectionRichTitle"
+    }
+  },
+  "list-context.product-list#novidades": {
+    "title": "Novidades",
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf"],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC",
+      "collection": "151",
+      "maxItems": 12
+    }
+  },
+  "flex-layout.row#banners-home": {
+    "children": [
+      "flex-layout.col#banners-home1",
+      "flex-layout.col#banners-home2"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "marginTop": 5,
+      "marginBottom": 7,
+      "preventHorizontalStretch": true,
+      "colGap": 7
+    }
+  },
+
+  "flex-layout.col#banners-home1": {
+    "children": ["image#banners-home1"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "image#banners-home1": {
+    "props": {
+      "src": "assets/banners/cavalete-sil.png",
+      "link": {
+        "properties": {
+          "attributeNofollow": false,
+          "newtab": false,
+          "url": "#"
+        }
+      }
+    }
+  },
+  "flex-layout.col#banners-home2": {
+    "children": ["image#banners-home2"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "image#banners-home2": {
+    "props": {
+      "src": "assets/banners/transito-sil.png",
+      "link": {
+        "properties": {
+          "attributeNofollow": false,
+          "newtab": false,
+          "url": "#"
+        }
+      }
+    }
+  },
+
+  "flex-layout.row#reviews-home": {
+    "props":{
+      "marginTop": 4,
+      "marginBottom": 6
+    },
+    "children": ["flex-layout.col#reviews-home"]
+  },
+  "flex-layout.col#reviews-home": {
+    "children": ["storereviews"]
+  },
+
+  "flex-layout.row#secondContent": {
+    "children": ["flex-layout.col#secondContent"]
+  },
+  "flex-layout.col#secondContent": {
+    "children": [
+      "rich-text#promocao",
+      "list-context.product-list#promocao",
+      "slider-layout#cat-rectangle",
+      "rich-text#maisVendidos",
+      "list-context.product-list#maisVendidos"
+    ]
+  },
+  "rich-text#promocao": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "PROMOÇÃO",
+      "font": "t-heading-4",
+      "blockClass": "sectionRichTitle"
+    }
+  },
+  "list-context.product-list#promocao": {
+    "title": "PROMOÇÃO",
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf"],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC",
+      "collection": "145",
+      "maxItems": 12
+    }
+  },
+  "rich-text#maisVendidos": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "MAIS VENDIDOS",
+      "font": "t-heading-4",
+      "blockClass": "sectionRichTitle"
+    }
+  },
+  "list-context.product-list#maisVendidos": {
+    "title": "MAIS VENDIDOS",
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf"],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC",
+      "collection": "146",
+      "maxItems": 12
+    }
+  },
+  "flex-layout.row#banners-home2": {
+    "children": [
+      "flex-layout.col#banners-home3",
+      "flex-layout.col#banners-home4"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "marginTop": 5,
+      "marginBottom": 9,
+      "preventHorizontalStretch": true,
+      "colGap": 7
+    }
+  },
+
+  "flex-layout.col#banners-home3": {
+    "children": ["image#banners-home3"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "image#banners-home3": {
+    "props": {
+      "src": "assets/banners/adesivo-sil.png",
+      "link": {
+        "properties": {
+          "attributeNofollow": false,
+          "newtab": false,
+          "url": "#"
+        }
+      }
+    }
+  },
+  "flex-layout.col#banners-home4": {
+    "children": ["image#banners-home4"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "image#banners-home4": {
+    "props": {
+      "src": "assets/banners/combate-sil.png",
+      "link": {
+        "properties": {
+          "attributeNofollow": false,
+          "newtab": false,
+          "url": "#"
+        }
+      }
+    }
+  }
+}

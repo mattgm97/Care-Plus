@@ -1,0 +1,83 @@
+{
+    "vtex.menu@2.x:menu#submenu-cat-CAVALETE-DE-SINALIZACAO":{
+        "props":{
+            "orientation": "vertical",
+            "blockClass":["row-menu-col","row-menu-col-cavalete"],
+            "items": [
+              {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Cavalete Atenção",
+                    "href": "/cavalete-de-sinalizacao/cavalete-atencao"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Cavalete Aviso",
+                    "href": "/cavalete-de-sinalizacao/cavalete-aviso"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Cavalete Cuidado",
+                    "href": "/cavalete-de-sinalizacao/cavalete-cuidado"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Cavalete Gerais",
+                    "href": "/cavalete-de-sinalizacao/cavalete-gerais"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Cavalete Obra",
+                    "href": "/cavalete-de-sinalizacao/cavalete-obra"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Cavalete Perigo",
+                    "href": "/cavalete-de-sinalizacao/cavalete-perigo"
+                }
+            }
+            
+            ]
+        }
+    }
+}

@@ -1,0 +1,152 @@
+.flexRow--topbar {
+    background-color: #333;/*#0054A8;*/
+    height: 40px;
+
+}
+
+.flexColChild--orcamento-e-social {
+    width: 100%;
+}
+
+.flexRowContent--header-links {
+    height: 40px;
+}
+
+.flexRowContent--flags__list {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.flexRow--footer__content {
+    background-color: #F5F5F5;
+}
+
+.flexRowContent--powered__row{
+    align-items: center;
+}
+
+.flexRowContent--buy-area :global(.vtex-button){
+    border-radius: 100px;
+    padding: 12px 8px;
+    background-color: #fe5000!important;
+    box-shadow: 1px 2px 4px 0 rgb(0 0 0 / 30%);
+
+}
+
+.flexRowContent--buy-area :global(.vtex-button):hover{
+    background-color: #ff7636!important;
+
+}
+
+.flexRowContent--buy-area :global(.vtex-button) :global(.vtex-button__label){
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+
+.flexColChild--Institutionaltitleblock1{
+    width: 90%;
+    margin-left: -10%;
+}
+
+.flexRowContent--progressive-discount :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+}
+
+
+.flexRow--mega-menu-container{
+    position: sticky;
+    top: 160px;
+    z-index: 9999;
+}
+
+
+.flexRow--progressive-discount{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+@media (max-width: 760px) {
+
+    .flexRowContent--buy-area :global(.vtex-button) :global(.vtex-button__label){
+        padding-left: 3.5em;
+        padding-right: 3.5em;
+    }
+    .flexRow--footer__copyright {
+        background-color: #F5F5F5;
+    }
+
+    .flexRowContent--powered__row {
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+
+    .flexRowContent--buy-area :global(.vtex-button){
+        font-size: 12px;
+        padding: 3px 0px;
+    }
+
+    .flexRowContent--progressive-discount{
+        display: flex;
+    flex-wrap: wrap;
+    }
+
+    .flexRowContent--progressive-discount :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+        width: 32% !important;
+        margin-bottom: 1em;
+        
+    }
+
+    .flexRowContent--orcamentos-points{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .flexRowContent--orcamentos-points :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+        width: 50% !important;
+    }
+    
+  
+}
+
+
+@media (min-width: 1125px) {
+    :global(.vtex-flex-layout-0-x-flexCol--filterCol) {
+      width: 330px;
+    }
+
+    .flexColChild--orcamentoForm{
+        box-shadow: 0px 4px 4px 2px rgb(0 0 0 / 25%);
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 2vh 2vw;
+        margin-top: 10%;
+    }
+    
+    .flexCol--orcamentoForm{
+        margin-left: -100%;
+    }
+    
+  }
+
+  @media (min-width: 1300px) and (max-width: 1400px) {
+    .flexRowContent--orcamento-row{
+        padding-left: 1em;
+    }
+    
+  }
+
+
+
+
+
+
+
+ 

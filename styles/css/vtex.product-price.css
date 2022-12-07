@@ -1,0 +1,38 @@
+.listPrice--selling-listprice-shelf, .listPriceRange--selling-listprice-shelf{
+    text-align: right;
+    color: #000;
+    text-transform: uppercase;
+    padding-right: 1em;
+}
+.listPriceValue--selling-listprice-shelf, .listPriceRangeUniqueValue--selling-listprice-shelf{
+    text-decoration: none;
+}
+
+.sellingPriceValue::before,  .sellingPriceRange::before{
+    content: "Por: ";
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  .listPrice::before, .listPriceRange::before {
+    content: "De: ";
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  .sellingPrice--selling-price-shelf, .sellingPriceRange--selling-price-shelf{
+    text-transform: uppercase;
+    padding-right: 0.5em;
+    text-align: right;
+    color: #0054A8;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 0.5em;
+  }
+
+  .installments--pdp-installments{
+    color: #979899;
+    text-align: center;
+  }
+
+  

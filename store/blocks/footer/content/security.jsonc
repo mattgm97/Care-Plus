@@ -1,0 +1,103 @@
+{
+  "flex-layout.col#security-container":{
+    "children": [
+      "flex-layout.row#security-0",
+      "flex-layout.row#security-1",
+      "flex-layout.row#security-2"
+    ],
+    "props": {
+      "blockClass": "security-container",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+       "fullWidth": true
+    }
+  },
+  "flex-layout.row#security-0":{
+    "children": [
+      "rich-text#security"    
+    ]
+  },
+  "flex-layout.row#security-1":{
+    "children": [
+      "rich-text#securityImage-0",
+      "rich-text#securityImage-1",
+      "rich-text#securityImage-2",
+      "seloAvaliacoes"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": "security__row"
+    }
+  },
+
+  "rich-text#security": {
+    "props": {
+      "blockClass": "footer__title",
+      "font": "t-heading-5",
+      "textPosition": "LEFT",
+      "textAlign": "LEFT",
+      "text": "SEGURANÇA E CERTIFICAÇÕES"
+    } 
+  },
+  "rich-text#securityImage-0": {
+    "props": {
+      "text": "[![Selo pci]( /arquivos/new-pci.png 'Acesse a PCI')](http://secure.vtex.com/?an=isinaliza)",
+      "blockClass": ["security__image","pci"]
+    }
+  },
+  "rich-text#securityImage-1": {
+    "props": {
+      "text": "[![Selo lets encrypt]( /arquivos/new-encrypt.png 'Acesse a lets encrypt')](https://letsencrypt.org/)",
+      "blockClass": ["security__image","lets-encrypt"]
+    }
+  },
+  "rich-text#securityImage-2": {
+    "props": {
+      "text": " [![Selo Google]( /arquivos/new-safe-google.png 'Acesse a Google')]( https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fwww.isinaliza.com%2F)",
+      "blockClass": ["security__image","google","no-margin-r"]
+    }
+  },
+
+
+
+  "flex-layout.row#security-2":{
+    "children": [
+     /* "sandbox#google",*/
+      "rich-text#googlereviews"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": "security__row"
+    }
+  },
+
+  "image#googlereviews":{
+    "props": {
+      "src": "assets/banners/selo-google.png",
+      "link": {
+        "properties": {
+          "attributeNofollow": false,
+          "newtab": true,
+          "url": "https://customerreviews.google.com/v/merchant?q=isinaliza.com&c=BR&v=17"
+        }
+      }
+    }
+  },
+
+  "rich-text#googlereviews": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[![Google avaliações](/arquivos/selo-google.png 'Google')](https://customerreviews.google.com/v/merchant?q=isinaliza.com&c=BR&v=17)"
+    }
+  },
+
+  "sandbox#google": {
+    "props": {
+      "width": "100%",
+      "height": "auto",
+      "initialContent": "<div class='review-widget_net' data-uuid='9938af75-4904-454d-a8ae-777d7171fd20' data-template='10' data-filter='' data-lang='pt' data-theme='light'><center><a href='https://www.review-widget.net/' target='_blank' rel='noopener'><img src='https://grwapi.net/assets/spinner/spin.svg' title='Google Review Widget' alt='Review Widget'></a></center></div><script async type='text/javascript' src='https://grwapi.net/widget.min.js'></script>",
+      "allowCookies": false
+    }
+  }
+}

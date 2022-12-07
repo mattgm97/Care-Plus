@@ -1,0 +1,12 @@
+.popper--overlayinstitucional{
+    transform: translate3d(9px, 206px, 0px) !important;
+    width: 88% !important;
+    left: 13px !important;
+    top: 50px !important;
+
+}
+
+.container--overlayinstitucional {
+    padding: 0px;
+    border: none !important;
+}

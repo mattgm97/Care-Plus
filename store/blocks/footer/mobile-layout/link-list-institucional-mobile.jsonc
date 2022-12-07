@@ -1,0 +1,102 @@
+// First accordion
+{
+  "vtex.menu@2.x:menu#linkList-container-mobile": {
+    "children": ["menu-item#linkList-footer-toggle"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer-accordion"
+    }
+  },
+
+  "menu-item#linkList-footer-toggle": {
+    "props": {
+      "id": "linkList-footer-toggle",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "linkList-footer-toggle",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Institucional",
+        "text": "SUPORTE AO CLIENTE"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#listLink-footer-accordion"]
+  },
+
+  "vtex.menu@2.x:submenu.accordion#listLink-footer-accordion": {
+    "children": ["vtex.menu@2.x:menu#servicos-footer-desktop-1"]
+  },
+
+  //Second Accordion
+
+  "vtex.menu@2.x:menu#linkList-container-mobile-2": {
+    "children": ["menu-item#linkList-footer-toggle-2"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": ["footer-accordion", "second-accordion"]
+    }
+  },
+
+  "menu-item#linkList-footer-toggle-2": {
+    "props": {
+      "id": "linkList-footer-toggle-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "linkList-footer-toggle",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Institucional",
+        "text": "PAGAMENTO"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#listLink-footer-accordion-2"]
+  },
+
+  "vtex.menu@2.x:submenu.accordion#listLink-footer-accordion-2": {
+    "children": ["flex-layout.row#payment-1"]
+  },
+
+  //SOBRE
+
+  "vtex.menu@2.x:menu#linkList-container-mobile-3": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-sobre-footer",
+      "items": [
+        {
+          "id": "footer-item-0",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/quem-somos",
+            "noFollow": false,
+            "tagTitle": "Quem somos",
+            "text": "Quem somos"
+          }
+        },
+
+        {
+          "id": "footer-item-2",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/contato",
+            "noFollow": false,
+            "tagTitle": "Contato",
+            "text": "Contato"
+          }
+        }
+      ]
+    }
+  }
+}

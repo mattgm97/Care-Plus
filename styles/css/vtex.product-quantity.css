@@ -1,0 +1,45 @@
+.quantitySelectorTitle{
+    display: none;
+}
+
+.quantitySelectorContainer{
+    margin:0;
+    padding-left: 12px;
+}
+
+:global(.vtex-numeric-stepper__input){
+    width: 100px;
+    border-color: #53A1EF;
+    background-color: #53A1EF;
+    color:white
+}
+
+:global(.vtex-numeric-stepper__plus-button), :global(.vtex-numeric-stepper__minus-button){
+    background-color: #53A1EF;
+    border: none;
+    border-radius: 5px;
+}
+
+:global(.vtex-numeric-stepper__plus-button){
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+}
+
+:global(.vtex-numeric-stepper__minus-button){
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+}
+
+:global(.vtex-numeric-stepper__minus-button__text), :global(.vtex-numeric-stepper__plus-button__text){
+    color: white !important
+}
+
+
+
+@media (max-width: 1000px) {
+    :global(.vtex-numeric-stepper__input){
+        width: 46px;
+    }
+
+}
+

@@ -1,0 +1,560 @@
+{
+    "vtex.menu@2.x:menu#category-menu-01": {
+        "children": [
+            "menu-item#CAVALETE-DE-SINALIZAÇÃO",
+            "menu-item#COMBATE-À-INCÊNDIO",
+            "menu-item#ADESIVOS-DE-SEGURANÇA",
+            "menu-item#TRÂNSITO",
+            "menu-item#CONDOMÍNIO",
+            "menu-item#BRAILLE-TÁTIL",
+            "menu-item#PERSONALIZADAS"
+        ],
+        "props": {
+            "blockClass": "mainMenu",
+            "experimentalOptimizeRendering": true
+        }
+    },
+    
+
+
+
+
+
+    // ----------------- PERSONALIZADAS ITEM -------------------
+    "menu-item#PERSONALIZADAS": {
+        "props": {
+            "id": "menu-item-category-all",
+            "type": "custom",
+            "experimentalOptimizeRendering": true,
+            "iconId": null,
+            "highlight": false,
+            "blockClass": [
+                "allCategoryBlock",
+                "highlightCategoryBlock",
+                "department-menu",
+                "removeBorderRight"
+            ],
+            "itemProps": {
+                "type": "internal",
+                "href": "/placas-personalizadas",
+                "noFollow": true,
+                "tagTitle": "PERSONALIZADAS",
+                "text": "PERSONALIZADAS"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#PERSONALIZADAS-submenu-block"
+        ]
+    },
+    "vtex.menu@2.x:submenu#PERSONALIZADAS-submenu-block": {
+        "props": {
+            "width": "100%",
+            "blockClass": "main-menu-row-desk"
+        },
+        "children": [
+            "flex-layout.row#PERSONALIZADAS"
+        ]
+    },
+    "flex-layout.row#PERSONALIZADAS": {
+        "props": {
+            "blockClass": [
+                "menu-content-area",
+                "menu-content-area-personalizadas"
+            ],
+            "paddingTop": 6,
+            "colGap": 2,
+            "horizontalAlign":"center"
+        },
+        "children": [
+            "flex-layout.col#PERSONALIZADAS",
+            "flex-layout.col#PERSONALIZADAS2",
+            "flex-layout.col#IMG-PERSONALIZADAS"
+        ]
+    },
+    "flex-layout.col#PERSONALIZADAS": {
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass":"menu-items-part"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-PERSONALIZADAS"
+        ]
+    },
+    "flex-layout.col#PERSONALIZADAS2": {
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass":"menu-items-part"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-PERSONALIZADAS2"
+        ]
+    },
+    "flex-layout.col#IMG-PERSONALIZADAS": {
+        "children": [
+            "image#IMG-PERSONALIZADAS"
+        ]
+    },
+    "image#IMG-PERSONALIZADAS": {
+        "props": {
+            "src": "assets/banners/generico-banner.png",
+            "maxHeight": 234
+        }
+    },
+    // ----------------- ADESIVOS DE SEGURANÇA ITEM -------------------
+    "menu-item#ADESIVOS-DE-SEGURANÇA": {
+        "props": {
+            "id": "menu-item-category-all",
+            "type": "custom",
+            "experimentalOptimizeRendering": true,
+            "iconId": null,
+            "highlight": false,
+            "blockClass": [
+                "allCategoryBlock",
+                "highlightCategoryBlock",
+                "department-menu",
+                "removeBorderRight"
+            ],
+            "itemProps": {
+                "type": "internal",
+                "href": "/adesivos-de-seguranca",
+                "noFollow": true,
+                "tagTitle": "ADESIVOS DE SEGURANÇA",
+                "text": "ADESIVOS DE SEGURANÇA"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#ADESIVOS-DE-SEGURANÇA-submenu-block"
+        ]
+    },
+    "vtex.menu@2.x:submenu#ADESIVOS-DE-SEGURANÇA-submenu-block": {
+        "props": {
+            "width": "100%",
+            "blockClass": "main-menu-row-desk"
+        },
+        "children": [
+            "flex-layout.row#ADESIVOS-DE-SEGURANÇA"
+        ]
+    },
+    "flex-layout.row#ADESIVOS-DE-SEGURANÇA": {
+        "props": {
+            "blockClass": [
+                "menu-content-area",
+                "menu-content-area-ADESIVOS-DE-SEGURANÇA"
+            ],
+            "paddingTop": 6,
+            "colGap": 2,
+            "horizontalAlign":"center"
+        },
+        "children": [
+            "flex-layout.col#ADESIVOS-DE-SEGURANÇA",
+            "flex-layout.col#ADESIVOS-DE-SEGURANÇA2",
+            "flex-layout.col#ADESIVOS-DE-SEGURANÇA3",
+            "flex-layout.col#IMG-ADESIVOS-DE-SEGURANÇA"
+        ]
+    },
+    "flex-layout.col#ADESIVOS-DE-SEGURANÇA": {
+        "props": {
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-ADESIVOS-DE-SEGURANÇA"
+        ]
+    },
+    "flex-layout.col#ADESIVOS-DE-SEGURANÇA2": {
+        "props": {
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-ADESIVOS-DE-SEGURANÇA2"
+        ]
+    },
+    "flex-layout.col#ADESIVOS-DE-SEGURANÇA3": {
+        "props": {
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-ADESIVOS-DE-SEGURANÇA3"
+        ]
+    },
+    
+    "flex-layout.col#IMG-ADESIVOS-DE-SEGURANÇA": {
+        "children": [
+            "image#IMG-ADESIVOS-DE-SEGURANÇA"
+        ]
+    },
+    "image#IMG-ADESIVOS-DE-SEGURANÇA": {
+        "props": {
+            "src": "assets/banners/generico-banner.png",
+            "maxHeight": 234
+        }
+    },
+    // ----------------- CAVALETE DE SINALIZAÇÃO ITEM -------------------
+    "menu-item#CAVALETE-DE-SINALIZAÇÃO": {
+        "props": {
+            "id": "menu-item-category-all",
+            "type": "custom",
+            "experimentalOptimizeRendering": true,
+            "iconId": null,
+            "highlight": false,
+            "blockClass": [
+                "allCategoryBlock",
+                "highlightCategoryBlock",
+                "department-menu",
+                "removeBorderRight"
+            ],
+            "itemProps": {
+                "type": "internal",
+                "href": "/cavalete-de-sinalizacao",
+                "noFollow": true,
+                "tagTitle": "CAVALETE DE SINALIZAÇÃO",
+                "text": "CAVALETE DE SINALIZAÇÃO"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#CAVALETE-DE-SINALIZAÇÃO-submenu-block"
+        ]
+    },
+    "vtex.menu@2.x:submenu#CAVALETE-DE-SINALIZAÇÃO-submenu-block": {
+        "props": {
+            "width": "100%",
+            "blockClass": "main-menu-row-desk"
+        },
+        "children": [
+            "flex-layout.row#CAVALETE-DE-SINALIZAÇÃO"
+        ]
+    },
+    "flex-layout.row#CAVALETE-DE-SINALIZAÇÃO": {
+        "props": {
+            "blockClass": [
+                "menu-content-area",
+                "menu-content-area-CAVALETE-DE-SINALIZACAO"
+            ],
+            "paddingTop": 6,
+            "colGap": 2,
+            "horizontalAlign":"center"
+        },
+        "children": [
+            "flex-layout.col#CAVALETE-DE-SINALIZAÇÃO",
+            "flex-layout.col#IMG-CAVALETE-DE-SINALIZAÇÃO"
+        ]
+    },
+    "flex-layout.col#CAVALETE-DE-SINALIZAÇÃO": {
+        "props": {
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-CAVALETE-DE-SINALIZACAO"
+        ]
+    },
+    "flex-layout.col#IMG-CAVALETE-DE-SINALIZAÇÃO": {
+        "children": [
+            "image#IMG-CAVALETE-DE-SINALIZAÇÃO"
+        ]
+    },
+    "image#IMG-CAVALETE-DE-SINALIZAÇÃO": {
+        "props": {
+            "src": "assets/banners/generico-banner.png",
+            "maxHeight": 234
+        }
+    },
+    // ----------------- CONDOMÍNIO ITEM -------------------
+    "menu-item#CONDOMÍNIO": {
+        "props": {
+            "id": "menu-item-category-all",
+            "type": "custom",
+            "experimentalOptimizeRendering": true,
+            "iconId": null,
+            "highlight": false,
+            "blockClass": [
+                "allCategoryBlock",
+                "highlightCategoryBlock",
+                "department-menu",
+                "removeBorderRight"
+            ],
+            "itemProps": {
+                "type": "internal",
+                "href": "/condominios",
+                "noFollow": true,
+                "tagTitle": "CONDOMÍNIO",
+                "text": "CONDOMÍNIO"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#CONDOMINIO-submenu-block"
+        ]
+    },
+    "vtex.menu@2.x:submenu#CONDOMINIO-submenu-block": {
+        "props": {
+            "width": "100%",
+            "blockClass": "main-menu-row-desk"
+        },
+        "children": [
+            "flex-layout.row#CONDOMINIO"
+        ]
+    },
+    "flex-layout.row#CONDOMINIO": {
+        "props": {
+            "blockClass": [
+                "menu-content-area",
+                "menu-content-area-CONDOMINIO"
+            ],
+            "paddingTop": 6,
+            "colGap": 2,
+            "horizontalAlign":"center"
+        },
+        "children": [
+            "flex-layout.col#CONDOMINIO",
+            "flex-layout.col#CONDOMINIO2",
+            "flex-layout.col#IMG-CONDOMINIO"
+        ]
+    },
+    "flex-layout.col#CONDOMINIO": {
+        "props": {
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-CONDOMINIO"
+        ]
+    },
+    "flex-layout.col#CONDOMINIO2": {
+        "props": {
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-CONDOMINIO2"
+        ]
+    },
+    "flex-layout.col#IMG-CONDOMINIO": {
+        "children": [
+            "image#IMG-CONDOMINIO"
+        ]
+    },
+    "image#IMG-CONDOMINIO": {
+        "props": {
+            "src": "assets/banners/generico-banner.png",
+            "maxHeight": 234
+        }
+    },
+    // ----------------- TRÂNSITO ITEM -------------------
+    "menu-item#TRÂNSITO": {
+        "props": {
+            "id": "menu-item-category-all",
+            "type": "custom",
+            "experimentalOptimizeRendering": true,
+            "iconId": null,
+            "highlight": false,
+            "blockClass": [
+                "allCategoryBlock",
+                "highlightCategoryBlock",
+                "department-menu",
+                "removeBorderRight"
+            ],
+            "itemProps": {
+                "type": "internal",
+                "href": "/sinalizacao-de-transito",
+                "noFollow": true,
+                "tagTitle": "TRÂNSITO",
+                "text": "TRÂNSITO"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#TRANSITO-submenu-block"
+        ]
+    },
+    "vtex.menu@2.x:submenu#TRANSITO-submenu-block": {
+        "props": {
+            "width": "100%",
+            "blockClass": "main-menu-row-desk"
+        },
+        "children": [
+            "flex-layout.row#TRANSITO"
+        ]
+    },
+    "flex-layout.row#TRANSITO": {
+        "props": {
+            "blockClass": [
+                "menu-content-area",
+                "menu-content-area-TRANSITO"
+            ],
+            "paddingTop": 6,
+            "colGap": 2,
+            "horizontalAlign":"center"
+        },
+        "children": [
+            "flex-layout.col#TRANSITO",
+            "flex-layout.col#IMG-TRANSITO"
+        ]
+    },
+    "flex-layout.col#TRANSITO": {
+        "props": {
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-TRANSITO"
+        ]
+    },
+ 
+ 
+    "flex-layout.col#IMG-TRANSITO": {
+        "children": [
+            "image#IMG-TRANSITO"
+        ]
+    },
+    "image#IMG-TRANSITO": {
+        "props": {
+            "src": "assets/banners/generico-banner.png",
+            "maxHeight": 234
+        }
+    },
+    // ----------------- BRAILLE TÁTIL ITEM -------------------
+    "menu-item#BRAILLE-TÁTIL": {
+        "props": {
+            "id": "menu-item-category-all",
+            "type": "custom",
+            "experimentalOptimizeRendering": true,
+            "iconId": null,
+            "highlight": false,
+            "blockClass": [
+                "allCategoryBlock",
+                "highlightCategoryBlock",
+                "department-menu",
+                "removeBorderRight"
+            ],
+            "itemProps": {
+                "type": "internal",
+                "href": "/braille-tatil",
+                "noFollow": true,
+                "tagTitle": "BRAILLE TÁTIL",
+                "text": "BRAILLE TÁTIL"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#BRAILLE-submenu-block"
+        ]
+    },
+    "vtex.menu@2.x:submenu#BRAILLE-submenu-block": {
+        "props": {
+            "width": "100%",
+            "blockClass": "main-menu-row-desk"
+        },
+        "children": [
+            "flex-layout.row#BRAILLE"
+        ]
+    },
+    "flex-layout.row#BRAILLE": {
+        "props": {
+            "blockClass": [
+                "menu-content-area",
+                "menu-content-area-BRAILLE"
+            ],
+            "paddingTop": 6,
+            "colGap": 2,
+            "horizontalAlign":"center"
+        },
+        "children": [
+            "flex-layout.col#BRAILLE",
+            "flex-layout.col#IMG-BRAILLE"
+        ]
+    },
+    "flex-layout.col#BRAILLE": {
+        "props": {
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-BRAILLE"
+        ]
+    },
+
+    "flex-layout.col#IMG-BRAILLE": {
+        "children": [
+            "image#IMG-BRAILLE"
+        ]
+    },
+    "image#IMG-BRAILLE": {
+        "props": {
+            "src": "assets/banners/generico-banner.png",
+            "maxHeight": 234
+        }
+    },
+    // ----------------- COMBATE À INCÊNDIO ITEM -------------------
+    "menu-item#COMBATE-À-INCÊNDIO": {
+        "props": {
+            "id": "menu-item-category-all",
+            "type": "custom",
+            "experimentalOptimizeRendering": true,
+            "iconId": null,
+            "highlight": false,
+            "blockClass": [
+                "allCategoryBlock",
+                "highlightCategoryBlock",
+                "department-menu",
+                "removeBorderRight"
+            ],
+            "itemProps": {
+                "type": "internal",
+                "href": "/combate-a-incendio",
+                "noFollow": true,
+                "tagTitle": "COMBATE À INCÊNDIO",
+                "text": "COMBATE À INCÊNDIO"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#INCENDIO-submenu-block"
+        ]
+    },
+    "vtex.menu@2.x:submenu#INCENDIO-submenu-block": {
+        "props": {
+            "width": "100%",
+            "blockClass": "main-menu-row-desk"
+        },
+        "children": [
+            "flex-layout.row#INCENDIO"
+        ]
+    },
+    "flex-layout.row#INCENDIO": {
+        "props": {
+            "blockClass": [
+                "menu-content-area",
+                "menu-content-area-INCENDIO"
+            ],
+            "paddingTop": 6,
+            "colGap": 2,
+            "horizontalAlign":"center"
+        },
+        "children": [
+            "flex-layout.col#INCENDIO",
+            "flex-layout.col#INCENDIO2",
+            "flex-layout.col#IMG-INCENDIO"
+        ]
+    },
+    "flex-layout.col#INCENDIO": {
+        "props": {
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-INCENDIO"
+        ]
+    },
+    "flex-layout.col#INCENDIO2": {
+        "props": {
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-INCENDIO2"
+        ]
+    },
+
+    "flex-layout.col#IMG-INCENDIO": {
+     
+        "children": [
+            "image#IMG-INCENDIO"
+        ]
+    },
+    "image#IMG-INCENDIO": {
+        "props": {
+            "src": "assets/banners/generico-banner.png",
+            "maxHeight": 234
+        }
+    }
+
+}

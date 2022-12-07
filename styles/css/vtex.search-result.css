@@ -1,0 +1,66 @@
+.filterMessage, :global(.vtex-search-result-3-x-filter__container--brand), .filter__container--title, .accordionFilterContainer--marca,
+ .filter__container--acesso-restrito, .filter__container--acionamento-remoto, .filter__container--asfixia, .filter__container--biologico, .filter__container--botao-acionamento,
+ .filter__container--celular, .filter__container--coleta-coletiva, .filter__container--eletrica, .filter__container--elevacao-de-carga, .filter__container--elevador,
+ .filter__container--empilhadeira, .filter__container--epi, .filter__container--equipamento-em-rotacao, .filter__container--esmagamento, .filter__container--explosivos,
+ .filter__container--ferramentas, .filter__container--fixacao, .filter__container--fumar, .filter__container--imflamavel, .filter__container--laser, .filter__container--obstaculos,
+  .filter__container--porta, .filter__container--proibicao, .filter__container--quimicos, .filter__container--radiacao, .filter__container--risco-corte, .filter__container--seguranca,
+  .filter__container--setas, .filter__container--superficie-quente  {
+    display: none;
+}
+
+.galleryTitle--layout{
+color:#515151;
+font-size: 22px;
+text-transform: uppercase;
+margin-bottom: 2em;
+}
+.filter__container{
+    border:none
+}
+
+:global(.vtex-checkbox__inner-container) {
+    border-color: #ED6F00;
+  }
+  .filterTitleSpan{
+      text-transform: uppercase;
+      color: #515151;
+  }
+
+ 
+
+  .buttonShowMore :global(.vtex-button){
+      border-radius: 100px;
+      padding: 14px 40px;
+      margin-bottom: 2em;
+      margin-top: 2em;
+  }
+
+  .filterClearButtonWrapper :global(.vtex-button), .filterApplyButtonWrapper :global(.vtex-button){
+      background-color: #ED6F00;
+      color: white;
+      padding-top: 0.25em;
+    padding-bottom: 0.32em;
+    border: solid;
+    border-width: 2px;
+    border-color: #ED6F00;
+    border-radius: 100px;
+
+  }
+
+  .filterClearButtonWrapper :global(.vtex-button){
+      background-color: white;
+      border-width: 2px;
+      border-color: #ED6F00;
+      color:#ED6F00
+  }
+
+  @media (min-width: 1125px) {
+    :global(.vtex-search-result-3-x-filter__container){
+        border: 1px solid #c4c4c4;
+        box-sizing: border-box;
+        box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+        border-radius: 5px;
+        padding: 1em;
+        margin-bottom: 1em;
+      }
+  }

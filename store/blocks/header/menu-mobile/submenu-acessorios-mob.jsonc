@@ -1,0 +1,380 @@
+{
+  "vtex.menu@2.x:menu#submenu-cat-acessorios-mob": {
+    "children": [
+      "menu-item#acessorios-mob1",
+      "menu-item#acessorios-mob2",
+      "menu-item#acessorios-mob3",
+      "menu-item#acessorios-mob4",
+      "menu-item#acessorios-mob5",
+      "menu-item#acessorios-mob6",
+      "menu-item#acessorios-mob7",
+      "menu-item#acessorios-mob8",
+      "menu-item#acessorios-mobALL"
+      // "menu-item#col1-all--mob"
+    ],
+    "props": {
+      "open": true,
+      "orientation": "vertical",
+      "blockClass": "submenu"
+    }
+  },
+
+  "menu-item#acessorios-mob1": {
+    "props": {
+      "type": "custom",
+      "id": "",
+      "highlight": false,
+       "blockClass": "submenu",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "blockClass": "submenu",
+        "text": "Caneleiras",
+        "href": "/acessorios/Caneleiras"
+      }
+    }
+  },
+  "menu-item#acessorios-mob2": {
+    "props": {
+      "type": "custom",
+      "id": "",
+      "highlight": false,
+      "blockClass": "submenu",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "blockClass": "sub-cat-item",
+        "text": "Mochilas e malas",
+        "href": "/acessorios/mochilas-e-malas"
+      }
+    }
+  },
+  "menu-item#acessorios-mob3": {
+    "props": {
+      "type": "custom",
+      "id": "",
+      "highlight": false,
+      "blockClass": "submenu",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "blockClass": "sub-cat-item",
+        "text": "Óculos de natação",
+        "href": "/acessorios/oculos-de-natacao"
+      }
+    }
+  },
+  "menu-item#acessorios-mob4": {
+    "props": {
+      "type": "custom",
+      "id": "",
+      "highlight": false,
+      "blockClass": "submenu",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "blockClass": "sub-cat-item",
+        "text": "Raquetes de tênis",
+        "href": "/acessorios/raquetes-de-tenis"
+      }
+    }
+  },
+  "menu-item#acessorios-mob5": {
+    "props": {
+      "type": "custom",
+      "id": "",
+      "highlight": false,
+      "blockClass": "submenu",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "blockClass": "sub-cat-item",
+        "text": "Toucas de natação",
+        "href": "/acessorios/toucas-de-natacao"
+      }
+    }
+  },
+
+  "menu-item#acessorios-mob6": {
+    "props": {
+      "type": "custom",
+      "id": "",
+      "blockClass": "submenu",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "text": "Bolas",
+        "href": "/acessorios/bolas"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#submenu-cat-acessorios-bola-mob"
+    ]
+  },
+
+  "vtex.menu@2.x:submenu.accordion#submenu-cat-acessorios-bola-mob": {
+    "children": ["vtex.menu@2.x:menu#submenu-cat-acessorios-bola-mob-submenu"],
+    "props": {
+      "blockClass": "sub-2-nav",
+      "width": "auto"
+    }
+  },
+
+  "vtex.menu@2.x:menu#submenu-cat-acessorios-bola-mob-submenu": {
+    "children": [
+      "menu-item#acessorios-bola-mob1",
+      "menu-item#acessorios-bola-mob2",
+      "menu-item#acessorios-bola-mob3",
+      "menu-item#acessorios-bola-mob4"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "menu-item#acessorios-bola-mob1": {
+    "props": {
+      "type": "custom",
+      "id": "",
+      "blockClass":"submenu",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "blockClass": "sub-cat-item",
+        "text": "Basquete",
+        "href": "/acessorios/bolas/basquete"
+      }
+    }
+  },
+  "menu-item#acessorios-bola-mob2": {
+    "props": {
+      "type": "custom",
+      "id": "",
+      "blockClass":"submenu",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "blockClass": "sub-cat-item",
+        "text": "Handebol",
+        "href": "/acessorios/bolas/handebol"
+      }
+    }
+  },
+  "menu-item#acessorios-bola-mob3": {
+    "props": {
+      "type": "custom",
+      "id": "",
+      "blockClass":"submenu",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "blockClass": "sub-cat-item",
+        "text": "Vôlei",
+        "href": "/acessorios/bolas/Volei"
+      }
+    }
+  },
+  "menu-item#acessorios-bola-mob4": {
+    "props": {
+      "type": "custom",
+      "id": "",
+      "blockClass": "submenu",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "text": "Futebol",
+        "href": "/acessorios/bolas/futebol"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#submenu-cat-acessorios-bola-futebol-mob"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#submenu-cat-acessorios-bola-futebol-mob": {
+    "children": [
+      "vtex.menu@2.x:menu#submenu-cat-acessorios-bola-futebol-mob-submenu"
+    ],
+    "props": {
+      "blockClass": "sub-2-nav",
+      "width": "auto"
+    }
+  },
+  "vtex.menu@2.x:menu#submenu-cat-acessorios-bola-futebol-mob-submenu": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass":"submenu",
+      "items": [
+        {
+          "type": "custom",
+          "id": "",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "blockClass": "sub-cat-item",
+            "text": "Campo",
+            "href": "/acessorios/bolas/futebol/campo"
+          }
+        },
+        {
+          "type": "custom",
+          "id": "",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "blockClass": "sub-cat-item",
+            "text": "Futsal",
+            "href": "/acessorios/bolas/futebol/futsal"
+          }
+        },
+        {
+          "type": "custom",
+          "id": "",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "blockClass": "sub-cat-item",
+            "text": "Society",
+            "href": "/acessorios/bolas/futebol/society"
+          }
+        }
+      ]
+    }
+  },
+  "menu-item#acessorios-mob7": {
+    "props": {
+        "type": "custom",
+        "id": "",
+        "blockClass": "submenu",
+        "highlight": false,
+        "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "text": "Bonés",
+            "href": "/acessorios/bones/"
+        }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#submenu-cat-acessorios-bone-mob"
+    ]
+  },
+
+  "vtex.menu@2.x:submenu.accordion#submenu-cat-acessorios-bone-mob": {
+    "children": ["vtex.menu@2.x:menu#submenu-cat-acessorios-bone-mob-submenu"],
+    "props": {
+      "blockClass": "sub-2-nav",
+      "width": "auto"
+    }
+  },
+
+  "vtex.menu@2.x:menu#submenu-cat-acessorios-bone-mob-submenu":{
+    "props": {
+        "orientation": "vertical",
+        "blockClass":"submenu",
+        "items":[
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Bonés aba curva",
+                    "href": "/acessorios/bones/bones-aba-curva"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Bonés aba reta",
+                    "href": "/acessorios/bones/bones-aba-reta"
+                }
+            }
+        ]
+    }
+  },
+  "menu-item#acessorios-mob8": {
+    "props": {
+        "type": "custom",
+        "id": "",
+        "blockClass": "submenu",
+        "highlight": false,
+        "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "text": "Luvas",
+            "href": "/acessorios/luvas/"
+        }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#submenu-cat-acessorios-luvas-mob"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#submenu-cat-acessorios-luvas-mob": {
+    "children": ["vtex.menu@2.x:menu#submenu-cat-acessorios-luvas-mob-submenu"],
+    "props": {
+      "blockClass": "sub-2-nav",
+      "width": "auto"
+    }
+  },
+
+  "vtex.menu@2.x:menu#submenu-cat-acessorios-luvas-mob-submenu":{
+    "props": {
+        "orientation": "vertical",
+        "blockClass":"submenu",
+        "items":[
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Luvas de academia",
+                    "href": "/acessorios/luvas/luvas-de-academia"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Luvas de goleiro",
+                    "href": "/acessorios/luvas/luvas-de-goleiro"
+                }
+            }
+        ]
+    }
+  },
+  "menu-item#acessorios-mobALL": {
+    "props": {
+      "type": "custom",
+      "id": "",
+      "highlight": false,
+      "blockClass": "submenu",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "text": "Todos",
+        "href": "/acessorios"
+      }
+    }
+  }
+}
