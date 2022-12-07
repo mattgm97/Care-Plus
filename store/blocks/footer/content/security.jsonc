@@ -21,8 +21,7 @@
     "children": [
       "rich-text#securityImage-0",
       "rich-text#securityImage-1",
-      "rich-text#securityImage-2",
-      "seloAvaliacoes"
+      "rich-text#securityImage-2"
     ],
     "props": {
       "preventHorizontalStretch": true,
@@ -73,7 +72,7 @@
 
   "image#googlereviews":{
     "props": {
-      "src": "assets/banners/selo-google.png",
+      "src": "",
       "link": {
         "properties": {
           "attributeNofollow": false,

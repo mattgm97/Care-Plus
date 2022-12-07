@@ -102,9 +102,7 @@
     "children": [
       "vtex.store-components:product-name",
       "product-identifier.product",
-      "productStars",
       "product-rating-summary",
-      "condition-layout.product#personalizada-show-selector",
       "flex-layout.row#progressive-discount",
      
       "product-price#product-details",
@@ -114,160 +112,13 @@
       "availability-subscriber"
     ]
   },
-  "condition-layout.product#personalizada-show-selector":{
-    "props":{
-      "conditions":[
-        {
-        "subject": "categoryId",
-        "arguments": {"id": "25"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "221"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "18"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "19"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "20"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "21"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "22"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "23"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "24"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "26"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "27"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "28"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "29"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "30"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "222"}
-      }
-    ],
-    "matchType": "none",
-    "Then": "sku-selector"
-    }
-  },
  
-  "condition-layout.product#personalizada":{
-    "props":{
-      "conditions":[
-        {
-        "subject": "categoryId",
-        "arguments": {"id": "25"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "221"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "18"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "19"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "20"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "21"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "22"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "23"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "24"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "26"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "27"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "28"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "29"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "30"}
-      },
-      {
-        "subject": "categoryId",
-        "arguments": {"id": "222"}
-      }
-    ],
-    "matchType": "any",
-    "Then": "placa-customizada",
-    "Else": "add-to-cart-button#pdp"
-    }
-  },
 
-  "placa-customizada":{
-    "blocks":[
-      "sku-selector#personalizado",
-      "product-quantity",
-      "product-price#product-details"
-    ]
-  },
+
+ 
 
   "flex-layout.row#progressive-discount": {
     "children": [
-      "progressive-discount#10",
-      "progressive-discount#20",
-      "progressive-discount#30",
-      "progressive-discount#40",
-      "progressive-discount#50"
     ],
     "props": {
       "blockClass": "progressive-discount",
@@ -275,36 +126,6 @@
     }
   },
 
-  "progressive-discount#10": {
-    "props": {
-      "value": 10,
-      "discountText": "3"
-    }
-  },
-  "progressive-discount#20": {
-    "props": {
-      "value": 20,
-      "discountText": "8"
-    }
-  },
-  "progressive-discount#30": {
-    "props": {
-      "value": 30,
-      "discountText": "10"
-    }
-  },
-  "progressive-discount#40": {
-    "props": {
-      "value": 40,
-      "discountText": "15"
-    }
-  },
-  "progressive-discount#50": {
-    "props": {
-      "value": 50,
-      "discountText": "17"
-    }
-  },
 
   "product-installments#default": {
     "props": {
@@ -361,7 +182,7 @@
     }
   },
   "flex-layout.col#buy-area2": {
-    "children": [ "condition-layout.product#personalizada"],
+    "children": [ ],
     "props":{
       "verticalAlign": "middle"
     }
@@ -379,8 +200,7 @@
       "marginTop": 4
     },
     "children":[
-      "flex-layout.col#shipping-and-benefits1",
-      "flex-layout.col#shipping-and-benefits2"
+      "flex-layout.col#shipping-and-benefits1"
     ]
   },
   "flex-layout.col#shipping-and-benefits1":{
@@ -389,11 +209,6 @@
     },
     "children":[
       "shipping-simulator"
-    ]
-  },
-  "flex-layout.col#shipping-and-benefits2":{
-    "children":[
-      "prod-benefits"
     ]
   },
 
@@ -489,7 +304,7 @@
 
   "flex-layout.row#avaliacoes":{
     "children":[
-      "reviews"
+     
     ]
   }
 }

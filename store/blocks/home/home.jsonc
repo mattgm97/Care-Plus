@@ -9,7 +9,6 @@
      
      // "__fold__",
       "flex-layout.row#secondContent",
-      "flex-layout.row#reviews-home",
       /*COMMENT SECTION*/
       "flex-layout.row#banners-home2"
     ]
@@ -207,16 +206,7 @@
     }
   },
 
-  "flex-layout.row#reviews-home": {
-    "props":{
-      "marginTop": 4,
-      "marginBottom": 6
-    },
-    "children": ["flex-layout.col#reviews-home"]
-  },
-  "flex-layout.col#reviews-home": {
-    "children": ["storereviews"]
-  },
+
 
   "flex-layout.row#secondContent": {
     "children": ["flex-layout.col#secondContent"]

@@ -35,7 +35,7 @@
   },
   "image#logoisinaliza": {
     "props": {
-      "src": "assets/icons/logo.svg",
+      "src": "assets/icons/logo.png",
       "maxHeight": 78,
       "blockClass": "footer-logo"
     }

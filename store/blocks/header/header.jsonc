@@ -7,12 +7,9 @@
   },
   "header-layout.desktop": {
     "children": [
-      "CSSWorkaround",
-      "wpp-btn",
       "responsive-layout.desktop#topbar",
       "header-row#1-desktop",
-      "header-row#2-desktop",
-      "flex-layout.row#mega-menu"
+      "header-row#2-desktop"
     ]
   },
   "responsive-layout.desktop#topbar": {
@@ -38,8 +35,8 @@
   "info-card#headerTelefone": {
     "props": {
       "isFullModeStyle": false,
-      "imageUrl": "assets/icons/telefone.png",
-      "headline": "**ENTRE** EM CONTATO **(47) 3441-0022**",
+      "imageUrl": "assets/icons/headset.png",
+      "headline": "(11) 96473-7665",
       "textPosition": "right",
       "callToActionMode": "none",
       "textMode": "rich-text",
@@ -53,24 +50,16 @@
     "props":{
       "width": "30%",
       "horizontalAlign": "right",
-      "blockClass":"orcamento-e-social"
+      "blockClass":"faq-header"
     }
   },
 
   "flex-layout.row#topbar-row-links":{
-    "children": ["flex-layout.col#topbar-col-links1", "flex-layout.col#topbar-col-links2"],
+    "children": ["flex-layout.col#topbar-col-links2"],
     "props":{
       "preventVerticalStretch": true,
       "horizontalAlign": "right",
       "blockClass": "header-links"
-    }
-  },
-
-  "flex-layout.col#topbar-col-links1":{
-    "children": ["rich-text#orcamento-text"],
-    "props":{
-      "preventVerticalStretch": true,
-      "verticalAlign": "middle"
     }
   },
 
@@ -82,16 +71,9 @@
     }
   },
 
-  "rich-text#orcamento-text": {
-    "props": {
-      "text": "[**PEÇA** UM ORÇAMENTO](/orcamento)",
-      "blockClass":"orcamento-text"
-    }
-  },
-
   "rich-text#orcamento-text2": {
     "props": {
-      "text": "**REDES SOCIAIS**  [![Facebook]( /arquivos/facebook-white.png 'Facebook')](https://www.facebook.com/isinaliza/) [![Instagram]( /arquivos/instagram-white.png 'Instagram')](https://www.instagram.com/isinaliza/) [![Youtube]( /arquivos/youtube-white.png 'Youtube')](https://www.youtube.com/channel/UCs2-MYW4YR-OuMjzJQP4lHA)",
+      "text": "[![Facebook]( /arquivos/dialog-baloon.svg 'faq')](/faq) **REDES SOCIAIS**   ",
       "blockClass":"socialmedia-text"
     }
   },
@@ -100,9 +82,8 @@
     "children": [
       "logo#desktop",
       "header-spacer",
-      "search-bar",
+      "vtex.menu@2.x:menu#category-menu-01",
       "header-spacer",
-
       "login",
       "minicart.v2"
     ],
@@ -116,8 +97,8 @@
     "props": {
       //"title": "Logo",
       "href": "/",
-      "url": "assets/icons/logo.svg",
-      "width": "196"
+      "url": "assets/icons/logo.png",
+      "width": "200"
     }
   },
   /*     "minicart": {
@@ -136,31 +117,14 @@
           }
       }, */
   "header-row#2-desktop": {
-    "children": ["mega-menu-trigger-btn", "vtex.menu@2.x:menu#category-menu-01"],
+    "children": ["vtex.menu@2.x:menu#category-menu-01"],
     "props": {
       /*"sticky": true,*/
       "blockClass": "main-menu"
     }
   },
 
-  "mega-menu-trigger-btn":{
-    "props":{
-      "id":"everything-menu"
-    }
-  },
 
-  "flex-layout.row#mega-menu":{
-    "children":["mega-menu"],
-    "props":{
-      "blockClass":"mega-menu-container"
-    }
-  },
-  "mega-menu":{
-    "props":{
-      "title":"Departamentos",
-      "blockClass":"mega-menu"
-    }
-  },
 
   /* MOBILE */
   "header-layout.mobile": {
@@ -169,8 +133,6 @@
   },
   "header-row#1-mobile": {
     "children": [
-      "CSSWorkaround",
-      "wpp-btn",
       "drawer#menu-mobile",
       "header-spacer",
       "logo#mobile",
@@ -218,9 +180,7 @@
   },
   "drawer#menu-mobile": {
     "children": [
-      "login#mob",
-      "mega-menu-go-back-btn",
-      "mega-menu"
+      "login#mob"
     ],
     "props": {
       "blockClass": "menu-mobile"
@@ -253,7 +213,7 @@
       // "providerPasswordButtonLabel": "Ingresar con mail y contraseña",
       "showIconProfile": true,
       "mirrorTooltipToRight": true,
-      "iconLabel": "ENTRE OU CADASTRE-SE",
+      "iconLabel": "Entrar",
       "labelClasses": "login__header"
       /* "accountOptionLinks": [
                   {
@@ -273,8 +233,8 @@
     "props": {
       //"optionsTitle": "Elija una de las opciones para confirmar su identidad",
       // "providerPasswordButtonLabel": "Ingresar con mail y contraseña",
-      "showIconProfile": false,
-      "iconLabel": "LOGIN OU CADASTRE-SE",
+      "showIconProfile": true,
+      "iconLabel": "Entrar",
       "labelClasses": "login__header",
       "accountOptionLinks":[
         {
@@ -296,7 +256,7 @@
     "props": {
       // "title": "Logo",
       "href": "/",
-      "url": "assets/icons/logo.svg",
+      "url": "assets/icons/logo.png",
       "width": "144"
     }
   },
