@@ -2,15 +2,14 @@
   "store.home": {
     "blocks": [
       "list-context.image-list#bannersprincipais",
+"responsive-layout.desktop#sellingConditions",
       "flex-layout.row#sellingConditions",
       //"__fold__",
       "flex-layout.row#firstContent",
       "flex-layout.row#banners-home",
      
      // "__fold__",
-      "flex-layout.row#secondContent",
-      /*COMMENT SECTION*/
-      "flex-layout.row#banners-home2"
+      "flex-layout.row#secondContent"
     ]
   },
   "list-context.image-list#bannersprincipais": {
@@ -48,80 +47,45 @@
     }
   },
 
-  "flex-layout.row#sellingConditions": {
-    "children": ["slider-layout#sellingConditions"],
+
+  "responsive-layout.desktop#sellingConditions":{
+    "children":["flex-layout.row#sellingConditions"]
+  },
+
+  "flex-layout.row#sellingConditions":{
+    "children":[
+      "flex-layout.col#sellingConditionsTitle",
+      "flex-layout.col#sellingConditionsIcons"
+    ],
     "props": {
       "marginTop": 6
     }
   },
-  "slider-layout#sellingConditions": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 4,
-        "tablet": 2,
-        "phone": 2
-      },
-      "infinite": true,
-      "showNavigationArrows": "never",
-      "blockClass": "carousel-sellingConditions",
-      "autoplay": {
-        "timeout": 5000,
-        "stopOnHover": true
-      }
-    },
-    "children": [
-      "info-card#sellerCondition1",
-      "info-card#sellerCondition2",
-      "info-card#sellerCondition3",
-      "info-card#sellerCondition4"
+
+  "flex-layout.col#sellingConditionsTitle":{
+    "children":[
+      "rich-text#planos"
     ]
   },
-  "info-card#sellerCondition1": {
+  "rich-text#planos": {
     "props": {
-      "isFullModeStyle": false,
-      "imageUrl": "assets/icons/truck.png",
-      "headline": "Frete grátis acima de R$ 250,00 para o Sul e o Sudeste",
-      "textPosition": "right",
-      "callToActionMode": "none",
-      "textMode": "rich-text",
-      "blockClass": "sellerConditionCard",
-      "textAlignment": "left"
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "Conheça os nossos planos",
+      "font": "t-heading-4",
+      "blockClass": "sectionRichTitle"
     }
   },
-  "info-card#sellerCondition2": {
-    "props": {
-      "isFullModeStyle": false,
-      "imageUrl": "assets/icons/shield.png",
-      "headline": "5 anos de garantia.",
-      "textPosition": "right",
-      "callToActionMode": "none",
-      "textMode": "rich-text",
-      "blockClass": "sellerConditionCard",
-      "textAlignment": "left"
-    }
-  },
-  "info-card#sellerCondition3": {
-    "props": {
-      "isFullModeStyle": false,
-      "imageUrl": "assets/icons/note.png",
-      "headline": "Boleto faturado para compras acima de R$300,00",
-      "textPosition": "right",
-      "callToActionMode": "none",
-      "textMode": "rich-text",
-      "blockClass": "sellerConditionCard",
-      "textAlignment": "left"
-    }
-  },
-  "info-card#sellerCondition4": {
-    "props": {
-      "isFullModeStyle": false,
-      "imageUrl": "assets/icons/discountStar.png",
-      "headline": "Ganhe até 30% OFF para atacado com mais de 10 unidades iguais",
-      "textPosition": "right",
-      "callToActionMode": "none",
-      "textMode": "rich-text",
-      "blockClass": "sellerConditionCard",
-      "textAlignment": "left"
+
+  "flex-layout.col#sellingConditionsIcons":{
+    "children":[
+      "image#condition1",
+      "image#condition2",
+      "image#condition3",
+      "image#condition4"
+    ],
+    "props":{
+      "blockClass":"sellingConditions"
     }
   },
 
@@ -132,8 +96,7 @@
   "flex-layout.col#firstContent": {
     "children": [
       "rich-text#novidades",
-      "list-context.product-list#novidades",
-      "slider-layout#categories-circle-slider"
+      "list-context.product-list#novidades"
     ]
   },
   "rich-text#novidades": {
@@ -170,23 +133,23 @@
   },
 
   "flex-layout.col#banners-home1": {
-    "children": ["image#banners-home1"],
+    "children": ["info-card#categorie01"],
     "props": {
       "horizontalAlign": "center"
     }
   },
-  "image#banners-home1": {
+
+  "info-card#categorie01": {
     "props": {
-      "src": "assets/banners/cavalete-sil.png",
-      "link": {
-        "properties": {
-          "attributeNofollow": false,
-          "newtab": false,
-          "url": "#"
-        }
-      }
+      "imageUrl": "assets/banners/banner1.png",
+      "callToActionText": "Planos especiais para a sua empresa!",
+      "callToActionUrl": "/cavalete-de-sinalizacao",
+      "textPosition": "right",
+      "callToActionMode": "link",
+      "blockClass": "circle-menu-option"
     }
   },
+ 
   "flex-layout.col#banners-home2": {
     "children": ["image#banners-home2"],
     "props": {
@@ -195,7 +158,7 @@
   },
   "image#banners-home2": {
     "props": {
-      "src": "assets/banners/transito-sil.png",
+      "src": "assets/banners/banner1.png",
       "link": {
         "properties": {
           "attributeNofollow": false,
@@ -215,7 +178,6 @@
     "children": [
       "rich-text#promocao",
       "list-context.product-list#promocao",
-      "slider-layout#cat-rectangle",
       "rich-text#maisVendidos",
       "list-context.product-list#maisVendidos"
     ]
@@ -257,55 +219,6 @@
       "collection": "146",
       "maxItems": 12
     }
-  },
-  "flex-layout.row#banners-home2": {
-    "children": [
-      "flex-layout.col#banners-home3",
-      "flex-layout.col#banners-home4"
-    ],
-    "props": {
-      "horizontalAlign": "center",
-      "marginTop": 5,
-      "marginBottom": 9,
-      "preventHorizontalStretch": true,
-      "colGap": 7
-    }
-  },
-
-  "flex-layout.col#banners-home3": {
-    "children": ["image#banners-home3"],
-    "props": {
-      "horizontalAlign": "center"
-    }
-  },
-  "image#banners-home3": {
-    "props": {
-      "src": "assets/banners/adesivo-sil.png",
-      "link": {
-        "properties": {
-          "attributeNofollow": false,
-          "newtab": false,
-          "url": "#"
-        }
-      }
-    }
-  },
-  "flex-layout.col#banners-home4": {
-    "children": ["image#banners-home4"],
-    "props": {
-      "horizontalAlign": "center"
-    }
-  },
-  "image#banners-home4": {
-    "props": {
-      "src": "assets/banners/combate-sil.png",
-      "link": {
-        "properties": {
-          "attributeNofollow": false,
-          "newtab": false,
-          "url": "#"
-        }
-      }
-    }
   }
+
 }

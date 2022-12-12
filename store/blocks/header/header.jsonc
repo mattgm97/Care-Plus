@@ -35,7 +35,7 @@
   "info-card#headerTelefone": {
     "props": {
       "isFullModeStyle": false,
-      "imageUrl": "assets/icons/headset.png",
+      "imageUrl": "assets/icons/headset.svg",
       "headline": "(11) 96473-7665",
       "textPosition": "right",
       "callToActionMode": "none",
