@@ -3,7 +3,6 @@
     "blocks": [
       "list-context.image-list#bannersprincipais",
 "responsive-layout.desktop#sellingConditions",
-      "flex-layout.row#sellingConditions",
       //"__fold__",
       "flex-layout.row#firstContent",
       "flex-layout.row#banners-home",
@@ -19,12 +18,12 @@
       "height": 484,
       "images": [
         {
-          "image": "https://isinaliza.vteximg.com.br/arquivos/ids/239091/isn-indicativas-banner-desktop.png",
-          "mobileImage": "https://isinaliza.vteximg.com.br/arquivos/ids/239092/isn-indicativas-banner-mobile.png"
+          "image": "assets/banners/banner-desktop.png",
+          "mobileImage": "assets/banners/banner-mobile.png"
         },
         {
-          "image": "https://isinaliza.vteximg.com.br/arquivos/ids/239095/isn-transito-refletivo-banner-desktop-2.png",
-          "mobileImage": "https://isinaliza.vteximg.com.br/arquivos/ids/239104/isn-transito-refletivo-banner-mobile-2.png"
+          "image": "assets/banners/banner-desktop.png",
+          "mobileImage": "assets/banners/banner-mobile.png"
         }
       ]
     }
@@ -58,22 +57,27 @@
       "flex-layout.col#sellingConditionsIcons"
     ],
     "props": {
-      "marginTop": 6
+      "marginTop": 6,
+      "colGap": 10
     }
   },
 
   "flex-layout.col#sellingConditionsTitle":{
     "children":[
       "rich-text#planos"
-    ]
+    ],
+    "props":{
+      "width": "31%",
+      "verticalAlign":"middle"
+    }
   },
   "rich-text#planos": {
     "props": {
       "textAlignment": "LEFT",
       "textPosition": "CENTER",
       "text": "Conheça os nossos planos",
-      "font": "t-heading-4",
-      "blockClass": "sectionRichTitle"
+      "font": "t-heading-1",
+      "blockClass": "sellingConditions-title"
     }
   },
 
@@ -85,7 +89,8 @@
       "image#condition4"
     ],
     "props":{
-      "blockClass":"sellingConditions"
+      "blockClass":"sellingConditions",
+      "verticalAlign":"middle"
     }
   },
 
@@ -95,26 +100,30 @@
 
   "flex-layout.col#firstContent": {
     "children": [
-      "rich-text#novidades",
-      "list-context.product-list#novidades"
+      "list-context.product-list#lite",
+      "list-context.product-list#pro"
     ]
   },
-  "rich-text#novidades": {
-    "props": {
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "text": "NOVIDADES",
-      "font": "t-heading-4",
-      "blockClass": "sectionRichTitle"
-    }
-  },
-  "list-context.product-list#novidades": {
+
+
+
+  "list-context.product-list#lite": {
     "title": "Novidades",
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#shelf"],
     "props": {
       "orderBy": "OrderByReleaseDateDESC",
-      "collection": "151",
+      "collection": "147",
+      "maxItems": 12
+    }
+  },
+  "list-context.product-list#pro": {
+    "title": "Novidades",
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf"],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC",
+      "collection": "148",
       "maxItems": 12
     }
   },

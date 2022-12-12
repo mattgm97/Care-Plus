@@ -8,8 +8,7 @@
   "header-layout.desktop": {
     "children": [
       "responsive-layout.desktop#topbar",
-      "header-row#1-desktop",
-      "header-row#2-desktop"
+      "header-row#1-desktop"
     ]
   },
   "responsive-layout.desktop#topbar": {
@@ -116,13 +115,6 @@
               "labelClasses": "gray"
           }
       }, */
-  "header-row#2-desktop": {
-    "children": ["vtex.menu@2.x:menu#category-menu-01"],
-    "props": {
-      /*"sticky": true,*/
-      "blockClass": "main-menu"
-    }
-  },
 
 
 

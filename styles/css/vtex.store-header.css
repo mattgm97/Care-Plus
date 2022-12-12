@@ -20,7 +20,7 @@
 }
 
 :global(.vtex-menu-2-x-menuContainerNav--mainMenu) {
-  width: 100%;
+  width: auto !important;
 }
 
 :global(.vtex-menu-2-x-menuContainerNav--mainMenu)

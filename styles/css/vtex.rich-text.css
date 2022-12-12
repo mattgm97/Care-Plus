@@ -4,21 +4,11 @@
     font-weight: bold;
     display: flex;
 }
-
-.paragraph--sectionRichTitle::before{
-    content:url('/arquivos/line-title.png');
-    position:relative; 
-    left:-50px;
-    top: -7px;
+.paragraph--sellingConditions-title{
+    font-weight: bold;
+    font-size: 38px;
+    color: #0D1846;
 }
-
-.paragraph--sectionRichTitle::after {
-    content:url('/arquivos/line-title.png');
-    position:relative;
-    right: -50px;
-    top: -7px;
-}
-
 .link--orcamento-text, .strong--socialmedia-text {
     font-size: 11px;
     color: white;
