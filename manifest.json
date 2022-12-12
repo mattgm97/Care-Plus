@@ -1,7 +1,7 @@
 {
-  "vendor": "careplus",
+  "vendor": "storecareplus",
   "name": "careplus-theme",
-  "version": "0.0.54",
+  "version": "0.0.53",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
