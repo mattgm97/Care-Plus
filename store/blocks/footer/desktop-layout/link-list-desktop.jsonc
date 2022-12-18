@@ -36,20 +36,6 @@
             "tagTitle": " Whatsapp: (11) 93004-1270",
             "text": " Whatsapp: (11) 93004-1270"
           }
-        },
-        {
-          "id": "footer-item-3",
-          "blockClass": "footer-sobre__menu-item",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "external",
-            "href": "mailto:contato@isinaliza.com",
-            "noFollow": false,
-            "tagTitle": "contato@isinaliza.com",
-            "text": "contato@isinaliza.com"
-          }
         }
       ]
     }

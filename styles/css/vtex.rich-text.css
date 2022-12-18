@@ -9,7 +9,7 @@
     font-size: 38px;
     color: #0D1846;
 }
-.link--orcamento-text, .strong--socialmedia-text {
+.link--orcamento-text {
     font-size: 11px;
     color: white;
     text-decoration: none;
@@ -22,14 +22,39 @@
 .paragraph--socialmedia-text {
     align-items: center;
     display: flex;
+    font-size: 12px;
+    color:white;
 }
+
+ .link--orders-text {
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    color:#0D1846;
+    text-decoration: none;
+
+}
+.paragraph--orders-text{
+    margin-top: 0.2em;
+}
+
+.image--orders-text{
+    margin-right: 1.5em;
+}
+
+.container--orders-text{
+    border-right: 1px solid #DBDBDB;
+    padding-right: 2em;
+    height: 32px;
+}
+
 
 .link--socialmedia-text {
     margin: 0px 2px 0px 2px;
 }
 
-.strong--socialmedia-text {
-    margin-right: 2px;
+.link--socialmedia-text {
+    margin-right: 10px;
 }
 
 .wrapper--payment__image {
@@ -37,7 +62,7 @@
 }
 
 .image--payment__image {
-    width: 56px;
+    width: 50px;
 }
 
 .paragraph--payment__image {
@@ -88,6 +113,25 @@
     height: auto;
 }
 
+.paragraph--footer-sobre{
+    color:white;
+    font-weight: 700;
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.paragraph--redes-title{
+    margin-left: -5.4em;
+}
+.container--sac{
+    background-color: white;
+    border-radius: 10px;
+    padding: 0em 5.6em;
+}
+
+.paragraph--copyright__text{
+    color:#fff;
+}
 @media (max-width: 760px) {
     .container--footer-sobre {
         justify-content: center;

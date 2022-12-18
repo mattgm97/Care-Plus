@@ -31,11 +31,11 @@
 
   "rich-text#security": {
     "props": {
-      "blockClass": "footer__title",
+      "blockClass": "footer-sobre",
       "font": "t-heading-5",
       "textPosition": "LEFT",
       "textAlign": "LEFT",
-      "text": "SEGURANÇA E CERTIFICAÇÕES"
+      "text": "Segurança"
     } 
   },
   "rich-text#securityImage-0": {

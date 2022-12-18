@@ -19,7 +19,6 @@
       "flex-layout.col#footer-1-box-menu-2",*/
       "rich-text#sobre-footer",
       "flex-layout.col#footer-1-box-menu-3",
-      "flex-layout.col#footer-1-box-1",
       "flex-layout.col#footer-1-box-2",
       "flex-layout.col#footer-1-box-3"
     ]
@@ -69,18 +68,6 @@
     }
   },
 
-  "flex-layout.col#footer-1-box-1":{
-    "children": [
-      "flex-layout.row#newsletter",
-      "flex-layout.row#newsletterRow"
-    
-    ],
-    "props": {
-        "blockClass": ["footer__content-col","footer__content-col--mobile-1"],
-        "verticalAlign": "top",
-        "width": "100%"
-    }
-  },
   "flex-layout.col#footer-1-box-2":{
     "children": [
       "rich-text#social-footer"
@@ -95,11 +82,11 @@
 
   "rich-text#social-footer":{
     "props": {
-      "text": "REDES SOCIAIS \n [![Facebook]( /arquivos/facebook-dark.png 'Facebook')](https://www.facebook.com/isinaliza/) [![Instagram]( /arquivos/instagram-dark.png 'Instagram')](https://www.instagram.com/isinaliza/) [![Youtube]( /arquivos/youtube-dark.png 'Youtube')](https://www.youtube.com/channel/UCs2-MYW4YR-OuMjzJQP4lHA)",
+      "text": "Redes Sociais",
       "font": "t-heading-5",
       "textPosition": "CENTER",
       "textAlign": "CENTER",
-      "blockClass": "footer-sobre"
+      "blockClass": ["footer-sobre", "redes-title"]
     }
   },
   "flex-layout.col#footer-1-box-3":{

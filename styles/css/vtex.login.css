@@ -1,8 +1,25 @@
 .label{
-color: black;
+  color: #0079C8;
+  margin-left: -1.5em;
+  margin-right: 1.5em;
+  font-size: 14px;
+  text-transform: initial;
 }
 
 :global(.vtex-login-2-x-accountOptionsSectionTitle){
     font-size: 20px;
   color: #515151;
+  }
+
+  .profileIcon{
+    display: none;
+  }
+
+  :global(.vtex-login-2-x-container)::before{
+    content: url(/arquivos/user.svg);
+  }
+
+  :global(.vtex-login-2-x-container){
+    border-right: 1px solid #DBDBDB;
+    height: 32px;
   }

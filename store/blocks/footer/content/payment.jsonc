@@ -22,11 +22,7 @@
       "rich-text#paymentImage-2",
       "rich-text#paymentImage-3",
       "rich-text#paymentImage-4",
-      "rich-text#paymentImage-5",
-      "rich-text#paymentImage-6",
-      "rich-text#paymentImage-7",
-      "rich-text#paymentImage-8",
-      "rich-text#paymentImage-9"
+      "rich-text#paymentImage-5"
     ],
     "props": {
       "preventHorizontalStretch": true,
@@ -40,11 +36,11 @@
       "textPosition": "LEFT",
       "textAlign": "LEFT",
       "blockClass": "footer-sobre",
-      "text": "PAGAMENTO"
+      "text": "Formas de Pagamento"
     } 
   },
 
-  "rich-text#paymentImage-0": {
+  "rich-text#paymentImage-1": {
     "props": {
       "text": "![Bandeira Visa](/arquivos/VISA.svg 'Bandeira Visa')",
       "blockClass": ["payment__image","visa"]
@@ -52,7 +48,7 @@
     }
   },
 
-  "rich-text#paymentImage-1": {
+  "rich-text#paymentImage-0": {
     "props": {
       "text": "![Bandeira Mastercard](/arquivos/MASTER.svg 'Bandeira Mastercard')",
       "blockClass": ["payment__image","mastercard"]
@@ -72,38 +68,13 @@
     }
   },
 
-  "rich-text#paymentImage-4": {
-    "props": {
-      "text": "![Bandeira HIPERCARD](/arquivos/HIPERCARD.svg 'Bandeira HIPERCARD')",
-      "blockClass": ["payment__image","hipercard"]
-    }
-  },
-
   "rich-text#paymentImage-5": {
     "props": {
-      "text": "![Bandeira Hiper](/arquivos/HIPER.svg 'Bandeira HIPER')",
-      "blockClass": ["payment__image","hiper"]
+      "text": "![Bandeira DEPOSITO](/arquivos/DEPOSITO.svg 'Bandeira DEPOSITO')",
+      "blockClass": ["payment__image","DEPOSITO"]
     }
   },
-  "rich-text#paymentImage-6": {
-    "props": {
-      "text": "![Bandeira ELO](/arquivos/ELO.svg 'Bandeira ELO')",
-      "blockClass": ["payment__image","elo"]
-    }
-  },
-  "rich-text#paymentImage-7": {
-    "props": {
-      "text": "![Bandeira Paypal](/arquivos/BANCO-DO-BRASIL.svg 'Bandeira Paypal')",
-      "blockClass": ["payment__image","Paypal"]
-    }
-  },
-  "rich-text#paymentImage-8": {
-    "props": {
-      "text": "![Bandeira PIX](/arquivos/PIX.svg 'Bandeira PIX')",
-      "blockClass": ["payment__image","PIX"]
-    }
-  },
-  "rich-text#paymentImage-9": {
+  "rich-text#paymentImage-4": {
     "props": {
       "text": "![Bandeira BOLETO](/arquivos/BOLETO.svg 'Bandeira BOLETO')",
       "blockClass": ["payment__image","BOLETO"]

@@ -3,12 +3,11 @@
     "blocks": [
       "list-context.image-list#bannersprincipais",
 "responsive-layout.desktop#sellingConditions",
-      //"__fold__",
+      "__fold__",
+      
       "flex-layout.row#firstContent",
       "flex-layout.row#banners-home",
-     
-     // "__fold__",
-      "flex-layout.row#secondContent"
+     "__fold__"
     ]
   },
   "list-context.image-list#bannersprincipais": {
@@ -48,7 +47,9 @@
 
 
   "responsive-layout.desktop#sellingConditions":{
-    "children":["flex-layout.row#sellingConditions"]
+    "children":["flex-layout.row#sellingConditions",
+    "flex-layout.row#services"
+  ]
   },
 
   "flex-layout.row#sellingConditions":{
@@ -94,8 +95,31 @@
     }
   },
 
+  "flex-layout.row#services":{
+    "children": [
+      "flex-layout.col#clinica-geral",
+      "flex-layout.col#emergencia",
+      "flex-layout.col#prevencao",
+      "flex-layout.col#Odontopediatria",
+      "flex-layout.col#Dentistica",
+      "flex-layout.col#Periodontia",
+      "flex-layout.col#Cirurgia",
+      "flex-layout.col#Endodontia",
+      "flex-layout.col#Radiologia"
+    ],
+    "props":{
+      "blockClass":"services-list",
+      "horizontalAlign":"around"
+    }
+  },
+
+
   "flex-layout.row#firstContent": {
-    "children": ["flex-layout.col#firstContent"]
+    "children": ["flex-layout.col#firstContent"],
+    "props":{
+      "blockClass":"products-offered",
+      "paddingTop":10
+    }
   },
 
   "flex-layout.col#firstContent": {
@@ -175,58 +199,6 @@
           "url": "#"
         }
       }
-    }
-  },
-
-
-
-  "flex-layout.row#secondContent": {
-    "children": ["flex-layout.col#secondContent"]
-  },
-  "flex-layout.col#secondContent": {
-    "children": [
-      "rich-text#promocao",
-      "list-context.product-list#promocao",
-      "rich-text#maisVendidos",
-      "list-context.product-list#maisVendidos"
-    ]
-  },
-  "rich-text#promocao": {
-    "props": {
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "text": "PROMOÇÃO",
-      "font": "t-heading-4",
-      "blockClass": "sectionRichTitle"
-    }
-  },
-  "list-context.product-list#promocao": {
-    "title": "PROMOÇÃO",
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#shelf"],
-    "props": {
-      "orderBy": "OrderByReleaseDateDESC",
-      "collection": "145",
-      "maxItems": 12
-    }
-  },
-  "rich-text#maisVendidos": {
-    "props": {
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "text": "MAIS VENDIDOS",
-      "font": "t-heading-4",
-      "blockClass": "sectionRichTitle"
-    }
-  },
-  "list-context.product-list#maisVendidos": {
-    "title": "MAIS VENDIDOS",
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#shelf"],
-    "props": {
-      "orderBy": "OrderByReleaseDateDESC",
-      "collection": "146",
-      "maxItems": 12
     }
   }
 

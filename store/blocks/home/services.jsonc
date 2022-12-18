@@ -1,0 +1,250 @@
+{
+    "flex-layout.col#clinica-geral":{
+        "children":[
+          "image#clinica-geral",
+          "rich-text#clinica-geral"
+        ],
+        "props":{
+            "blockClass":"services-block",
+            "horizontalAlign": "center"
+        }
+      },
+      "image#clinica-geral": {
+        "props": {
+          "src": "assets/icons/Clinica.svg",
+          "maxHeight": 100
+        }
+      },
+      "rich-text#clinica-geral": {
+        "props": {
+          "text": "Clínica Geral",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "blockClass": "text-services"
+        }
+      },
+
+
+
+      "flex-layout.col#emergencia":{
+        "children":[
+          "image#emergencia",
+          "rich-text#emergencia"
+        ],
+        "props":{
+            "blockClass":"services-block",
+            "horizontalAlign": "center"
+        }
+      },
+      "image#emergencia": {
+        "props": {
+          "src": "assets/icons/emergencia.svg",
+          "maxHeight": 100
+        }
+      },
+      "rich-text#emergencia": {
+        "props": {
+          "text": "Emergência",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "blockClass": "text-services"
+        }
+      },
+
+
+
+
+      "flex-layout.col#prevencao":{
+        "children":[
+          "image#prevencao",
+          "rich-text#prevencao"
+        ],
+        "props":{
+            "blockClass":"services-block",
+            "horizontalAlign": "center"
+        }
+      },
+      "image#prevencao": {
+        "props": {
+          "src": "assets/icons/prevencao.svg",
+          "maxHeight": 100
+        }
+      },
+      "rich-text#prevencao": {
+        "props": {
+          "text": "Prevenção",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "blockClass": "text-services"
+        }
+      },
+
+
+
+
+      "flex-layout.col#Odontopediatria":{
+        "children":[
+          "image#Odontopediatria",
+          "rich-text#Odontopediatria"
+        ],
+        "props":{
+            "blockClass":"services-block",
+            "horizontalAlign": "center"
+        }
+      },
+      "image#Odontopediatria": {
+        "props": {
+          "src": "assets/icons/Odontopediatria.svg",
+          "maxHeight": 100
+        }
+      },
+      "rich-text#Odontopediatria": {
+        "props": {
+          "text": "Odontopediatria",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "blockClass": "text-services"
+        }
+      },
+      
+
+
+
+      "flex-layout.col#Dentistica":{
+        "children":[
+          "image#Dentistica",
+          "rich-text#Dentistica"
+        ],
+        "props":{
+            "blockClass":"services-block",
+            "horizontalAlign": "center"
+        }
+      },
+      "image#Dentistica": {
+        "props": {
+          "src": "assets/icons/Dentistica.svg",
+          "maxHeight": 100
+        }
+      },
+      "rich-text#Dentistica": {
+        "props": {
+          "text": "Dentística \n (Restaurações)",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "blockClass": "text-services"
+        }
+      },
+
+
+
+
+      
+      "flex-layout.col#Periodontia":{
+        "children":[
+          "image#Periodontia",
+          "rich-text#Periodontia"
+        ],
+        "props":{
+            "blockClass":"services-block",
+            "horizontalAlign": "center"
+        }
+      },
+      "image#Periodontia": {
+        "props": {
+          "src": "assets/icons/Periodontia.svg",
+          "maxHeight": 100
+        }
+      },
+      "rich-text#Periodontia": {
+        "props": {
+          "text": "Periodontia",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "blockClass": "text-services"
+        }
+      },
+
+
+
+
+      "flex-layout.col#Cirurgia":{
+        "children":[
+          "image#Cirurgia",
+          "rich-text#Cirurgia"
+        ],
+        "props":{
+            "blockClass":"services-block",
+            "horizontalAlign": "center"
+        }
+      },
+      "image#Cirurgia": {
+        "props": {
+          "src": "assets/icons/Cirurgia.svg",
+          "maxHeight": 100
+        }
+      },
+      "rich-text#Cirurgia": {
+        "props": {
+          "text": "Cirurgia",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "blockClass": "text-services"
+        }
+      },
+
+
+      
+      "flex-layout.col#Endodontia":{
+        "children":[
+          "image#Endodontia",
+          "rich-text#Endodontia"
+        ],
+        "props":{
+            "blockClass":"services-block",
+            "horizontalAlign": "center"
+        }
+      },
+      "image#Endodontia": {
+        "props": {
+          "src": "assets/icons/Endodontia.svg",
+          "maxHeight": 100
+        }
+      },
+      "rich-text#Endodontia": {
+        "props": {
+          "text": "Endodontia",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "blockClass": "text-services"
+        }
+      },
+      
+
+      
+      "flex-layout.col#Radiologia":{
+        "children":[
+          "image#Radiologia",
+          "rich-text#Radiologia"
+        ],
+        "props":{
+            "blockClass":"services-block",
+            "horizontalAlign": "center"
+        }
+      },
+      "image#Radiologia": {
+        "props": {
+          "src": "assets/icons/Radiologia.svg",
+          "maxHeight": 100
+        }
+      },
+      "rich-text#Radiologia": {
+        "props": {
+          "text": "Radiologia",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "blockClass": "text-services"
+        }
+      }
+
+
+}

@@ -26,7 +26,7 @@
   "flex-layout.col#topbar-1": {
     "children": ["info-card#headerTelefone"],
     "props":{
-      "width": "70%",
+      "width": "90%",
       "horizontalAlign": "left"
     }
   },
@@ -34,7 +34,7 @@
   "info-card#headerTelefone": {
     "props": {
       "isFullModeStyle": false,
-      "imageUrl": "assets/icons/headset.svg",
+      "imageUrl": "assets/icons/headset-final.svg",
       "headline": "(11) 96473-7665",
       "textPosition": "right",
       "callToActionMode": "none",
@@ -72,7 +72,7 @@
 
   "rich-text#orcamento-text2": {
     "props": {
-      "text": "[![Facebook]( /arquivos/dialog-baloon.svg 'faq')](/faq) **REDES SOCIAIS**   ",
+      "text": "[![FAQ]( /arquivos/dialog-baloon.svg 'faq')](/faq) Perguntas frequentes",
       "blockClass":"socialmedia-text"
     }
   },
@@ -83,7 +83,11 @@
       "header-spacer",
       "vtex.menu@2.x:menu#category-menu-01",
       "header-spacer",
+      "header-spacer",
       "login",
+      "header-spacer",
+      "rich-text#meus-pedidos",
+      "header-spacer",
       "minicart.v2"
     ],
     "props": {
@@ -98,6 +102,13 @@
       "href": "/",
       "url": "assets/icons/logo.png",
       "width": "200"
+    }
+  },
+
+  "rich-text#meus-pedidos": {
+    "props": {
+      "text": "[![Meus Pedidos]( /arquivos/shopping-bag.svg 'Meus Pedidos')  Meus Pedidos](/account#/orders)",
+      "blockClass":"orders-text"
     }
   },
   /*     "minicart": {

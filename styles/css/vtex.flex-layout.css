@@ -1,5 +1,5 @@
 .flexRow--topbar {
-    background-color: #333;/*#0054A8;*/
+    background-color: #0D1846;
     height: 40px;
 
 }
@@ -18,7 +18,7 @@
 }
 
 .flexRow--footer__content {
-    background-color: #F5F5F5;
+    background-color: #0D1846;
 }
 
 .flexRowContent--powered__row{
@@ -49,9 +49,23 @@
     margin-left: -10%;
 }
 
-.flexRowContent--progressive-discount :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
-    padding-right: 0.3rem;
-    padding-left: 0.3rem;
+.flexRow--services-list :global(.vtex-store-components-3-x-container){
+    background-color: #E5F2FA;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.flexRowContent--services-list{
+    width: 89%;
+}
+
+.flexCol--services-block{
+    padding: 1.6em 0;
+}
+
+.flexCol--services-block:hover{
+background-color: #CAEBFF;
 }
 
 
@@ -73,7 +87,34 @@
     justify-content: space-between;
 }
 
+.flexRow--products-offered{
+    background-color: #F7F5F2;
+    margin-top: -6%;
+    padding-top: 2%;
+}
 
+.flexRowContent--footer-icons {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .flexRowContent--social-icons :global(.vtex-store-components-3-x-imageElement) {
+    padding: 0 18px;
+    max-height: 22px;
+    cursor: pointer;
+    width: auto;
+    transition: 0.3s ease-in-out;
+  }
+  .flexRowContent--social-icons
+    :global(.vtex-store-components-3-x-imageElement):hover {
+    transform: scale(1.2);
+   
+  }
+
+  .flexRow--footer__copyright {
+    background-color: #0D1846;
+}
 
 
 
@@ -83,9 +124,9 @@
         padding-left: 3.5em;
         padding-right: 3.5em;
     }
-    .flexRow--footer__copyright {
-        background-color: #F5F5F5;
-    }
+
+    
+   
 
     .flexRowContent--powered__row {
         display: flex;
@@ -119,7 +160,9 @@
       width: 330px;
     }
 
-  
+    .flexRowContent--footer-icons {
+        margin-left: -2.8em;
+      }
     
   }
 
