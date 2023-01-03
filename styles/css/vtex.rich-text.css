@@ -4,9 +4,15 @@
     font-weight: bold;
     display: flex;
 }
+
+.paragraph--subtext{
+    margin: 0;
+    margin-top: -1em;
+    visibility: hidden;
+}
 .paragraph--sellingConditions-title{
     font-weight: bold;
-    font-size: 38px;
+    font-size: 36px;
     color: #0D1846;
 }
 .link--orcamento-text {
@@ -113,11 +119,21 @@
     height: auto;
 }
 
-.paragraph--footer-sobre{
+.paragraph--footer-sobre, .paragraph--seguranca-title{
     color:white;
     font-weight: 700;
     margin-top: 0;
     font-size: 22px;
+    margin-bottom: 26px;
+}
+
+.paragraph--seguranca-title{
+    margin-top: 85px;
+}
+
+.paragraph--powered__title{
+    font-size: 16px;
+    color: #fff;
 }
 
 .paragraph--redes-title{
@@ -127,6 +143,9 @@
     background-color: white;
     border-radius: 10px;
     padding: 0em 5.6em;
+}
+.paragraph--sac{
+    color: #4F4F4F;
 }
 
 .paragraph--copyright__text{

@@ -57,7 +57,8 @@
       "flex-layout.col#prevencao":{
         "children":[
           "image#prevencao",
-          "rich-text#prevencao"
+          "rich-text#prevencao",
+          "rich-text#prevencao2"
         ],
         "props":{
             "blockClass":"services-block",
@@ -79,13 +80,21 @@
         }
       },
 
-
+      "rich-text#prevencao2": {
+        "props": {
+          "text": "(Limpeza)",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "blockClass": ["text-services","subtext"]
+        }
+      },
 
 
       "flex-layout.col#Odontopediatria":{
         "children":[
           "image#Odontopediatria",
-          "rich-text#Odontopediatria"
+          "rich-text#Odontopediatria",
+          "rich-text#Odontopediatria2"
         ],
         "props":{
             "blockClass":"services-block",
@@ -106,6 +115,14 @@
           "blockClass": "text-services"
         }
       },
+      "rich-text#Odontopediatria2": {
+        "props": {
+          "text": "(Crianças)",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "blockClass": ["text-services","subtext"]
+        }
+      },
       
 
 
@@ -113,7 +130,8 @@
       "flex-layout.col#Dentistica":{
         "children":[
           "image#Dentistica",
-          "rich-text#Dentistica"
+          "rich-text#Dentistica",
+          "rich-text#Dentistica2"
         ],
         "props":{
             "blockClass":"services-block",
@@ -128,13 +146,20 @@
       },
       "rich-text#Dentistica": {
         "props": {
-          "text": "Dentística \n (Restaurações)",
+          "text": "Dentística",
           "textAlignment": "CENTER",
           "textPosition": "CENTER",
           "blockClass": "text-services"
         }
       },
-
+      "rich-text#Dentistica2": {
+        "props": {
+          "text": "(Restaurações)",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "blockClass": ["text-services","subtext"]
+        }
+      },
 
 
 
@@ -142,7 +167,8 @@
       "flex-layout.col#Periodontia":{
         "children":[
           "image#Periodontia",
-          "rich-text#Periodontia"
+          "rich-text#Periodontia",
+          "rich-text#Periodontia2"
         ],
         "props":{
             "blockClass":"services-block",
@@ -163,6 +189,14 @@
           "blockClass": "text-services"
         }
       },
+      "rich-text#Periodontia2": {
+        "props": {
+          "text": "(Gengiva)",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "blockClass": ["text-services","subtext"]
+        }
+      },
 
 
 
@@ -170,7 +204,8 @@
       "flex-layout.col#Cirurgia":{
         "children":[
           "image#Cirurgia",
-          "rich-text#Cirurgia"
+          "rich-text#Cirurgia",
+          "rich-text#Cirurgia2"
         ],
         "props":{
             "blockClass":"services-block",
@@ -191,13 +226,23 @@
           "blockClass": "text-services"
         }
       },
+      "rich-text#Cirurgia2": {
+        "props": {
+          "text": "(Extrações)",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "blockClass": ["text-services","subtext"]
+        }
+      },
+
 
 
       
       "flex-layout.col#Endodontia":{
         "children":[
           "image#Endodontia",
-          "rich-text#Endodontia"
+          "rich-text#Endodontia",
+          "rich-text#Endodontia2"
         ],
         "props":{
             "blockClass":"services-block",
@@ -216,6 +261,15 @@
           "textAlignment": "CENTER",
           "textPosition": "CENTER",
           "blockClass": "text-services"
+        }
+      },
+
+      "rich-text#Endodontia2": {
+        "props": {
+          "text": "(Canal)",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "blockClass": ["text-services","subtext"]
         }
       },
       

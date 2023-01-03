@@ -12,7 +12,9 @@
 
   "flex-layout.row#footer-container-contacts-desktop": {
     "props": {
-      "blockClass": "footer__content"
+      "blockClass": "footer__content",
+      "paddingBottom": 8
+
     },
     "children": [
       "flex-layout.col#footer-contacts-box-0",
@@ -132,7 +134,8 @@
 
   "flex-layout.row#footer-container-0-desktop": {
     "props": {
-      "blockClass": "footer__content"
+      "blockClass": "footer__content",
+      "paddingBottom": 8
     },
     "children": [
       "flex-layout.col#footer-0-box-0",
@@ -143,14 +146,12 @@
   },
 
   "flex-layout.col#footer-0-box-0": {
-    "children": ["image#logocareplus", "vtex.menu@2.x:menu#contacts"],
+    "children": ["flex-layout.col#care-container"],
     "props": {
-      "blockClass": ["footer__content-col", "footer__content-col--desktop-0"],
+      "blockClass": ["footer__content-col", "footer__content-col--desktop-1"],
       "verticalAlign": "top",
       "width": "25%",
-      "marginRight": 6,
-      "preventHorizontalStretch": true,
-      "fullWidth": true
+      "marginRight": 6
     }
   },
   "image#logocareplus": {
@@ -184,8 +185,7 @@
       "flex-layout.row#payment-0",
       "flex-layout.row#payment-1",
       "flex-layout.row#security-0",
-      "flex-layout.row#security-1",
-      "flex-layout.row#security-2"
+      "flex-layout.row#security-1"
 
     ],
     "props": {
@@ -199,7 +199,8 @@
 
   "flex-layout.row#footer-container-1-desktop": {
     "props": {
-      "blockClass": "footer__copyright"
+      "blockClass": "footer__copyright",
+      "paddingBottom": 8
     },
     "children": [
       "flex-layout.col#footer-1-box-copy",

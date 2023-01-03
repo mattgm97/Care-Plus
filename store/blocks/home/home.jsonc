@@ -1,13 +1,25 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#bannersprincipais",
+      "flex-layout.row#bannerarea",
 "responsive-layout.desktop#sellingConditions",
       "__fold__",
       
       "flex-layout.row#firstContent",
       "flex-layout.row#banners-home",
      "__fold__"
+    ]
+  },
+
+  "flex-layout.row#bannerarea":{
+    "children":[
+      "flex-layout.col#bannerarea"
+    ]
+  },
+
+  "flex-layout.col#bannerarea":{
+    "children":[
+      "list-context.image-list#bannersprincipais"
     ]
   },
   "list-context.image-list#bannersprincipais": {

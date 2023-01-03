@@ -1,3 +1,15 @@
+
+
+@media (min-width: 1400px) {
+    :global(.vtex-store-components-3-x-container){
+        max-width: 1322px;
+    }
+}
+
+
+
+
+
 .infoCardTextContainer--sellerConditionCard {
     padding: 0;
     padding-left: 10px;
@@ -277,8 +289,14 @@
 
 :global(.vtex-menu-2-x-styledLinkContent--menu-footer) {
     font-weight: 400;
+    font-size: 18px;
     color: white;
 }
+
+:global(.vtex-flex-layout-0-x-flexCol--services-block):hover :global(.vtex-rich-text-0-x-paragraph--text-services) {
+    visibility: visible;
+}
+
 
 
 

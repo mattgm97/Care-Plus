@@ -21,73 +21,76 @@
     background-color: #0D1846;
 }
 
-.flexRowContent--powered__row{
+.flexRowContent--powered__row {
     align-items: center;
 }
 
-.flexRowContent--buy-area :global(.vtex-button){
+.flexRowContent--buy-area :global(.vtex-button) {
     border-radius: 100px;
     padding: 12px 8px;
-    background-color: #fe5000!important;
+    background-color: #fe5000 !important;
     box-shadow: 1px 2px 4px 0 rgb(0 0 0 / 30%);
 
 }
 
-.flexRowContent--buy-area :global(.vtex-button):hover{
-    background-color: #ff7636!important;
+.flexRowContent--buy-area :global(.vtex-button):hover {
+    background-color: #ff7636 !important;
 
 }
 
-.flexRowContent--buy-area :global(.vtex-button) :global(.vtex-button__label){
+.flexRowContent--buy-area :global(.vtex-button) :global(.vtex-button__label) {
     padding-left: 5em;
     padding-right: 5em;
 }
 
 
-.flexColChild--Institutionaltitleblock1{
+.flexColChild--Institutionaltitleblock1 {
     width: 90%;
     margin-left: -10%;
 }
 
-.flexRow--services-list :global(.vtex-store-components-3-x-container){
+.flexRow--services-list :global(.vtex-store-components-3-x-container) {
     background-color: #E5F2FA;
     display: flex;
     justify-content: center;
     position: relative;
 }
 
-.flexRowContent--services-list{
-    width: 89%;
+.flexRowContent--services-list {
+    width: 92%;
 }
 
-.flexCol--services-block{
+.flexCol--services-block {
     padding: 1.6em 0;
 }
 
-.flexCol--services-block:hover{
-background-color: #CAEBFF;
+.flexCol--services-block:hover {
+    background-color: #CAEBFF;
 }
 
+.flexCol--services-block:hover .paragraph--subtext {
+    display: block;
+}
 
-.flexRow--mega-menu-container{
+.flexRow--mega-menu-container {
     position: sticky;
     top: 160px;
     z-index: 9999;
 }
 
 
-.flexRow--progressive-discount{
+.flexRow--progressive-discount {
     margin-top: 10px;
 }
 
-.flexCol--sellingConditions{
+.flexCol--sellingConditions {
     display: flex;
     flex-direction: inherit;
     align-items: center;
     justify-content: space-between;
 }
 
-.flexRow--products-offered{
+.flexRow--products-offered {
     background-color: #F7F5F2;
     margin-top: -6%;
     padding-top: 2%;
@@ -98,21 +101,22 @@ background-color: #CAEBFF;
     display: flex;
     align-items: center;
     height: 100%;
-  }
-  .flexRowContent--social-icons :global(.vtex-store-components-3-x-imageElement) {
+}
+
+.flexRowContent--social-icons :global(.vtex-store-components-3-x-imageElement) {
     padding: 0 18px;
     max-height: 22px;
     cursor: pointer;
     width: auto;
     transition: 0.3s ease-in-out;
-  }
-  .flexRowContent--social-icons
-    :global(.vtex-store-components-3-x-imageElement):hover {
-    transform: scale(1.2);
-   
-  }
+}
 
-  .flexRow--footer__copyright {
+.flexRowContent--social-icons :global(.vtex-store-components-3-x-imageElement):hover {
+    transform: scale(1.2);
+
+}
+
+.flexRow--footer__copyright {
     background-color: #0D1846;
 }
 
@@ -120,61 +124,50 @@ background-color: #CAEBFF;
 
 @media (max-width: 760px) {
 
-    .flexRowContent--buy-area :global(.vtex-button) :global(.vtex-button__label){
+    .flexRowContent--buy-area :global(.vtex-button) :global(.vtex-button__label) {
         padding-left: 3.5em;
         padding-right: 3.5em;
     }
 
-    
-   
+
+
 
     .flexRowContent--powered__row {
         display: flex;
         align-items: center;
-        justify-content:center;
+        justify-content: center;
     }
 
-    .flexRowContent--buy-area :global(.vtex-button){
+    .flexRowContent--buy-area :global(.vtex-button) {
         font-size: 12px;
         padding: 3px 0px;
     }
 
-    .flexRowContent--progressive-discount{
+    .flexRowContent--progressive-discount {
         display: flex;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 
-    .flexRowContent--progressive-discount :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+    .flexRowContent--progressive-discount :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
         width: 32% !important;
         margin-bottom: 1em;
-        
+
     }
 
-    
-  
+
+
 }
 
 
 @media (min-width: 1125px) {
     :global(.vtex-flex-layout-0-x-flexCol--filterCol) {
-      width: 330px;
+        width: 330px;
     }
 
     .flexRowContent--footer-icons {
         margin-left: -2.8em;
-      }
-    
-  }
+    }
 
-  @media (min-width: 1300px) and (max-width: 1400px) {
-   
-    
-  }
+}
 
-
-
-
-
-
-
- 
+@media (min-width: 1300px) and (max-width: 1400px) {}

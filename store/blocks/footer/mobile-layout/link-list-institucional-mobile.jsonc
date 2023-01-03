@@ -19,7 +19,7 @@
         "type": "internal",
         "noFollow": true,
         "tagTitle": "Institucional",
-        "text": "SUPORTE AO CLIENTE"
+        "text": "Fale Conosco"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu.accordion#listLink-footer-accordion"]

@@ -24,7 +24,7 @@
   },
   "rich-text#poweredby": {
     "props": {
-      "text": "**Powered By**",
+      "text": "Powered By",
       "blockClass": ["powered__title"]
     }
   },
@@ -36,7 +36,7 @@
   },
   "rich-text#poweredImage-1": {
     "props": {
-      "text": "[![Logo ALMAH](/arquivos/VTEX_pink_RGB.png 'Acesse a VTEX')](https://vtex.com/br-pt/)",
+      "text": "[![Logo VTEX](/arquivos/vtex.svg 'Acesse a VTEX')](https://vtex.com/br-pt/)",
       "blockClass": ["powered__image","vtex-icon"]
     }
   }

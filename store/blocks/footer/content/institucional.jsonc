@@ -20,7 +20,7 @@
       "textPosition": "LEFT",
       "textAlign": "LEFT",
       "blockClass": "footer-sobre",
-      "text": "INSTITUCIONAL"
+      "text": "Planos"
     }
   },
 
@@ -37,10 +37,10 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/quem-somos",
+            "href": "/store-dental-lite/p",
             "noFollow": false,
-            "tagTitle": "Quem somos",
-            "text": "Quem somos"
+            "tagTitle": "Dental Lite",
+            "text": "Dental Lite"
           }
         },
         {
@@ -51,10 +51,10 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/contato",
+            "href": "/dental-lite-ortodontia/p",
             "noFollow": false,
-            "tagTitle": "Contato",
-            "text": "Contato"
+            "tagTitle": "Dental Lite Ortodontia",
+            "text": "Dental Lite Ortodontia"
           }
         },
         {
@@ -65,10 +65,185 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/orcamento",
+            "href": "/dental-lite-ortodontia-protese/p",
             "noFollow": false,
-            "tagTitle": "Orçamento",
-            "text": "Orçamento"
+            "tagTitle": "Dental Lite Ortodontia e Prótese",
+            "text": "Dental Lite Ortodontia e Prótese"
+          }
+        },
+        {
+          "id": "footer-item-acc-2",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/store-dental-pro-10/p",
+            "noFollow": false,
+            "tagTitle": "Dental Pro10",
+            "text": "Dental Pro10"
+          }
+        },
+        {
+          "id": "footer-item-acc-2",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/dental-pro10-ortodontia-protese/p",
+            "noFollow": false,
+            "tagTitle": "Dental Pro10 Ortodontia e Prótese",
+            "text": "Dental Pro10 Ortodontia e Prótese"
+          }
+        },
+        {
+          "id": "footer-item-acc-2",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/dental-pro20-ortodontia-e-alinhador-estetico/p",
+            "noFollow": false,
+            "tagTitle": "Dental Pro20 Ortodontia e Alinhador",
+            "text": "Dental Pro20 Ortodontia e Alinhador"
+          }
+        }
+      ]
+    }
+  },
+
+
+  "flex-layout.col#care-container": {
+    "children": [
+      "flex-layout.row#care-title",
+      "vtex.menu@2.x:menu#contact-footer-desktop-2"
+    ],
+    "props": {
+      "blockClass": "linkList-container",
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#care-title": {
+    "children": ["rich-text#care-title-1"]
+  },
+
+  "rich-text#care-title-1": {
+    "props": {
+      "font": "t-heading-5",
+      "textPosition": "LEFT",
+      "textAlign": "LEFT",
+      "blockClass": "footer-sobre",
+      "text": "A Care Plus"
+    }
+  },
+
+  "vtex.menu@2.x:menu#contact-footer-desktop-2": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-footer",
+      "items": [
+        {
+          "id": "footer-item-acc-0",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/empresa",
+            "noFollow": false,
+            "tagTitle": "A Empresa",
+            "text": "A Empresa"
+          }
+        },
+        {
+          "id": "footer-item-acc-1",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/diferenciais",
+            "noFollow": false,
+            "tagTitle": "Diferenciais",
+            "text": "Diferenciais"
+          }
+        },
+        {
+          "id": "footer-item-acc-2",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/responsabilidade",
+            "noFollow": false,
+            "tagTitle": "Responsabilidade",
+            "text": "Responsabilidade"
+          }
+        },
+        {
+          "id": "footer-item-acc-2",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/termos-e-condicoes",
+            "noFollow": false,
+            "tagTitle": "Termos e Condições",
+            "text": "Termos e Condições"
+          }
+        },
+        {
+          "id": "footer-item-acc-2",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/privacidade",
+            "noFollow": false,
+            "tagTitle": "Aviso de Privacidade",
+            "text": "Aviso de Privacidade"
+          }
+        },
+        {
+          "id": "footer-item-acc-2",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/direitos",
+            "noFollow": false,
+            "tagTitle": "Exerça seus Direitos",
+            "text": "Exerça seus Direitos"
+          }
+        },
+        {
+          "id": "footer-item-acc-2",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/rede-credenciada",
+            "noFollow": false,
+            "tagTitle": "Rede Credenciada",
+            "text": "Rede Credenciada"
           }
         }
       ]

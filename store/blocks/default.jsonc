@@ -40,10 +40,9 @@
       "product-summary-name",
       "product-rating-inline",
       "product-summary-space",
-      /*"product-list-price#shelf",
-      "product-selling-price#shelf",*/
-      "product-list-price-range#shelf",
-      "product-selling-price-range#shelf",  
+      "getSpecs",
+      "product-list-price#shelf",
+      "product-selling-price#shelf",  
       "add-to-cart-button#shelf"
     ],
     "props":{

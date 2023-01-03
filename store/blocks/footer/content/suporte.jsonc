@@ -20,7 +20,7 @@
       "textPosition": "LEFT",
       "textAlign": "LEFT",
       "blockClass": "footer-sobre",
-      "text": "SUPORTE AO CLIENTE"
+      "text": "Fale Conosco"
     }
   },
 
@@ -36,11 +36,11 @@
           "iconId": null,
           "highlight": false,
           "itemProps": {
-            "type": "internal",
-            "href": "/politica-de-privacidade",
+            "type": "external",
+            "href": "https://wa.me/5511964737665",
             "noFollow": false,
-            "tagTitle": "Política de Privacidade",
-            "text": "Política de Privacidade"
+            "tagTitle": "WhatsApp",
+            "text": "WhatsApp"
           }
         },
         {
@@ -50,11 +50,11 @@
           "iconId": null,
           "highlight": false,
           "itemProps": {
-            "type": "internal",
-            "href": "/politica-de-seguranca",
+            "type": "external",
+            "href": "https://xwc.careplus.com.br/careplus/form_chat_storecareplus.html",
             "noFollow": false,
-            "tagTitle": "Política de Segurança",
-            "text": "Política de Segurança"
+            "tagTitle": "Chat",
+            "text": "Chat"
           }
         },
         {
@@ -65,10 +65,10 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/politica-de-entregas",
+            "href": "/contato",
             "noFollow": false,
-            "tagTitle": "Política de Entregas",
-            "text": "Política de Entregas"
+            "tagTitle": "Contato",
+            "text": "Contato"
           }
         },
         {
@@ -79,38 +79,10 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/troca-e-devolucao",
-            "noFollow": false,
-            "tagTitle": "Política de Troca e Devolução",
-            "text": "Política de Troca e Devolução"
-          }
-        },
-        {
-          "id": "footer-item-acc-10",
-          "blockClass": "footer-sobre__menu-item",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "/politica-de-pagamento",
-            "noFollow": false,
-            "tagTitle": "Política de Pagamento",
-            "text": "Política de Pagamento"
-          }
-        },
-        {
-          "id": "footer-item-acc-11",
-          "blockClass": "footer-sobre__menu-item",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
             "href": "/faq",
             "noFollow": false,
-            "tagTitle": "Dúvidas Frequentes",
-            "text": "Dúvidas Frequentes"
+            "tagTitle": "FAQ",
+            "text": "FAQ"
           }
         }
       ]
