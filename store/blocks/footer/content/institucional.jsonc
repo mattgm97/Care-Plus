@@ -155,8 +155,8 @@
           "iconId": null,
           "highlight": false,
           "itemProps": {
-            "type": "internal",
-            "href": "/empresa",
+            "type": "external",
+            "href": "https://www.careplus.com.br/a-careplus",
             "noFollow": false,
             "tagTitle": "A Empresa",
             "text": "A Empresa"
@@ -169,8 +169,8 @@
           "iconId": null,
           "highlight": false,
           "itemProps": {
-            "type": "internal",
-            "href": "/diferenciais",
+            "type": "external",
+            "href": "https://www.careplus.com.br/a-careplus/diferenciais",
             "noFollow": false,
             "tagTitle": "Diferenciais",
             "text": "Diferenciais"
@@ -183,8 +183,8 @@
           "iconId": null,
           "highlight": false,
           "itemProps": {
-            "type": "internal",
-            "href": "/responsabilidade",
+            "type": "external",
+            "href": "https://www.careplus.com.br/a-careplus/responsabilidade-social",
             "noFollow": false,
             "tagTitle": "Responsabilidade",
             "text": "Responsabilidade"
@@ -197,8 +197,8 @@
           "iconId": null,
           "highlight": false,
           "itemProps": {
-            "type": "internal",
-            "href": "/termos-e-condicoes",
+            "type": "external",
+            "href": "https://www.careplus.com.br/a-careplus/termos-e-condicoes",
             "noFollow": false,
             "tagTitle": "Termos e Condições",
             "text": "Termos e Condições"
@@ -211,8 +211,8 @@
           "iconId": null,
           "highlight": false,
           "itemProps": {
-            "type": "internal",
-            "href": "/privacidade",
+            "type": "external",
+            "href": "https://www.careplus.com.br/a-careplus/politica-de-privacidade",
             "noFollow": false,
             "tagTitle": "Aviso de Privacidade",
             "text": "Aviso de Privacidade"
@@ -225,8 +225,8 @@
           "iconId": null,
           "highlight": false,
           "itemProps": {
-            "type": "internal",
-            "href": "/direitos",
+            "type": "external",
+            "href": "https://privacyportal-de.onetrust.com/webform/1008c9c1-5b06-4f60-b76e-80bb9f385e31/38944ca9-3aea-4529-96cb-f1e28bd0b9e2",
             "noFollow": false,
             "tagTitle": "Exerça seus Direitos",
             "text": "Exerça seus Direitos"
@@ -239,8 +239,8 @@
           "iconId": null,
           "highlight": false,
           "itemProps": {
-            "type": "internal",
-            "href": "/rede-credenciada",
+            "type": "external",
+            "href": "https://www8.careplus.com.br/portal/portal/modulos/rede/pesquisaRedeCP.aspx",
             "noFollow": false,
             "tagTitle": "Rede Credenciada",
             "text": "Rede Credenciada"

@@ -2,25 +2,23 @@
   "store.home": {
     "blocks": [
       "flex-layout.row#bannerarea",
-"responsive-layout.desktop#sellingConditions",
+      "responsive-layout.desktop#sellingConditions",
       "__fold__",
-      
       "flex-layout.row#firstContent",
+      "flex-layout.row#passoApasso",
       "flex-layout.row#banners-home",
-     "__fold__"
+      "__fold__",
+      "flex-layout.row#bannerarea2",
+      "flex-layout.row#about-us"
     ]
   },
 
-  "flex-layout.row#bannerarea":{
-    "children":[
-      "flex-layout.col#bannerarea"
-    ]
+  "flex-layout.row#bannerarea": {
+    "children": ["flex-layout.col#bannerarea"]
   },
 
-  "flex-layout.col#bannerarea":{
-    "children":[
-      "list-context.image-list#bannersprincipais"
-    ]
+  "flex-layout.col#bannerarea": {
+    "children": ["list-context.image-list#bannersprincipais"]
   },
   "list-context.image-list#bannersprincipais": {
     "title": "banner principal",
@@ -57,15 +55,15 @@
     }
   },
 
-
-  "responsive-layout.desktop#sellingConditions":{
-    "children":["flex-layout.row#sellingConditions",
-    "flex-layout.row#services"
-  ]
+  "responsive-layout.desktop#sellingConditions": {
+    "children": [
+      "flex-layout.row#sellingConditions",
+      "flex-layout.row#services"
+    ]
   },
 
-  "flex-layout.row#sellingConditions":{
-    "children":[
+  "flex-layout.row#sellingConditions": {
+    "children": [
       "flex-layout.col#sellingConditionsTitle",
       "flex-layout.col#sellingConditionsIcons"
     ],
@@ -75,13 +73,11 @@
     }
   },
 
-  "flex-layout.col#sellingConditionsTitle":{
-    "children":[
-      "rich-text#planos"
-    ],
-    "props":{
+  "flex-layout.col#sellingConditionsTitle": {
+    "children": ["rich-text#planos"],
+    "props": {
       "width": "31%",
-      "verticalAlign":"middle"
+      "verticalAlign": "middle"
     }
   },
   "rich-text#planos": {
@@ -94,20 +90,20 @@
     }
   },
 
-  "flex-layout.col#sellingConditionsIcons":{
-    "children":[
+  "flex-layout.col#sellingConditionsIcons": {
+    "children": [
       "image#condition1",
       "image#condition2",
       "image#condition3",
       "image#condition4"
     ],
-    "props":{
-      "blockClass":"sellingConditions",
-      "verticalAlign":"middle"
+    "props": {
+      "blockClass": "sellingConditions",
+      "verticalAlign": "middle"
     }
   },
 
-  "flex-layout.row#services":{
+  "flex-layout.row#services": {
     "children": [
       "flex-layout.col#clinica-geral",
       "flex-layout.col#emergencia",
@@ -119,18 +115,17 @@
       "flex-layout.col#Endodontia",
       "flex-layout.col#Radiologia"
     ],
-    "props":{
-      "blockClass":"services-list",
-      "horizontalAlign":"around"
+    "props": {
+      "blockClass": "services-list",
+      "horizontalAlign": "around"
     }
   },
 
-
   "flex-layout.row#firstContent": {
     "children": ["flex-layout.col#firstContent"],
-    "props":{
-      "blockClass":"products-offered",
-      "paddingTop":10
+    "props": {
+      "blockClass": "products-offered",
+      "paddingTop": 10
     }
   },
 
@@ -140,8 +135,6 @@
       "list-context.product-list#pro"
     ]
   },
-
-
 
   "list-context.product-list#lite": {
     "title": "Novidades",
@@ -163,6 +156,63 @@
       "maxItems": 12
     }
   },
+
+  "flex-layout.row#passoApasso": {
+    "children": ["flex-layout.col#passoApasso"],
+    "props": {
+      "horizontalAlign": "center",
+      "marginTop": 5,
+      "marginBottom": 7,
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.col#passoApasso": {
+    "children": [
+      "rich-text#passoApassoSmall",
+      "rich-text#passoApassoBig",
+      "image#passoapasso",
+      "link#buttonPassoAPasso"
+    ],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+
+  "rich-text#passoApassoSmall": {
+    "props": {
+      "text": "Passo a passo",
+      "font": "t-heading-5",
+      "textPosition": "CENTER",
+      "textAlign": "CENTER",
+      "blockClass": "passoApassoSmall"
+    }
+  },
+
+  "rich-text#passoApassoBig": {
+    "props": {
+      "text": "Veja como é fácil adquirir nossos planos",
+      "font": "t-heading-1",
+      "textPosition": "CENTER",
+      "textAlign": "CENTER",
+      "blockClass": "passoApassoBig"
+    }
+  },
+
+  "image#passoapasso": {
+    "props": {
+      "src": "assets/banners/passoapasso.png"
+    }
+  },
+
+  "link#buttonPassoAPasso": {
+    "props": {
+      "href": "/",
+      "label": "Ver Planos",
+      "blockClass": "homeButtonFree",
+      "displayMode": "button"
+    }
+  },
+
   "flex-layout.row#banners-home": {
     "children": [
       "flex-layout.col#banners-home1",
@@ -170,38 +220,21 @@
     ],
     "props": {
       "horizontalAlign": "center",
-      "marginTop": 5,
-      "marginBottom": 7,
+      "marginTop": 8,
+      "marginBottom": 9,
       "preventHorizontalStretch": true,
       "colGap": 7
     }
   },
 
   "flex-layout.col#banners-home1": {
-    "children": ["info-card#categorie01"],
+    "children": ["image#banners-home1"],
     "props": {
       "horizontalAlign": "center"
     }
   },
 
-  "info-card#categorie01": {
-    "props": {
-      "imageUrl": "assets/banners/banner1.png",
-      "callToActionText": "Planos especiais para a sua empresa!",
-      "callToActionUrl": "/cavalete-de-sinalizacao",
-      "textPosition": "right",
-      "callToActionMode": "link",
-      "blockClass": "circle-menu-option"
-    }
-  },
- 
-  "flex-layout.col#banners-home2": {
-    "children": ["image#banners-home2"],
-    "props": {
-      "horizontalAlign": "center"
-    }
-  },
-  "image#banners-home2": {
+  "image#banners-home1": {
     "props": {
       "src": "assets/banners/banner1.png",
       "link": {
@@ -212,6 +245,135 @@
         }
       }
     }
-  }
+  },
 
+  "flex-layout.col#banners-home2": {
+    "children": ["image#banners-home2"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "image#banners-home2": {
+    "props": {
+      "src": "assets/banners/banner2.png",
+      "link": {
+        "properties": {
+          "attributeNofollow": false,
+          "newtab": false,
+          "url": "#"
+        }
+      }
+    }
+  },
+
+  "flex-layout.row#bannerarea2": {
+    "children": ["flex-layout.col#bannerarea2"],
+    "props": {
+      "horizontalAlign": "center",
+      "marginBottom": 7,
+      "preventHorizontalStretch": true,
+      "blockClass": "secondary-banner"
+    }
+  },
+
+  "flex-layout.col#bannerarea2": {
+    "children": ["list-context.image-list#bannersprincipais2"]
+  },
+  "list-context.image-list#bannersprincipais2": {
+    "title": "banner principal",
+    "children": ["slider-layout#bannersprincipais2"],
+    "props": {
+      "height": 484,
+      "images": [
+        {
+          "image": "assets/banners/banner-desktop.png",
+          "mobileImage": "assets/banners/banner-mobile.png"
+        },
+        {
+          "image": "assets/banners/banner-desktop.png",
+          "mobileImage": "assets/banners/banner-mobile.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#bannersprincipais2": {
+    "title": "Slider secundario",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      },
+      "blockClass": "secondaryCarousel"
+    }
+  },
+  "flex-layout.row#about-us": {
+    "children": ["flex-layout.col#about-us", "flex-layout.col#about-us2"],
+    "props": {
+      "marginTop": 8,
+      "marginBottom": 10,
+      "colGap": 10
+    }
+  },
+
+  "flex-layout.col#about-us": {
+    "children": ["rich-text#about-us", "rich-text#about-us-content","image#our-numbers", "link#button-about-us"],
+    "props": {
+      "preventVerticalStretch": true,
+      "width": "44%"
+    }
+  },
+  
+
+  "rich-text#about-us": {
+    "props": {
+      "text": "A Care Plus **+** Bupa",
+      "font": "t-heading-1",
+      "textPosition": "LEFT",
+      "textAlign": "LEFT",
+      "blockClass": "about-us"
+    }
+  },
+
+  "rich-text#about-us-content": {
+    "props": {
+      "text": "Há 30 anos cuidando do bem mais precioso das pessoas, a vida. A responsabilidade é enorme, por isso priorizamos pilares como cuidado, dedicação e segurança. \n \nDiariamente, participamos da vida de inúmeras pessoas. São histórias de cuidado, superação e, claro, muitos sorrisos! \n \nPermita-nos participar de sua história, de sua vida!",
+      "textPosition": "LEFT",
+      "textAlign": "LEFT",
+      "blockClass": "about-us-content"
+    }
+  },
+
+  "image#our-numbers": {
+    "props": {
+      "src": "assets/banners/our-numbers-img.png",
+      "maxWidth": "450px"
+    }
+  },
+
+  "flex-layout.col#about-us2": {
+    "children": ["image#about-us"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "image#about-us": {
+    "props": {
+      "src": "assets/banners/banner-about-us.png"
+    }
+  },
+  "link#button-about-us": {
+    "props": {
+      "href": "https://www.careplus.com.br/a-careplus",
+      "label": "Ver Mais",
+      "blockClass": "homeButtonAboutUs",
+      "displayMode": "button"
+    }
+  }
 }

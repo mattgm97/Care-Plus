@@ -16,9 +16,42 @@
     padding: 10px;
 }
 
+.sliderLeftArrow--secondaryCarousel{
+    border: 3px solid #A7A8A9;
+    border-radius: 100px;
+    background-color: transparent !important;
+    height: 27px;
+    width: 27px;
+    box-shadow: none;
+
+}
+
+.sliderLeftArrow--secondaryCarousel::before{
+    content:url('/arquivos/triangle-left.svg');
+    position: relative;
+    left: -2px;
+}
+
+.sliderRightArrow--secondaryCarousel{
+    border: 3px solid #A7A8A9;
+    border-radius: 100px;
+    background-color: transparent !important;
+    height: 27px;
+    width: 27px;
+    box-shadow: none;
+}
+
+.sliderRightArrow--secondaryCarousel::before{
+    content:url('/arquivos/triangle-right.svg');
+    position: relative;
+    left: 1px;
+}
+
+
+
 .slideChildrenContainer--slider-shelf--default, .slideChildrenContainer--cat-rectangle-slider{
     margin-top: 1em;
-    margin-bottom: 5em;
+    margin-bottom: 3em;
 }
 
 .slideChildrenContainer--cat-rectangle-slider{
@@ -28,6 +61,11 @@
 
 .slideChildrenContainer--cat-rectangle-slider :global(.vtex-store-components-3-x-imageElementLink) :global(.vtex-store-components-3-x-imageElement){
     height: auto !important;
+}
+
+.paginationDotsContainer--secondaryCarousel{
+    left: -80%;
+    bottom: 10%;
 }
 
 @media screen and (max-width: 768px) {

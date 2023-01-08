@@ -1,3 +1,32 @@
-*{
-    color: #000;
+.product-specifications{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2em;
+}
+
+.product-specifications .col{
+    margin: 0;
+    padding: 0;
+    /*padding-left: 2.2em;*/
+    padding-right: 1.2em;
+}
+
+.product-specifications .col:first-of-type{
+    padding-right: 3.2em;
+}
+
+.product-specifications .col li{
+    list-style: none;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.product-specifications .col img{
+    margin-right: 16px;
+}
+.product-specifications .col p{
+    font-size: 14px;
+    color: #21272A;
 }

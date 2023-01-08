@@ -42,10 +42,10 @@
       "product-summary-space",
       "getSpecs",
       "product-list-price#shelf",
-      "product-selling-price#shelf",  
+      "condition-layout.product#typeOfPlan",
       "add-to-cart-button#shelf"
     ],
-    "props":{
+    "props": {
       "blockClass": "default-prod-shelf"
     }
   },
@@ -56,39 +56,56 @@
     }
   },
 
-  "product-list-price-range#shelf":{
-    "props":{
-      "message":"{minPriceValue}",
-      "blockClass":"selling-listprice-shelf"
+  "condition-layout.product#typeOfPlan": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "3"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "7"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "4"
+          }
+        }
+      ],
+      "matchType": "any",
+      "Then": "product-selling-price#shelf",
+      "Else": "product-selling-price#shelfPro"
     }
   },
 
-  "product-selling-price-range#shelf":{
-    "props":{
-      "message":"{minPriceValue}",
-      "blockClass":"selling-price-shelf"
+  "product-list-price#shelf": {
+    "props": {
+      "blockClass": "selling-listprice-shelf"
+    }
+  },
+  "product-selling-price#shelf": {
+    "props": {
+      "blockClass": "selling-price-shelf"
     }
   },
 
-
-  "product-list-price#shelf":{
-    "props":{
-      "blockClass":"selling-listprice-shelf"
+  "product-selling-price#shelfPro": {
+    "props": {
+      "blockClass": ["selling-price-shelf", "shelf-pro"]
     }
   },
-  "product-selling-price#shelf":{
-    "props":{
-      "blockClass":"selling-price-shelf"
-    }
-  },
-
 
   "add-to-cart-button#shelf": {
     "props": {
-      "text": "COMPRAR",
+      "text": "Eu quero",
       "blockClass": "buy-button-shelf",
-      "onClickBehavior":"go-to-product-page"
+      "onClickBehavior": "go-to-product-page"
     }
   }
-
 }

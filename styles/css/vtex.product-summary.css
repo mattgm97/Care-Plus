@@ -1,30 +1,40 @@
 .productBrand{
-    text-align: left;
-    color: #8D8D8D;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    height: 34px;
-    font-size: 15px;
-    font-weight: 300;
-    letter-spacing: 0.03em; 
+  color: #21272A; 
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+.productNameContainer {
+  text-align: left;
+  /*padding-left: 2.2em;*/
+}
+
+.containerNormal--default-prod-shelf{
+  max-width: 423px !important;
 }
 
 .containerNormal :global(.vtex-button) {
     margin: 0 auto;
-    background-color: #fe5000!important;
-    box-shadow: 1px 2px 4px 0 rgb(0 0 0 / 30%);
+    background-color: #0079C8!important;
     border: none;
-    border-radius: 40px;
+    border-radius: 6px;
+    transition: 0.3s;
+    text-transform: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    max-width: 175px;
+    height: 56px;
   }
 
   .nameContainer{
       padding-right: 1em;
+      justify-content: flex-start;
   }
 
   .element--default-prod-shelf{
     background-color: white;
+    padding: 2em;
+    padding-top: 0;
   }
 
 

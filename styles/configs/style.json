@@ -97,7 +97,7 @@
       "muted-5": "#f2f4f5"
     },
     "hover-background": {
-      "action-primary": "#ED6F00",
+      "action-primary": "#EC8938",
       "action-secondary": "#dbe9fd",
       "emphasis": "#dd1659",
       "success": "#8bc34a",

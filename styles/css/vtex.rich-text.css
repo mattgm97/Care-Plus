@@ -5,16 +5,51 @@
     display: flex;
 }
 
-.paragraph--subtext{
+.paragraph--subtext {
     margin: 0;
     margin-top: -1em;
     visibility: hidden;
 }
-.paragraph--sellingConditions-title{
+
+.paragraph--passoApassoSmall {
+    color: #6929C4;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+.paragraph--passoApassoBig {
+    color: #0D1846;
+    font-size: 38px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 70px;
+}
+
+.paragraph--sellingConditions-title {
     font-weight: bold;
     font-size: 36px;
     color: #0D1846;
 }
+
+.paragraph--about-us {
+    font-size: 38px;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 0;
+}
+
+.paragraph--about-us-content {
+    font-size: 20px;
+    margin: 0px 0px 15px 0px;
+}
+
+
+
+.strong--about-us {
+    color: #0079C7;
+}
+
 .link--orcamento-text {
     font-size: 11px;
     color: white;
@@ -29,26 +64,27 @@
     align-items: center;
     display: flex;
     font-size: 12px;
-    color:white;
+    color: white;
 }
 
- .link--orders-text {
+.link--orders-text {
     align-items: center;
     display: flex;
     font-size: 14px;
-    color:#0D1846;
+    color: #0D1846;
     text-decoration: none;
 
 }
-.paragraph--orders-text{
+
+.paragraph--orders-text {
     margin-top: 0.2em;
 }
 
-.image--orders-text{
+.image--orders-text {
     margin-right: 1.5em;
 }
 
-.container--orders-text{
+.container--orders-text {
     border-right: 1px solid #DBDBDB;
     padding-right: 2em;
     height: 32px;
@@ -114,43 +150,46 @@
     padding-left: 40px;
 }
 
-.image--vtex-icon{
+.image--vtex-icon {
     width: 80px;
     height: auto;
 }
 
-.paragraph--footer-sobre, .paragraph--seguranca-title{
-    color:white;
+.paragraph--footer-sobre, .paragraph--seguranca-title {
+    color: white;
     font-weight: 700;
     margin-top: 0;
     font-size: 22px;
     margin-bottom: 26px;
 }
 
-.paragraph--seguranca-title{
+.paragraph--seguranca-title {
     margin-top: 85px;
 }
 
-.paragraph--powered__title{
+.paragraph--powered__title {
     font-size: 16px;
     color: #fff;
 }
 
-.paragraph--redes-title{
+.paragraph--redes-title {
     margin-left: -5.4em;
 }
-.container--sac{
+
+.container--sac {
     background-color: white;
     border-radius: 10px;
     padding: 0em 5.6em;
 }
-.paragraph--sac{
+
+.paragraph--sac {
     color: #4F4F4F;
 }
 
-.paragraph--copyright__text{
-    color:#fff;
+.paragraph--copyright__text {
+    color: #fff;
 }
+
 @media (max-width: 760px) {
     .container--footer-sobre {
         justify-content: center;
@@ -158,21 +197,4 @@
         text-align: center;
     }
 
-    .paragraph--sectionRichTitle::before{
-        content:url('/arquivos/line-title.png');
-        position:relative; 
-        left: -24px;
-        top: -7px;
-        width: 65px;
-        overflow: hidden;
-    }
-    
-    .paragraph--sectionRichTitle::after{
-        content:url('/arquivos/line-title.png');
-        position:relative;
-        right: -24px;
-        top: -7px;
-        width: 65px;
-        overflow: hidden;
-    }
 }

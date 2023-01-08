@@ -1,0 +1,27 @@
+.buttonLink--homeButtonFree{
+    background-color: #0079C8;
+    border-color: #0079C8;
+    padding: 0.9em 5.7em;
+    margin-top: 4.5em;
+    transition: 0.3s;
+}
+
+.buttonLink--homeButtonAboutUs{
+    background-color: #0079C8;
+    border-color: #0079C8;
+    padding: 0.9em 2em;
+    margin-top: 2.5em;
+    transition: 0.3s;
+}
+
+.label--homeButtonFree{
+    text-transform: initial;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.label--homeButtonAboutUs{
+    text-transform: initial;
+    font-size: 16px;
+    font-weight: 700;
+}

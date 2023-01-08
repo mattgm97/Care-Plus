@@ -290,7 +290,7 @@
 
   "product-summary-buy-button#search": {
     "props": {
-      "buyButtonText": "comprar"
+      "buyButtonText": "Eu quero"
     }
   },
 
