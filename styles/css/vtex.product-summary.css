@@ -22,9 +22,16 @@
     text-transform: inherit;
     font-weight: 700;
     font-size: 16px;
-    max-width: 175px;
+    max-width: 192px;
     height: 56px;
   }
+
+  .containerNormal :global(.vtex-button) :global(.vtex-button__label){
+    padding-bottom: 0.5em !important;
+    padding-top: 0em !important;
+  }
+
+  
 
   .nameContainer{
       padding-right: 1em;
