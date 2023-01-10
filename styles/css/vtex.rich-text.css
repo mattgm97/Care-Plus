@@ -37,13 +37,39 @@
     font-weight: 700;
     color: #000000;
     margin-top: 0;
+    line-height: 46.32px;
+}
+
+
+.paragraph--clinica-title{
+    margin-bottom: 0;
 }
 
 .paragraph--about-us-content {
     font-size: 20px;
     margin: 0px 0px 15px 0px;
+    line-height: 24.38px;   
 }
 
+.paragraph--clinicas-content{
+    padding-right: 44px;
+}
+
+.paragraph--clinicas-subtitle {
+    font-size: 28px;
+    font-weight: 400;
+    color: #575757;
+    line-height: 26.8px;
+    margin-bottom: 2.2em;
+}
+
+.paragraph--text-services{
+font-size: 14px;
+}
+
+.paragraph--subtext{
+    font-size: 11px;
+}
 
 
 .strong--about-us {

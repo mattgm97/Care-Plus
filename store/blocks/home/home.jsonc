@@ -5,6 +5,7 @@
       "responsive-layout.desktop#sellingConditions",
       "__fold__",
       "flex-layout.row#firstContent",
+      "flex-layout.row#nossas-clinicas",
       "flex-layout.row#passoApasso",
       "flex-layout.row#banners-home",
       "__fold__",
@@ -157,6 +158,72 @@
     }
   },
 
+  "flex-layout.row#nossas-clinicas": {
+    "children": [
+      "flex-layout.col#nossas-clinicas",
+      "flex-layout.col#nossas-clinicas2"
+    ],
+    "props": {
+      "marginTop": 9,
+      "marginBottom": 7,
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "flex-layout.col#nossas-clinicas": {
+    "children": [
+      "rich-text#clinicas-title",
+      "rich-text#clinicas-subtitle",
+      "rich-text#clinicas-content",
+      "link#clinicas-link"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "width": "28%"
+    }
+  },
+
+  "rich-text#clinicas-title":{
+    "props": {
+      "text": "Conheça nossas Clínicas",
+      "font": "t-heading-1",
+      "textPosition": "LEFT",
+      "textAlign": "LEFT",
+      "blockClass": ["about-us", "clinica-title"]
+    }
+  },
+
+  "rich-text#clinicas-subtitle":{
+    "props": {
+      "text": "Foco em oferecer o que há de mais moderno em medicina e odontologia.",
+      "textPosition": "LEFT",
+      "textAlign": "LEFT",
+      "blockClass": "clinicas-subtitle"
+    }
+  },
+
+  "rich-text#clinicas-content":{
+    "props": {
+      "text": "Por sermos uma clínica multidisciplinar, reunimos em um só local as especialidades de medicina ocupacional, dermatologia clínica e cosmiatria, odontologia, nutrição e psicologia.",
+      "textPosition": "LEFT",
+      "textAlign": "LEFT",
+      "blockClass": ["about-us-content", "clinicas-content"]
+    }
+  },
+
+  "link#clinicas-link": {
+    "props": {
+      "href": "https://www8.careplus.com.br/portal/portal/modulos/rede/pesquisaRedeCP.aspx",
+      "label": "Ver Mais",
+      "blockClass": "homeButtonAboutUs",
+      "displayMode": "button"
+    }
+  },
+
+  "flex-layout.col#nossas-clinicas2":{
+    "children": ["slider-layout#quadrado"]
+  },
+
   "flex-layout.row#passoApasso": {
     "children": ["flex-layout.col#passoApasso"],
     "props": {
@@ -200,7 +267,7 @@
 
   "image#passoapasso": {
     "props": {
-      "src": "assets/banners/passoapasso.png"
+      "src": "assets/banners/passoapasso2.png"
     }
   },
 
@@ -286,12 +353,12 @@
       "height": 484,
       "images": [
         {
-          "image": "assets/banners/banner-desktop.png",
-          "mobileImage": "assets/banners/banner-mobile.png"
+          "image": "assets/banners/banola.png",
+          "mobileImage": "assets/banners/banola.png"
         },
         {
-          "image": "assets/banners/banner-desktop.png",
-          "mobileImage": "assets/banners/banner-mobile.png"
+          "image": "assets/banners/banola.png",
+          "mobileImage": "assets/banners/banola.png"
         }
       ]
     }
@@ -323,13 +390,17 @@
   },
 
   "flex-layout.col#about-us": {
-    "children": ["rich-text#about-us", "rich-text#about-us-content","image#our-numbers", "link#button-about-us"],
+    "children": [
+      "rich-text#about-us",
+      "rich-text#about-us-content",
+      "image#our-numbers",
+      "link#button-about-us"
+    ],
     "props": {
       "preventVerticalStretch": true,
       "width": "44%"
     }
   },
-  
 
   "rich-text#about-us": {
     "props": {

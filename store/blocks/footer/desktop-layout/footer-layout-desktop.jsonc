@@ -62,7 +62,7 @@
       "flex-layout.row#social-icons"
     ],
     "props": {
-      "blockClass": ["footer__content-col", "footer__content-col--desktop-0"],
+      "blockClass": ["footer__content-col", "footer__content-col--desktop-0", "redes-sociais-col"],
       "verticalAlign": "middle",
       "preventHorizontalStretch": true
     }

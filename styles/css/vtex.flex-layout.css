@@ -4,6 +4,10 @@
 
 }
 
+.flexCol--redes-sociais-col{
+    padding-left: 3em;
+}
+
 .flexColChild--faq-header {
     width: 100%;
 }
@@ -12,6 +16,16 @@
     height: 40px;
 }
 
+.flexRowContent--quad-slider-row{
+    flex-wrap: wrap;
+}
+.flexRowContent--quad-slider-row :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+    width: 100% !important;
+    margin-bottom: 26px;
+    margin-left: 13px;
+    margin-right: 13px;
+
+}
 .flexRowContent--flags__list {
     flex-wrap: wrap;
     display: flex;
@@ -96,8 +110,7 @@
 
 .flexRow--products-offered {
     background-color: #F7F5F2;
-    margin-top: -6%;
-    padding-top: 2%;
+    margin-top: -5%;
 }
 
 .flexRowContent--footer-icons {

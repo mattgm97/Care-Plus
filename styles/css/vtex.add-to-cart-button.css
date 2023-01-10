@@ -1,0 +1,10 @@
+.buttonText--buy-button-shelf::after{
+    content: url("/arquivos/carrinho-buybtn.svg");
+    position: relative;
+    top: 6px;
+    left: 18px;
+}
+
+.buttonDataContainer--buy-button-shelf{
+    margin-left: -10%;
+  }
