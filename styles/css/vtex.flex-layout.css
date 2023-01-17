@@ -14,6 +14,7 @@
 
 .flexRowContent--header-links {
     height: 40px;
+    margin-left: -8px;
 }
 
 .flexRowContent--quad-slider-row{
@@ -22,8 +23,6 @@
 .flexRowContent--quad-slider-row :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
     width: 100% !important;
     margin-bottom: 26px;
-    margin-left: 13px;
-    margin-right: 13px;
 
 }
 .flexRowContent--flags__list {
@@ -37,6 +36,11 @@
 
 .flexRowContent--powered__row {
     align-items: center;
+}
+
+.flexCol--product-content-section{
+background-color: #0D1846;
+padding-top: 85px;
 }
 
 .flexRowContent--buy-area :global(.vtex-button) {
@@ -111,6 +115,11 @@
 .flexRow--products-offered {
     background-color: #F7F5F2;
     margin-top: -5%;
+}
+
+.flexRow--related-shelfs{
+    background-color: #F7F5F2;
+    margin-top: -2%;
 }
 
 .flexRowContent--footer-icons {

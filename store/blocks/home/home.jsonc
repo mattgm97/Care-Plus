@@ -166,7 +166,7 @@
     "props": {
       "marginTop": 9,
       "marginBottom": 7,
-      "preventHorizontalStretch": true
+      "colGap": 5
     }
   },
 
@@ -221,7 +221,10 @@
   },
 
   "flex-layout.col#nossas-clinicas2":{
-    "children": ["slider-layout#quadrado"]
+    "children": ["slider-layout#quadrado"],
+    "props":{
+      "marginLeft":8
+    }
   },
 
   "flex-layout.row#passoApasso": {

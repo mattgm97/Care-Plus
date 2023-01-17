@@ -1,0 +1,33 @@
+.product-specifications-pdp{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2em;
+}
+
+.product-specifications-pdp .col{
+    margin: 0;
+    padding: 0;
+    /*padding-left: 2.2em;*/
+    padding-right: 3.2em;
+}
+
+.product-specifications-pdp .col:first-of-type{
+    padding-right: 3.2em;
+}
+
+.product-specifications-pdp .col li{
+    list-style: none;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.product-specifications-pdp .col img{
+    margin-right: 16px;
+}
+.product-specifications-pdp .col p{
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+}

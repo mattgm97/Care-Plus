@@ -49,6 +49,60 @@
 
 
 
+.sliderLeftArrow--carousel-quad{
+    border: 1px solid #0079C8;
+    background-color: white !important;
+    border-radius: 2px;
+    height: 38px;
+    width: 38px;
+    box-shadow: none;
+    margin-top: -20px;
+    margin-left: -20px;
+
+}
+
+.sliderLeftArrow--carousel-quad:disabled, .sliderRightArrow--carousel-quad:disabled{
+    border: 1px solid #929BA2;
+
+}
+
+.sliderLeftArrow--carousel-quad:disabled::before{
+    content:url('/arquivos/trad-arrow-left-muted.svg');
+    transform: rotate(360deg);
+
+}
+
+.sliderRightArrow--carousel-quad:disabled::before{
+    content:url('/arquivos/trad-arrow-left-muted.svg');
+    transform: rotate(180deg);
+}
+
+.sliderLeftArrow--carousel-quad::before{
+    content:url('/arquivos/trad-arrow-right.svg');
+    transform: rotate(180deg);
+    position: relative;
+    left: -2px;
+}
+
+.sliderRightArrow--carousel-quad{
+    border: 1px solid #0079C8;
+    background-color: white !important;
+    border-radius: 2px;
+    height: 38px;
+    width: 38px;
+    box-shadow: none;
+    margin-top: -20px;
+    margin-right: -6px;
+}
+
+.sliderRightArrow--carousel-quad::before{
+    content:url('/arquivos/trad-arrow-right.svg');
+    position: relative;
+    left: 1px;
+}
+
+
+
 .slideChildrenContainer--slider-shelf--default, .slideChildrenContainer--cat-rectangle-slider{
     margin-top: 1em;
     margin-bottom: 3em;

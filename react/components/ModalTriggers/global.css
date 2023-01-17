@@ -1,0 +1,20 @@
+.product-triggers{
+    display: flex;
+    align-items: baseline;
+    justify-content:flex-start;
+    background-color: #E8EDFC;
+    max-width: 442px;
+    padding: 15px 24px;
+}
+.product-triggers span{
+margin-right: 12px;
+}
+
+.modal-link-pdp{
+    color: #0079C8;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 16px;
+    text-decoration: underline;
+}
+

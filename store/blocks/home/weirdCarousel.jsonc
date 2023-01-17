@@ -6,11 +6,12 @@
             "tablet": 2,
             "phone": 2
           },
-          "infinite": true,
+          "infinite": false,
           "showNavigationArrows": "desktopOnly",
-          "blockClass": "carousel"
+          "showPaginationDots":"never",
+          "blockClass": "carousel-quad"
         },
-        "children": ["flex-layout.row#quadrado1", "flex-layout.row#quadrado2"/*, "flex-layout.row#quadrado3", "flex-layout.row#quadrado4"*/]
+        "children": ["flex-layout.row#quadrado1", "flex-layout.row#quadrado2", "flex-layout.row#quadrado3", "flex-layout.row#quadrado4"]
       },
     
       "flex-layout.row#quadrado1":{
@@ -70,5 +71,72 @@
         "props": {
           "src": "assets/banners/quad4.png"
         }
+      },
+
+
+
+
+
+
+
+
+      "flex-layout.row#quadrado3":{
+        "children":["flex-layout.col#quadrado3a","flex-layout.col#quadrado3b"],
+        "props":{
+            "blockClass":"quad-slider-row"
+        }
+      },
+      "flex-layout.col#quadrado3a":{
+        "children":["image#quadrado3a"],
+        "props":{
+            "blockClass":"quad-slider-col"
+        }
+      },
+      "image#quadrado3a": {
+        "props": {
+          "src": "assets/banners/quad1.png"
+        }
+      },
+      "flex-layout.col#quadrado3b":{
+        "children":["image#quadrado3b"],
+        "props":{
+            "blockClass":"quad-slider-col"
+        }
+      },
+      "image#quadrado3b": {
+        "props": {
+          "src": "assets/banners/quad2.png"
+        }
+      },
+
+
+      "flex-layout.row#quadrado4":{
+        "children":["flex-layout.col#quadrado4a","flex-layout.col#quadrado4b"],
+        "props":{
+            "blockClass":"quad-slider-row"
+        }
+      },
+      "flex-layout.col#quadrado4a":{
+        "children":["image#quadrado4a"],
+        "props":{
+            "blockClass":"quad-slider-col"
+        }
+      },
+      "image#quadrado4a": {
+        "props": {
+          "src": "assets/banners/quad3.png"
+        }
+      },
+      "flex-layout.col#quadrado4b":{
+        "children":["image#quadrado2b"],
+        "props":{
+            "blockClass":"quad-slider-col"
+        }
+      },
+      "image#quadrado4b": {
+        "props": {
+          "src": "assets/banners/quad4.png"
+        }
       }
+      
 }

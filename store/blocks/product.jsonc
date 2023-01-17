@@ -3,7 +3,10 @@
     "props": {
       "blockClass": ["pdp"]
     },
-    "children": ["flex-layout.row#pdp"]
+    "children": ["flex-layout.row#pdp",
+    "flex-layout.row#bannerarea2",
+    "flex-layout.row#relatedshelfPlaceholder",
+    "flex-layout.row#about-us"]
   },
 
   "flex-layout.row#pdp": {
@@ -18,14 +21,10 @@
       "blockClass": ["pdp-col"]
     },
     "children": [
-      "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
-      "flex-layout.row#product-buy-together",
-    //  "__fold__",
-      "flex-layout.row#description",
+      "flex-layout.row#product-content"
      /* "flex-layout.row#relatedshelf" para quando o app da vtex sair do alpha*/
-     "flex-layout.row#relatedshelfPlaceholder",
-     "flex-layout.row#avaliacoes"
+    
     ]
   },
 
@@ -40,24 +39,17 @@
     }
   },
 
-  "flex-layout.row#product-breadcrumb": {
-    "props": {
-      "marginTop": 20
-    },
-    "children": ["breadcrumb"]
-  },
 
   "flex-layout.row#product-main": {
     "props": {
-      "colGap": 9,
       "rowGap": 7,
       "marginTop": 4,
-      "marginBottom": 8,
+      "marginBottom": 3,
       "paddingTop": 7,
       "paddingBottom": 5,
       "blockClass": "product-main"
     },
-    "children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
+    "children": ["flex-layout.col#right-col","product-images"/*"flex-layout.col#stack"*/]
   },
   "stack-layout": {
     "children": [
@@ -86,9 +78,9 @@
   },
   "product-images": {
     "props": {
-      "displayThumbnailsArrows": true,
+      "displayThumbnailsArrows": false,
       "thumbnailsOrientation": "vertical",
-      "thumbnailMaxHeight": 127
+      "thumbnailMaxHeight": 384
     }
   },
   "flex-layout.col#right-col": {
@@ -96,36 +88,55 @@
       "preventVerticalStretch": true,
       "rowGap": 0,
       "blockClass": "product-content-section",
-      "paddingLeft": 1,
-      "paddingRight": 1
+      "paddingLeft": 10,
+      "paddingRight": 9
     },
     "children": [
+      "rich-text#planos-pretitle",
       "vtex.store-components:product-name",
-      "product-identifier.product",
-      "product-rating-summary",
-      "flex-layout.row#progressive-discount",
+      "product-description"
      
-      "product-price#product-details",
-      /* "product-installments#default",*/
-      "flex-layout.row#buy-area",
-      "flex-layout.row#shipping-and-benefits",
-      "availability-subscriber"
     ]
   },
  
-
-
- 
-
-  "flex-layout.row#progressive-discount": {
-    "children": [
-    ],
+  "rich-text#planos-pretitle": {
     "props": {
-      "blockClass": "progressive-discount",
-      "marginBottom": 6
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Planos",
+      "font": "t-heading-5",
+      "blockClass": "prod-pretitle"
     }
   },
+  /*"product-price#product-details",
+  "flex-layout.row#buy-area",
+  "flex-layout.row#shipping-and-benefits",
+  "availability-subscriber"*/
 
+  "flex-layout.row#product-content":{
+"children":[
+  "flex-layout.col#content1", "flex-layout.col#content2"
+]
+  },
+
+  "flex-layout.col#content1":{
+    "props":{
+      "verticalAlign": "middle",
+      "preventVerticalStretch": true
+    },
+    "children":["rich-text#coberturas-title","getSpecsPDP","ModalTriggers"]
+  },
+
+ 
+ 
+
+  "flex-layout.col#content2":{
+    "props":{
+      "verticalAlign": "middle",
+      "preventVerticalStretch": true
+    },
+    "children":[]
+  },
 
   "product-installments#default": {
     "props": {
@@ -241,32 +252,17 @@
 
 
 
-  "flex-layout.row#product-buy-together":{
-    "children": ["flex-layout.col#product-buy-together"]
-  },
 
-  "flex-layout.col#product-buy-together":{
-"children":[
-  "recommendation-buy-together"
-]
-  },
-
-  "flex-layout.row#description": {
-    "children": ["flex-layout.col#description"],
-    "props": {
-      "blockClass": ["product-description"]
-    }
-  },
-  "flex-layout.col#description": {
-    "children": ["product-description" /*aqui vem reviews*/]
-  },
+ 
   "flex-layout.row#relatedshelfPlaceholder":{
-    "children":["flex-layout.col#shelfs"]
+    "children":["flex-layout.col#shelfs"],
+    "props":{
+      "blockClass":"related-shelfs"
+    }
   },
   "flex-layout.col#shelfs":{
     "children":[
-      "shelf#related",
-      "shelf#related2"
+      "shelf#related"
     ]
   },
   "shelf#related": {
@@ -277,34 +273,12 @@
       "orderBy": "OrderByTopSaleDESC",
       "productList": {
         "maxItems": 10,
-        "itemsPerPage": 4,
+        "itemsPerPage": 3,
         "minItemsPerPage": 2,
         "scroll": "BY_PAGE",
         "arrows": true,
-        "titleText": "QUEM VIU, VIU TAMBÉM"
+        "titleText": "Outros planos indicados para você"
       }
     }
-  },
-  "shelf#related2": {
-    "blocks": ["product-summary.shelf"],
-    "props": {
-      "blockClass": "related--shelf",
-      "recomendation": "buy",
-      "orderBy": "OrderByTopSaleDESC",
-      "productList": {
-        "maxItems": 10,
-        "itemsPerPage": 4,
-        "minItemsPerPage": 2,
-        "scroll": "BY_PAGE",
-        "arrows": true,
-        "titleText": "MAIS VENDIDOS"
-      }
-    }
-  },
-
-  "flex-layout.row#avaliacoes":{
-    "children":[
-     
-    ]
   }
 }

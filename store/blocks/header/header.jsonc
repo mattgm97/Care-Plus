@@ -73,7 +73,9 @@
   "rich-text#orcamento-text2": {
     "props": {
       "text": "[![FAQ]( /arquivos/dialog-baloon.svg 'faq')](/faq) Perguntas frequentes",
-      "blockClass":"socialmedia-text"
+      "blockClass":"socialmedia-text",
+      "textPosition": "RIGHT",
+      "textAlign": "RIGHT"
     }
   },
 

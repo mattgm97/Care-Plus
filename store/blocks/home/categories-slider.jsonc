@@ -17,7 +17,8 @@
   },
   "image#condition4": {
     "props": {
-      "src": "assets/conditions/desconto.svg"
+      "src": "assets/conditions/desconto.svg",
+      "blockClass": "imspecial"
     }
   }
   

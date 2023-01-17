@@ -51,6 +51,12 @@
     line-height: 24.38px;   
 }
 
+.paragraph--prod-pretitle{
+    font-weight: 500;
+    font-size: 24px;
+    color: #D3B9FF;
+}
+
 .paragraph--clinicas-content{
     padding-right: 44px;
 }
@@ -65,6 +71,15 @@
 
 .paragraph--text-services{
 font-size: 14px;
+}
+
+
+.paragraph--modal-link-pdp{
+    color: #0079C8;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 16px;
+    text-decoration: underline;
 }
 
 .paragraph--subtext{

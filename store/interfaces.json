@@ -1,5 +1,12 @@
 {
   "getSpecs":{
     "component":"getSpecs"
+  },
+  "getSpecsPDP":{
+    "component":"getSpecsPDP"
+  },
+  "ModalTriggers":{
+    "component":"ModalTriggers",
+    "allowed":["modal-trigger"]
   }
 }

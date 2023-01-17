@@ -7,6 +7,10 @@
 }
 
 
+.imageElement--imspecial{
+    margin-top: -3px;
+}
+
 
 
 
@@ -113,8 +117,16 @@
 }
 
 .productBrand {
-    font-size: 26px;
-    letter-spacing: 0.03em;
+    font-size: 38px;
+    font-weight: 700;
+    color: white;
+}
+
+.content{
+color: white;
+font-weight: 400;
+font-size: 14px;
+line-height: 26px;
 }
 
 .productNameContainer {
@@ -166,27 +178,10 @@
 }
 
 .productDescriptionTitle {
-    text-align: center;
-    color: #1E7BC4;
-    font-weight: bold;
-    margin-top: 1.5em;
-    text-transform: uppercase;
+    display: none;
 
 }
 
-.productDescriptionTitle::after {
-    content: url('/arquivos/line-title.png');
-    position: relative;
-    right: -50px;
-    top: -7px;
-}
-
-.productDescriptionTitle::before {
-    content: url('/arquivos/line-title.png');
-    position: relative;
-    left: -50px;
-    top: -7px;
-}
 
 
 .infoCardContainer--orcamento-cards {
