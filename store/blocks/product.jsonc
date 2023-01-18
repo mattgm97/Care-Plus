@@ -11,7 +11,8 @@
 
   "flex-layout.row#pdp": {
     "props": {
-      "blockClass": ["pdp-container"]
+      "blockClass": ["pdp-container"],
+      "marginBottom": 6
     },
     "children": ["flex-layout.col#pdp"]
   },
@@ -116,28 +117,50 @@
   "flex-layout.row#product-content":{
 "children":[
   "flex-layout.col#content1", "flex-layout.col#content2"
-]
+],
+"props":{
+  "colGap": 10
+}
   },
 
   "flex-layout.col#content1":{
     "props":{
       "verticalAlign": "middle",
-      "preventVerticalStretch": true
+      "preventVerticalStretch": true,
+      "width":"65%"
     },
     "children":["rich-text#coberturas-title","getSpecsPDP","ModalTriggers"]
   },
 
- 
- 
+
+  "rich-text#coberturas-title": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Coberturas do plano",
+      "font": "t-heading-3",
+      "blockClass": "pdp-coberturas"
+    }
+  },
 
   "flex-layout.col#content2":{
     "props":{
       "verticalAlign": "middle",
-      "preventVerticalStretch": true
+      "preventVerticalStretch": true,
+      "blockClass":"content-pdp-block"
     },
-    "children":[]
+    "children":[
+      "vtex.store-components:product-name#box",
+      "product-price#product-details",
+      "payment-types"
+    ]
   },
 
+  "vtex.store-components:product-name#box":{
+    "props":{
+      "blockClass":"nameBox"
+    }
+  },
   "product-installments#default": {
     "props": {
       "message": "ou {installmentsNumber}x de {installmentValue} sem juros",

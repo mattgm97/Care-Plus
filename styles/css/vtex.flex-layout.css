@@ -112,6 +112,7 @@ padding-top: 85px;
     justify-content: space-between;
 }
 
+
 .flexRow--products-offered {
     background-color: #F7F5F2;
     margin-top: -5%;
@@ -120,6 +121,12 @@ padding-top: 85px;
 .flexRow--related-shelfs{
     background-color: #F7F5F2;
     margin-top: -2%;
+}
+.flexCol--content-pdp-block{
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.16);
+border-radius: 4px;
+border-bottom: solid 5px #0079C8;
+border-top: solid 5px #0079C8;
 }
 
 .flexRowContent--footer-icons {

@@ -8,5 +8,8 @@
   "ModalTriggers":{
     "component":"ModalTriggers",
     "allowed":["modal-trigger"]
+  },
+  "payment-types":{
+    "component":"PaymentTypes"
   }
 }

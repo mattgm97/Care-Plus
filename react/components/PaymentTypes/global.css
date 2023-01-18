@@ -1,0 +1,10 @@
+.payment-types {
+    text-align: center;
+}
+
+.payment-types span {
+    color: #929BA2;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
