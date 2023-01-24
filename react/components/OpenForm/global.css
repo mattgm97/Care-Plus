@@ -1,0 +1,30 @@
+.buyPlan{
+  margin: 0 auto;
+  background-color: #db3907;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  width: 233px;
+  height: 38px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  box-shadow: none;
+  transition: 0.3s ease-in-out;
+}
+.buyPlan:hover{
+  cursor: pointer;
+  background-color: #ec8938;
+}
+.buyPlan::after{
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin-left: 9px;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='8.408' height='14.311' viewBox='0 0 8.408 14.311'%3e%3cpath id='Caminho_16939' data-name='Caminho 16939' d='M109.658,6.6,103.289.229a.785.785,0,0,0-1.107,0L101.713.7a.784.784,0,0,0,0,1.107l5.348,5.348-5.354,5.354a.785.785,0,0,0,0,1.107l.469.469a.785.785,0,0,0,1.107,0l6.375-6.374a.79.79,0,0,0,0-1.111Z' transform='translate(-101.478)' fill='%23fff'/%3e%3c/svg%3e ");
+}

@@ -15,7 +15,7 @@ const PaymentTypes: StorefrontFunctionComponent<
   return (
     <div className="payment-types">
     <span>Formas de pagamento:</span>
-    <img src="/arquivos/cartao-boleto.svg" alt="" />
+    <img src="/arquivos/cartao-boleto.png" alt="" />
    
     </div>
   );

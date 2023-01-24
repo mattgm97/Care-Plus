@@ -8,7 +8,7 @@ interface ProductAvailableProps {
 const getSpecs: StorefrontFunctionComponent<ProductAvailableProps> = () => {
   const productInfo = useProduct();
   const specs = productInfo?.product?.properties[0].values;
-  
+  console.log(productInfo)
   let specsGrid1 = [];
   let specsGrid2 = [];
 

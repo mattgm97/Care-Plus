@@ -11,5 +11,11 @@
   },
   "payment-types":{
     "component":"PaymentTypes"
+  },
+  "form-register-titular": {
+    "component": "OpenForm"
+  },
+  "container-form": {
+    "component": "ContainerForm"
   }
 }

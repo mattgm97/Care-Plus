@@ -6,7 +6,8 @@
     "children": ["flex-layout.row#pdp",
     "flex-layout.row#bannerarea2",
     "flex-layout.row#relatedshelfPlaceholder",
-    "flex-layout.row#about-us"]
+    "flex-layout.row#about-us",
+    "container-form"]
   },
 
   "flex-layout.row#pdp": {
@@ -152,9 +153,12 @@
     "children":[
       "vtex.store-components:product-name#box",
       "product-price#product-details",
-      "payment-types"
+      "payment-types",
+      "form-register-titular"
     ]
   },
+
+
 
   "vtex.store-components:product-name#box":{
     "props":{
@@ -195,6 +199,7 @@
       "blockClass": ["pdp", "PriceBox"]
     }
   },
+  
 
   "flex-layout.row#buy-area": {
     "children": ["flex-layout.col#buy-area1", "flex-layout.col#buy-area2"],

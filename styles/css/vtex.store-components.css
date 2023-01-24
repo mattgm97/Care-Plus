@@ -161,13 +161,33 @@ line-height: 26px;
 }
 
 .price_sellingPriceContainer--pdp {
-    color: #1E7BC4;
+    color: #6929C4;
     text-align: center;
+}
+
+.price_sellingPriceContainer--pro {
+    color: #1B883C !important;
 }
 
 .sellingPriceValue {
     font-size: 54px;
+    border-bottom: 1px solid #DDE1E6;
+    padding-bottom: 25px;
 }
+
+.sellingPriceValue::after, .sellingPriceRange::after {
+    content: "/mês";
+    font-size: 24px;
+    font-weight: 400;
+  
+  }
+
+  .currencyCode--pdp {
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+    top: -22px;
+  }
 
 .price_listPriceContainer--pdp {
     font-size: 17px;

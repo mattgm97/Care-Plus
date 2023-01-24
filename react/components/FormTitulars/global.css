@@ -1,0 +1,329 @@
+.containerFixed{
+  position: fixed;
+  background-color: #fff;
+  padding-bottom: 180px;
+  top: 120px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index:1000;
+  display: flex;
+  align-items: flex-start;
+  justify-items: center;
+  overflow-y: auto;
+  z-index: 9999;
+}
+
+.containerForm{
+  margin:  0 auto;
+  width: 1040px;
+  margin-top: 55px;
+}
+.form{
+  display: flex;
+  flex-wrap: wrap;
+  align-items:flex-start;
+}
+.form input{
+  width: calc(50% - 40px);
+  height:48px ;
+  display: flex;
+
+  padding:15px 18px ;
+  border:1px solid #D8D8D8;
+  border-bottom: 2px solid #D8D8D8;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+
+  transition: border .4s ease-in-out;
+
+}
+.form input::placeholder{
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 15px;
+  color: #0d1846;
+}
+
+.firstRowContainer {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.abreviationError {
+  color: red;
+  font-size: 9px;
+  top: -20px;
+  margin-left: 10px;
+  position: absolute;
+}
+
+.abreviationBirthDayError {
+  color: red;
+  font-size: 9px;
+  top: -20px;
+  margin-left: 10px;
+  position: absolute;
+}
+
+.form input:focus-visible {
+          border:1px solid #D8D8D8 !important;
+          border-bottom: 2px solid #0079C8 !important;
+          outline: none !important;
+}
+
+.form input[name="city"]{
+  width: calc(50% - 180px);
+}
+.form input[name="uf"]{
+  width: 120px;
+}
+.subtitleContainer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.subtitle{
+  color: #0d1846;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+}
+.subtitleContainer{
+  margin-top: 40px;
+}
+.subtitleContainer:first-child {
+  margin-top: 0px;
+
+}
+.subtitleContainer:first-child .subtitle::before{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+  left: -150px;
+  width: 150px;
+  height: 5px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='139' height='5' viewBox='0 0 139 5'%3e%3cdefs%3e%3clinearGradient id='linear-gradient' x1='1' y1='0.5' x2='0' y2='1' gradientUnits='objectBoundingBox'%3e%3cstop offset='0' stop-color='%23ccecfd'/%3e%3cstop offset='1' stop-color='%230079c8'/%3e%3c/linearGradient%3e%3c/defs%3e%3crect id='Retângulo_4139' data-name='Retângulo 4139' width='139' height='5' fill='url(%23linear-gradient)'/%3e%3c/svg%3e ");
+}
+
+.titleForm{
+  display: block;
+  text-align: center;
+  max-width: 763px;
+  margin:  0 auto 70px auto;
+
+
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #0d1846;
+}
+
+.form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #fff;
+  border:1px solid #D8D8D8;
+  background-image: none;
+}
+.form select::-ms-expand {
+  display: none;
+}
+.select {
+  position: relative;
+  display: flex;
+  width: calc(50% - 40px);
+  height: 45px;
+  line-height: 3;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #D8D8D8;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.form select {
+  flex: 1;
+  padding: 2px 18px;
+  border-radius: 5px;
+  color: #0d1846;
+  font-size:16px ;
+  cursor: pointer;
+
+}
+.form select option{
+  height: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.select::after {
+  content: '';
+  position: absolute;
+  top: 17px;
+  right: 18px;
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='18.639' height='10.95' viewBox='0 0 18.639 10.95'%3e%3cpath id='Caminho_17028' data-name='Caminho 17028' d='M112.131,8.592,103.836.3a1.022,1.022,0,0,0-1.442,0l-.611.611a1.021,1.021,0,0,0,0,1.442l6.965,6.965-6.973,6.973a1.022,1.022,0,0,0,0,1.442l.611.611a1.022,1.022,0,0,0,1.442,0l8.3-8.3a1.029,1.029,0,0,0,0-1.447Z' transform='translate(18.639 -101.478) rotate(90)' fill='%230079c8'/%3e%3c/svg%3e ");
+  background-repeat: no-repeat;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+.select:focus::after{
+  transform: rotate(180deg);
+}
+
+.select:hover::after {
+  color: #f39c12;
+}
+
+.agreementContainer{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 50px auto 10px;
+  width: 800px;
+}
+.agreementContainer [type="checkbox"]{
+  cursor: pointer;
+  width: 19px;
+  height: 19px;
+  border: #707070 1px solid;
+  position: relative;
+  border-radius:0;
+  margin-bottom: 0;
+}
+.agreementContainer [type="checkbox"]:checked::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 19px;
+  background-color:#fff;
+  border: #707070 1px solid;
+  height: 19px;
+}
+
+.agreementContainer [type="checkbox"]:checked::after{
+  content: "";
+  position: absolute;
+  top: 4.5px;
+  left: 5.5px;
+  width: 11px;
+  background-color: #0079C8;
+  height: 11px;
+}
+
+.agreementContainer label{
+  color: #0d1846;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 15px;
+  text-align: justify;
+  width: 90%;
+}
+
+.agreementContainer label:hover{
+  cursor: pointer;
+}
+.form [type="submit"]{
+  background-color: #db3907;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 22px;
+  height: 54px;
+  border-radius: 5px;
+  width: 323px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+  border: none;
+  transition: 0.3s ease-in-out;
+  margin: 0 auto;
+  margin-top: 24px;
+
+}
+.form [type="submit"]:hover{
+  cursor: pointer;
+  background-color: #ec8938;
+
+}
+.form [type="submit"]::after{
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin-left: 9px;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='8.408' height='14.311' viewBox='0 0 8.408 14.311'%3e%3cpath id='Caminho_16939' data-name='Caminho 16939' d='M109.658,6.6,103.289.229a.785.785,0,0,0-1.107,0L101.713.7a.784.784,0,0,0,0,1.107l5.348,5.348-5.354,5.354a.785.785,0,0,0,0,1.107l.469.469a.785.785,0,0,0,1.107,0l6.375-6.374a.79.79,0,0,0,0-1.111Z' transform='translate(-101.478)' fill='%23fff'/%3e%3c/svg%3e ");
+}
+.form [type="submit"]:disabled{
+  cursor: not-allowed;
+  background-color: #B5B5B5;
+}
+
+@media(max-width:800px){
+  .form input, .form .select{
+    width: 100%;
+  }
+
+  .form,.titleForm{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .titleForm{
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .form input[name="uf"]{
+    width: 80px;
+  }
+  .form input[name="city"]{
+    width: calc(100% - 124px);
+  }
+  .subtitleContainer:first-child .subtitle::before{
+    display: none;
+  }
+  .agreementContainer{
+    margin: 50px 0 10px;
+    width: 100%;
+  }
+}
+.linkPolicies,
+.linkPolicies:visited,
+.linkPolicies:active{
+  color:#0079c8;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0px auto 5px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
