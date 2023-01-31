@@ -6,7 +6,7 @@ export interface DataMD2 {
   birthDate: string,
   gender: string,
   nameMotherOrPis: string,
-  cns: string,
+  confEmail: string,
   pis: string,
   cell: string,
   agreement: boolean,
@@ -22,7 +22,8 @@ export interface DataMD2 {
   }
 }
 function addItemCart(id: number, idSeller:string) {
-  fetch(`/checkout/cart/add?sku=${id}&qty=1&seller=${idSeller}`).then(() => {
+  
+  fetch(`/checkout/cart/add?sc=2&sku=${id}&qty=1&seller=${idSeller}`).then(() => {
     window.location.pathname = `/checkout`
   })
 }

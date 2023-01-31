@@ -1,8 +1,8 @@
 .containerFixed{
   position: fixed;
-  background-color: #fff;
+  background-color: #F7F5F2;
   padding-bottom: 180px;
-  top: 120px;
+  top: 98px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -25,18 +25,18 @@
   align-items:flex-start;
 }
 .form input{
-  width: calc(50% - 40px);
-  height:48px ;
+  width: calc(33% - 24px);
+  height:72px ;
   display: flex;
 
   padding:15px 18px ;
   border:1px solid #D8D8D8;
   border-bottom: 2px solid #D8D8D8;
-  border-radius: 5px;
+  border-radius: 4px;
   margin-right: 10px;
   margin-left: 10px;
-  margin-bottom: 20px;
-  font-size: 16px;
+  margin-bottom: 24px;
+  font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.5px;
 
@@ -79,24 +79,20 @@
           outline: none !important;
 }
 
-.form input[name="city"]{
-  width: calc(50% - 180px);
-}
-.form input[name="uf"]{
-  width: 120px;
-}
+
+
 .subtitleContainer{
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
   margin-bottom: 40px;
 }
 
 .subtitle{
-  color: #0d1846;
-  font-size: 18px;
+  color: #0079C8;
+  font-size: 25px;
   font-weight: 600;
   position: relative;
 }
@@ -107,32 +103,38 @@
   margin-top: 0px;
 
 }
-.subtitleContainer:first-child .subtitle::before{
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: 8px;
-  left: -150px;
-  width: 150px;
-  height: 5px;
-  background-repeat: no-repeat;
-  background-position: left;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='139' height='5' viewBox='0 0 139 5'%3e%3cdefs%3e%3clinearGradient id='linear-gradient' x1='1' y1='0.5' x2='0' y2='1' gradientUnits='objectBoundingBox'%3e%3cstop offset='0' stop-color='%23ccecfd'/%3e%3cstop offset='1' stop-color='%230079c8'/%3e%3c/linearGradient%3e%3c/defs%3e%3crect id='Retângulo_4139' data-name='Retângulo 4139' width='139' height='5' fill='url(%23linear-gradient)'/%3e%3c/svg%3e ");
-}
+
 
 .titleForm{
   display: block;
   text-align: center;
   max-width: 763px;
-  margin:  0 auto 70px auto;
+  margin:  0 auto 14px auto;
 
 
-  font-size: 20px;
+  font-size: 38px;
   line-height: 30px;
   font-weight: bold;
   letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #0d1846;
+  color: #0D1846;
+}
+
+.titleFormSub{
+  display: block;
+  text-align: center;
+  max-width: 763px;
+  margin:  0 auto 24px auto;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.titleDownload{
+  margin-left: 0em;
+  margin-top: 3em;
+  text-align: left;
 }
 
 .form select {
@@ -153,8 +155,8 @@
 .select {
   position: relative;
   display: flex;
-  width: calc(50% - 40px);
-  height: 45px;
+  width: calc(33% - 24px);
+  height: 72px;
   line-height: 3;
   border-radius: 5px;
   overflow: hidden;
@@ -181,7 +183,7 @@
 .select::after {
   content: '';
   position: absolute;
-  top: 17px;
+  top: 26px;
   right: 18px;
   width: 20px;
   height: 20px;
@@ -200,6 +202,11 @@
   color: #f39c12;
 }
 
+.vtex-product-list-0-x-inputContainer input, .vtex-product-list-0-x-inputContainer span{
+  color: #fff;
+  font-size: 18px;
+}
+
 .agreementContainer{
   align-items: center;
   display: flex;
@@ -213,7 +220,7 @@
   height: 19px;
   border: #707070 1px solid;
   position: relative;
-  border-radius:0;
+  border-radius:1px;
   margin-bottom: 0;
 }
 .agreementContainer [type="checkbox"]:checked::before{
@@ -223,17 +230,22 @@
   width: 19px;
   background-color:#fff;
   border: #707070 1px solid;
+  border-radius: 1px;
   height: 19px;
 }
 
 .agreementContainer [type="checkbox"]:checked::after{
   content: "";
+  background: url(/arquivos/Checkbox-yes.svg);
   position: absolute;
-  top: 4.5px;
-  left: 5.5px;
-  width: 11px;
-  background-color: #0079C8;
-  height: 11px;
+  top: 1px;
+  left: 1px;
+  width: 19px;
+  height: 19px;
+  border-radius: 1px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .agreementContainer label{
@@ -249,16 +261,31 @@
 .agreementContainer label:hover{
   cursor: pointer;
 }
+
+.agreementBox{
+  width: 100%;
+    display: flex;
+}
+
+.linksContainers{
+  margin-top: 40px;
+  width: 100%;
+  margin-bottom: 82px;
+}
+
+
+
 .form [type="submit"]{
-  background-color: #db3907;
+  background-color: #0079C8;
   color: #fff;
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 1px;
   line-height: 22px;
-  height: 54px;
+  height: 56px;
   border-radius: 5px;
-  width: 323px;
+  width: 384px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -278,7 +305,8 @@
   content: "";
   width: 16px;
   height: 16px;
-  margin-left: 9px;
+  position: relative;
+  left: 8em;
   background-repeat: no-repeat;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='8.408' height='14.311' viewBox='0 0 8.408 14.311'%3e%3cpath id='Caminho_16939' data-name='Caminho 16939' d='M109.658,6.6,103.289.229a.785.785,0,0,0-1.107,0L101.713.7a.784.784,0,0,0,0,1.107l5.348,5.348-5.354,5.354a.785.785,0,0,0,0,1.107l.469.469a.785.785,0,0,0,1.107,0l6.375-6.374a.79.79,0,0,0,0-1.111Z' transform='translate(-101.478)' fill='%23fff'/%3e%3c/svg%3e ");
 }
@@ -297,15 +325,16 @@
     padding-right: 20px;
   }
   .titleForm{
+    font-size: 38px;
+    line-height: 30px;
+  }
+
+  .titleForm{
     font-size: 18px;
     line-height: 30px;
   }
-  .form input[name="uf"]{
-    width: 80px;
-  }
-  .form input[name="city"]{
-    width: calc(100% - 124px);
-  }
+  
+  
   .subtitleContainer:first-child .subtitle::before{
     display: none;
   }
@@ -324,6 +353,6 @@
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 

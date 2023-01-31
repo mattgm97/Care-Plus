@@ -125,6 +125,7 @@
 .productBrand--nameBox{
 color: #0D1846;
 font-weight: 600;
+padding: 0 1em;
 font-size: 28px;
 line-height: 34px;
 }
@@ -302,6 +303,7 @@ line-height: 26px;
 
 .productNameContainer--nameBox {
    text-align: center;
+   padding: 0 0.8em;
 }
 
 

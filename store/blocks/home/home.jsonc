@@ -143,7 +143,7 @@
     "children": ["slider-layout#shelf"],
     "props": {
       "orderBy": "OrderByReleaseDateDESC",
-      "collection": "147",
+      "collection": "150",
       "maxItems": 12
     }
   },
@@ -153,7 +153,7 @@
     "children": ["slider-layout#shelf"],
     "props": {
       "orderBy": "OrderByReleaseDateDESC",
-      "collection": "148",
+      "collection": "149",
       "maxItems": 12
     }
   },

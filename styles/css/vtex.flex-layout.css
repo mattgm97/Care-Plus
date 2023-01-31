@@ -201,6 +201,11 @@ border-top: solid 5px #0079C8;
         margin-left: -2.8em;
     }
 
+    .flexCol--product-content-section{
+        height: 383px;
+        margin-top: 1.6em;
+        }
+
 }
 
 @media (min-width: 1300px) and (max-width: 1400px) {}

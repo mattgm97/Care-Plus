@@ -9,6 +9,8 @@ export default function FormTitulars({ product, selectedItem }: any) {
   const[showAbreviationError, setShowAbreviationError] = useState(false)
   const[showSecondAbreviationError, setShowSecondAbreviationError] = useState(false)
   const [showBirthdayError, setShowBirthdayError] = useState(false)
+ 
+ 
   //const[estilo, setEstilo] = useState()
   const [dataForm, setDataForm] = useState(
     {
@@ -18,7 +20,7 @@ export default function FormTitulars({ product, selectedItem }: any) {
       birthDate: "",
       gender: "",
       nameMotherOrPis: "",
-      cns: "",
+      confEmail: "",
       pis: "",
       cell: "",
       agreement: false,
@@ -189,21 +191,54 @@ export default function FormTitulars({ product, selectedItem }: any) {
 
   function onsubmit(e: FormEvent) {
     e.preventDefault()
-    sendMasterDataAndAdd(dataForm, product.sku.itemId, selectedItem.sellers[0].sellerId)
+    console.log(dataForm)
+    console.log("dataForm")
+    console.log(product)
+    console.log("product")
+    console.log(selectedItem)
+    sendMasterDataAndAdd(dataForm, selectedItem.itemId, selectedItem.sellers[0].sellerId)
   }
 
   console.log(dataForm)
+
+let whichContract:any;
+
+switch(selectedItem.itemId){
+  case "12":
+    whichContract = <a href="/arquivos/Contrato_Dental_Lite_CG.pdf" target="_blank" className="linkPolicies" rel="noopener noreferrer">Contrato Dental Lite</a>
+  break;
+  case "7":
+    whichContract = <a href="/arquivos/Contrato_Dental_Lite_CG_ORTO_PRÓTESE.pdf" target="_blank" className="linkPolicies" rel="noopener noreferrer">Contrato Dental Lite Ortodontia e Prótese</a>
+  break;
+  case "5":
+    whichContract = <a href="/arquivos/Contrato_Dental_Lite_CG_ORTO.pdf" target="_blank" className="linkPolicies" rel="noopener noreferrer">Contrato Dental Lite Ortodontia</a>
+  break;
+  case "13":
+    whichContract = <a href="/arquivos/Contrato_Dental_Pro_10_CG.pdf" target="_blank" className="linkPolicies" rel="noopener noreferrer">Contrato Dental Pro 10</a>
+  break;
+  case "11":
+    whichContract =   <a href="/arquivos/Contrato_Dental_Pro_20_CG_ORTO_ALINHADORES.pdf" target="_blank" className="linkPolicies" rel="noopener noreferrer">Contrato Dental Pro20 Ortodontia e Alinhador Estético</a>
+  break;
+  case "9":
+    whichContract = <a href="/arquivos/Contrato_Dental_Pro_10_CG_ORTO_PRÓTESE.pdf" target="_blank" className="linkPolicies" rel="noopener noreferrer">Contrato Dental Pro10 Ortodontia e Prótese</a>
+  break;
+}
+
+
   return (
     <section className="containerFixed">
       <div className="containerForm">
 
         <div className="titleForm">
-          Preencha o formulário abaixo com as informações do titular do plano
+        Preencha o formulário abaixo
+        </div>
+        <div className="titleFormSub">
+        Com as informações do titular do plano
         </div>
 
         <form onSubmit={onsubmit} className="form" method="post">
           <div className="subtitleContainer">
-            <span className="subtitle">Dados Cadastrais do Beneficiário</span>
+            <span className="subtitle">Dados Pessoais</span>
 
           </div>
           <div className="firstRowContainer">
@@ -230,10 +265,8 @@ export default function FormTitulars({ product, selectedItem }: any) {
             }}
             value={cpfMask(dataForm.cpf)}
           />
-          </div>
 
-          <div className="firstRowContainer">
-            {showBirthdayError && <p className="abreviationBirthDayError">Por favor, insira uma data de nascimento válida.</p>}
+{showBirthdayError && <p className="abreviationBirthDayError">Por favor, insira uma data de nascimento válida.</p>}
             <input type="text" name="birthday" placeholder="Data de Nascimento*"
               onChange={e => { setDataForm({ ...dataForm, birthDate: e.target.value }) }}
               value={birthDayMask(dataForm.birthDate)}
@@ -241,6 +274,10 @@ export default function FormTitulars({ product, selectedItem }: any) {
                       inputChecker(e.target.name)
             }}
             />
+          </div>
+
+          <div className="firstRowContainer">
+          
 
             <div className="select">
               <select name="gender" id="gender"
@@ -253,10 +290,8 @@ export default function FormTitulars({ product, selectedItem }: any) {
                 <option value="prefiro não declarar">Prefiro não Declarar</option>
               </select>
             </div>
-          </div>
 
-          <div className="firstRowContainer">
-          {showSecondAbreviationError && <p className="abreviationError">Por favor, preencha um nome completo sem abreviações.</p>}
+            {showSecondAbreviationError && <p className="abreviationError">Por favor, preencha um nome completo sem abreviações.</p>}
           <input type="text"
           onBlur={e => {
                     inputChecker(e.target.name)
@@ -265,7 +300,7 @@ export default function FormTitulars({ product, selectedItem }: any) {
             onChange={e => { setDataForm({ ...dataForm, nameMotherOrPis: e.target.value }) }}
             value={dataForm.nameMotherOrPis} />
 
-          <input type="text"
+<input type="text"
           onBlur={e => {
                     inputChecker(e.target.name)
           }}
@@ -290,12 +325,12 @@ export default function FormTitulars({ product, selectedItem }: any) {
             value={dataForm.email}
           />
 
-          <input type="text" name="cns" placeholder="Cartão Nacional de Saúde"
+          <input type="text" name="confEmail" placeholder="Confirmação de E-Mail*"
           onBlur={e => {
                     inputChecker(e.target.name)
           }}
-            onChange={e => { setDataForm({ ...dataForm, cns: e.target.value }) }}
-            value={dataForm.cns}
+            onChange={e => { setDataForm({ ...dataForm, confEmail: e.target.value }) }}
+            value={dataForm.confEmail}
           />
 
           <div className="subtitleContainer">
@@ -313,6 +348,31 @@ export default function FormTitulars({ product, selectedItem }: any) {
               validateDataForm()
             }}
           />
+            <input type="text" name="uf" placeholder="UF*"
+          onBlur={e => {
+                    inputChecker(e.target.name)
+          }}
+            onChange={e => { setDataForm({ ...dataForm, address: { ...dataForm.address, uf: e.target.value } }) }}
+            value={dataForm.address.uf}
+          />
+
+<input type="text" name="city" placeholder="Cidade*"
+          onBlur={e => {
+                    inputChecker(e.target.name)
+          }}
+            onChange={e => { setDataForm({ ...dataForm, address: { ...dataForm.address, city: e.target.value } }) }}
+            value={dataForm.address.city}
+          />
+
+<input type="text" name="district" placeholder="Bairro*"
+          onBlur={e => {
+                    inputChecker(e.target.name)
+          }}
+            onChange={e => { setDataForm({ ...dataForm, address: { ...dataForm.address, district: e.target.value } }) }}
+            value={dataForm.address.district}
+          />
+
+
           <input type="text" name="address" placeholder="Endereço*"
           onBlur={e => {
                     inputChecker(e.target.name)
@@ -343,29 +403,10 @@ export default function FormTitulars({ product, selectedItem }: any) {
               validateDataForm()
             }}
           />
-          <input type="text" name="city" placeholder="Cidade*"
-          onBlur={e => {
-                    inputChecker(e.target.name)
-          }}
-            onChange={e => { setDataForm({ ...dataForm, address: { ...dataForm.address, city: e.target.value } }) }}
-            value={dataForm.address.city}
-          />
-          <input type="text" name="uf" placeholder="UF*"
-          onBlur={e => {
-                    inputChecker(e.target.name)
-          }}
-            onChange={e => { setDataForm({ ...dataForm, address: { ...dataForm.address, uf: e.target.value } }) }}
-            value={dataForm.address.uf}
-          />
-          <input type="text" name="district" placeholder="Bairro*"
-          onBlur={e => {
-                    inputChecker(e.target.name)
-          }}
-            onChange={e => { setDataForm({ ...dataForm, address: { ...dataForm.address, district: e.target.value } }) }}
-            value={dataForm.address.district}
-          />
-
-          <div className="agreementContainer">
+       
+        
+       <div className="agreementBox">
+       <div className="agreementContainer">
             <input type="checkbox" id="agreement" name="agrment"
               onChange={e => {
                 setDataForm({ ...dataForm, agreement: e.target.checked })
@@ -379,14 +420,22 @@ export default function FormTitulars({ product, selectedItem }: any) {
               }} />
             <label htmlFor="conditionGeral">Declaro que li as Condições Gerais, Contrato, Guia de Leitura Contratual e Manual de Planos de Saúde e concordo com as condições apresentadas.</label>
           </div>
+       </div>
 
-          <a href="/arquivos/ContratoDentalLite.pdf" target="_blank" className="linkPolicies" rel="noopener noreferrer">Contrato Dental Lite</a>
-          <a href="/arquivos/ContratoDentalPro10.pdf" target="_blank" className="linkPolicies" rel="noopener noreferrer">Contrato Dental Pro 10</a>
+       <div className="titleFormSub titleDownload">
+        Faça download do seu contrato abaixo:
+        </div>
+         <div className='linksContainers'>
+          {whichContract}
+
           <a href="/arquivos/Condicoes_Gerais_new-min.pdf" target="_blank" className="linkPolicies" rel="noopener noreferrer">Condições Gerais</a>
           <a href="/arquivos/Guia_de_Leitura_Contratual_new.pdf" target="_blank" className="linkPolicies" rel="noopener noreferrer">Guia de Leitura Contratual</a>
           <a href="/arquivos/MPS_-_Manual_de_Contratação_Plano_de_Saúde_new-min.pdf" target="_blank" className="linkPolicies" rel="noopener noreferrer">MPS - Manual de Contratação Plano de Saúde</a>
 
-          <button type="submit" disabled={!validate ? true : false}> Prosseguir para o Checkout </button>
+         </div>
+
+       
+          <button type="submit" disabled={!validate ? true : false}> Continuar </button>
         </form>
       </div>
 
