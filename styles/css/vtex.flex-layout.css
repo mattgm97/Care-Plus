@@ -153,6 +153,9 @@ border-top: solid 5px #0079C8;
     background-color: #0D1846;
 }
 
+.flexRow--contentDesktopContact{
+    background-color: #F7F5F2;
+}
 
 
 @media (max-width: 760px) {

@@ -122,6 +122,11 @@
     bottom: 10%;
 }
 
+.paginationDotsContainer--mainCarousel{
+    left: -76%;
+    bottom: 12%;
+}
+
 @media screen and (max-width: 768px) {
     .slide--slider-shelf--default{
         margin: 0px 10px;

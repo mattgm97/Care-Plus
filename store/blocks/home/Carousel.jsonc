@@ -1,0 +1,218 @@
+{
+  "slider-layout#quadrado": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": false,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
+      "blockClass": "carousel-quad"
+    },
+    "children": [
+      "flex-layout.row#quadrado1",
+      "flex-layout.row#quadrado2",
+      "flex-layout.row#quadrado3",
+      "flex-layout.row#quadrado4"
+    ]
+  },
+
+  "flex-layout.row#quadrado1": {
+    "children": ["flex-layout.col#quadrado1a", "flex-layout.col#quadrado1b"],
+    "props": {
+      "blockClass": "quad-slider-row"
+    }
+  },
+  "flex-layout.col#quadrado1a": {
+    "children": ["image#quadrado1a"],
+    "props": {
+      "blockClass": "quad-slider-col"
+    }
+  },
+  "image#quadrado1a": {
+    "props": {
+      "src": "assets/banners/quad1.png"
+    }
+  },
+  "flex-layout.col#quadrado1b": {
+    "children": ["image#quadrado1b"],
+    "props": {
+      "blockClass": "quad-slider-col"
+    }
+  },
+  "image#quadrado1b": {
+    "props": {
+      "src": "assets/banners/quad2.png"
+    }
+  },
+
+  "flex-layout.row#quadrado2": {
+    "children": ["flex-layout.col#quadrado2a", "flex-layout.col#quadrado2b"],
+    "props": {
+      "blockClass": "quad-slider-row"
+    }
+  },
+  "flex-layout.col#quadrado2a": {
+    "children": ["image#quadrado2a"],
+    "props": {
+      "blockClass": "quad-slider-col"
+    }
+  },
+  "image#quadrado2a": {
+    "props": {
+      "src": "assets/banners/quad3.png"
+    }
+  },
+  "flex-layout.col#quadrado2b": {
+    "children": ["image#quadrado2b"],
+    "props": {
+      "blockClass": "quad-slider-col"
+    }
+  },
+  "image#quadrado2b": {
+    "props": {
+      "src": "assets/banners/quad4.png"
+    }
+  },
+
+  "flex-layout.row#quadrado3": {
+    "children": ["flex-layout.col#quadrado3a", "flex-layout.col#quadrado3b"],
+    "props": {
+      "blockClass": "quad-slider-row"
+    }
+  },
+  "flex-layout.col#quadrado3a": {
+    "children": ["image#quadrado3a"],
+    "props": {
+      "blockClass": "quad-slider-col"
+    }
+  },
+  "image#quadrado3a": {
+    "props": {
+      "src": "assets/banners/quad1.png"
+    }
+  },
+  "flex-layout.col#quadrado3b": {
+    "children": ["image#quadrado3b"],
+    "props": {
+      "blockClass": "quad-slider-col"
+    }
+  },
+  "image#quadrado3b": {
+    "props": {
+      "src": "assets/banners/quad2.png"
+    }
+  },
+
+  "flex-layout.row#quadrado4": {
+    "children": ["flex-layout.col#quadrado4a", "flex-layout.col#quadrado4b"],
+    "props": {
+      "blockClass": "quad-slider-row"
+    }
+  },
+  "flex-layout.col#quadrado4a": {
+    "children": ["image#quadrado4a"],
+    "props": {
+      "blockClass": "quad-slider-col"
+    }
+  },
+  "image#quadrado4a": {
+    "props": {
+      "src": "assets/banners/quad3.png"
+    }
+  },
+  "flex-layout.col#quadrado4b": {
+    "children": ["image#quadrado2b"],
+    "props": {
+      "blockClass": "quad-slider-col"
+    }
+  },
+  "image#quadrado4b": {
+    "props": {
+      "src": "assets/banners/quad4.png"
+    }
+  },
+
+  "slider-layout#banners-main": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "autoplay": {
+        "timeout": /*3000,*/ 30000,
+        "stopOnHover": true
+      },
+      "blockClass": "mainCarousel"
+    },
+    "children": [
+      "info-card#bannerMain1","info-card#bannerMain2","info-card#bannerMain3","info-card#bannerMain4"
+    ]
+  },
+
+  "info-card#bannerMain1": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "TextModeEnum":"rich-text",
+      "textPosition": "left",
+      "imageUrl": "assets/banners/emptybanner.jpeg",
+      "headline": "CLÍNICAS PRÓPRIAS",
+      "subhead":"Exclusividade Care Plus. \n Care Plus Clinic e Prime Clinic: atendimento premium ao seu alcance.",
+      "callToActionText": "Saiba mais",
+      "callToActionUrl": "/",
+      "blockClass": "mainCarousel",
+      "textAlignment": "left"
+      
+    }
+  },
+  "info-card#bannerMain2": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "TextModeEnum":"rich-text",
+      "textPosition": "left",
+      "imageUrl": "assets/banners/emptybanner.jpeg",
+      "headline": "CLÍNICAS PRÓPRIAS",
+      "subhead":"Exclusividade Care Plus. \n Care Plus Clinic e Prime Clinic: atendimento premium ao seu alcance.",
+      "callToActionText": "Saiba mais",
+      "callToActionUrl": "/",
+      "blockClass": "mainCarousel",
+      "textAlignment": "left"
+    }
+  },
+  "info-card#bannerMain3": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "TextModeEnum":"rich-text",
+      "textPosition": "left",
+      "imageUrl": "assets/banners/emptybanner.jpeg",
+      "headline": "CLÍNICAS PRÓPRIAS",
+      "subhead":"Exclusividade Care Plus. \n Care Plus Clinic e Prime Clinic: atendimento premium ao seu alcance.",
+      "callToActionText": "Saiba mais",
+      "callToActionUrl": "/",
+      "blockClass": "mainCarousel",
+      "textAlignment": "left"
+    }
+  },
+  "info-card#bannerMain4": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "assets/banners/emptybanner.jpeg",
+      "headline": "CLÍNICAS PRÓPRIAS",
+      "subhead":"Exclusividade Care Plus. \n Care Plus Clinic e Prime Clinic: atendimento premium ao seu alcance.",
+      "callToActionText": "Saiba mais",
+      "callToActionUrl": "/",
+      "blockClass": "mainCarousel",
+      "textAlignment": "left"
+    }
+  }
+}

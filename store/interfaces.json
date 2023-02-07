@@ -17,5 +17,8 @@
   },
   "container-form": {
     "component": "ContainerForm"
+  },
+  "ContactCards": {
+    "component": "ContactCards"
   }
 }

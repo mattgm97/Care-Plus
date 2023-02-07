@@ -20,28 +20,28 @@ const ModalTriggers: StorefrontFunctionComponent<
 console.log(productInfo);
     switch (currentProd) {
       case "5":
-        setcarencias(`/arquivos/dental_lite+ortodontia1.png`);
-        setcondicoes(`/arquivos/dental_lite+ortodontia2.png`);
+        setcarencias(`/arquivos/Ndental_lite+ortodontia1.png`);
+        setcondicoes(`/arquivos/Ndental_lite+ortodontia2.png`);
         break;
       case "7":
-        setcarencias(`/arquivos/dental_lite+ortodontia_protese1.png`);
-        setcondicoes(`/arquivos/dental_lite+ortodontia_protese2.png`);
+        setcarencias(`/arquivos/Ndental_lite+ortodontia_protese1.png`);
+        setcondicoes(`/arquivos/Ndental_lite+ortodontia_protese2.png`);
         break;
       case "12":
-        setcarencias(`/arquivos/dental_lite1.png`);
-        setcondicoes(`/arquivos/dental_lite2.png`);
+        setcarencias(`/arquivos/Ndental_lite1.png`);
+        setcondicoes(`/arquivos/Ndental_lite2.png`);
         break;
       case "11":
-        setcarencias(`/arquivos/dental_pro20+ortodontia_alinhador_1.png`);
-        setcondicoes(`/arquivos/dental_pro20+ortodontia_alinhador_2.png`);
+        setcarencias(`/arquivos/Ndental_pro20+ortodontia_alinhador_1.png`);
+        setcondicoes(`/arquivos/Ndental_pro20+ortodontia_alinhador_2.png`);
         break;
       case "9":
-        setcarencias(`/arquivos/dental_pro10+ortodontia_protese_1.png`);
-        setcondicoes(`/arquivos/dental_pro10+ortodontia_protese_2.png`);
+        setcarencias(`/arquivos/Ndental_pro10+ortodontia_protese_1.png`);
+        setcondicoes(`/arquivos/Ndental_pro10+ortodontia_protese_2.png`);
         break;
       case "13":
-        setcarencias(`/arquivos/dental_pro10_1.png`);
-        setcondicoes(`/arquivos/dental_pro10_2.png`);
+        setcarencias(`/arquivos/Ndental_pro10_1.png`);
+        setcondicoes(`/arquivos/Ndental_pro10_2.png`);
         break;
     }
  

@@ -1,0 +1,13 @@
+.formSubmitButton{
+    text-align: center;
+    margin-top: 32px;
+}
+
+.formSubmitButton :global(.vtex-button){
+    width: 100%;
+    padding: 20px;
+    background-color: #0079C8;
+    border-color: #0079C8;
+    font-weight: 700;
+    font-size: 16px;
+}

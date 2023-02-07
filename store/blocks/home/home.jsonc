@@ -19,7 +19,7 @@
   },
 
   "flex-layout.col#bannerarea": {
-    "children": ["list-context.image-list#bannersprincipais"]
+    "children": [/*"list-context.image-list#bannersprincipais", */"slider-layout#banners-main"]
   },
   "list-context.image-list#bannersprincipais": {
     "title": "banner principal",
@@ -142,7 +142,6 @@
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#shelf"],
     "props": {
-      "orderBy": "OrderByReleaseDateDESC",
       "collection": "150",
       "maxItems": 12
     }
@@ -152,7 +151,6 @@
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#shelf"],
     "props": {
-      "orderBy": "OrderByReleaseDateDESC",
       "collection": "149",
       "maxItems": 12
     }

@@ -8,16 +8,16 @@
 
   "responsive-layout.mobile#contato-mobile": {
     "children": [
-      "image#institucional-mobile",
+      "image#contato-mobile",
       /*"flex-layout.row#nav-mobile-institucional",*/
       "rich-text#titulo-contato",
       "flex-layout.row#content-form"
     ]
   },
 
-  "image#institucional-mobile": {
+  "image#contato-mobile": {
     "props": {
-      "src": "assets/banners/contact-desktop.png",
+      "src": "assets/banners/contactmobi.png",
       "title": "Banner Institucional",
       "blockClass": "bannerInstitucional"
     }
@@ -26,7 +26,7 @@
   "rich-text#titulo-contato": {
     "props": {
       "blockClass": "titulo-contato",
-      "text": "Contato"
+      "text": "Ou envie uma mensagem pelo formulário"
     }
   },
 
@@ -40,7 +40,8 @@
   "form#contato": {
     "props": {
       "entity": "contato",
-      "schema": "schemascontato"
+      "schema": "schemascontato",
+      "blockClass": "form-contact"
     },
     "children": [
       "form-input.text#name",
@@ -54,12 +55,23 @@
   },
 
   "form-success": {
-    "children": ["rich-text#successSubmit"]
+    "children": ["rich-text#successSubmit",
+    "image#sucessContact--icon"
+  ]
+  },
+
+  "image#sucessContact--icon": {
+    "props": {
+      "src": "/arquivos/ok-form.png",
+      "blockClass": "image-sucess-form",
+      "maxWidth": "124px",
+      "maxHeight": "124px"
+    }
   },
 
   "rich-text#successSubmit": {
     "props": {
-      "text": "Enviado com sucesso!",
+      "text": "Mensagem enviada com sucesso!",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "blockClass": "sucessContato"
@@ -68,14 +80,25 @@
 
   "responsive-layout.desktop#contato-desktop": {
     "children": [
-      "image#institucional-desktop",
+      "flex-layout.row#contatoBannerRow",
       "flex-layout.row#contentDesktop"
     ]
   },
 
-  "image#institucional-desktop": {
+  "flex-layout.row#contatoBannerRow": {
     "props": {
-      "src": "assets/banners/contact-desktop.png",
+      "horizontalAlign": "center"
+    },
+    "children": ["flex-layout.col#contatoBannerRow"]
+  },
+
+  "flex-layout.col#contatoBannerRow": {
+    "children": ["image#contato-desktop"]
+  },
+
+  "image#contato-desktop": {
+    "props": {
+      "src": "assets/banners/contactdesktop.png",
       "title": "Banner Institucional",
       "blockClass": "bannerInstitucional"
     }
@@ -83,18 +106,37 @@
 
   "flex-layout.row#contentDesktop": {
     "children": [
-      /*"flex-layout.col#col-menu-institucional",*/
+      "flex-layout.col#contact-channels",
       "flex-layout.col#content-formDesktop"
     ],
     "props": {
-      "blockClass": "contentDesktop"
+      "blockClass": "contentDesktopContact",
+      "paddingTop": 6,
+      "paddingBottom": 6,
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#contact-channels": {
+    "children": ["rich-text#titulo-contato-alternative","ContactCards"],
+    "props":{
+      "width":"33%"
+    }
+  },
+
+  "rich-text#titulo-contato-alternative": {
+    "props": {
+      "blockClass": "titulo-contato",
+      "text": "Escolha um canal"
     }
   },
 
   "flex-layout.col#content-formDesktop": {
     "children": ["rich-text#titulo-contato", "form#contato"],
     "props": {
-      "blockClass": "contentForm"
+      "blockClass": "contentForm",
+      "preventVerticalStretch": true,
+      "paddingRight": 9
     }
   },
 

@@ -4,12 +4,64 @@
     :global(.vtex-store-components-3-x-container){
         max-width: 1322px;
     }
+    .infoCardTextContainer--mainCarousel{
+        margin-left: 8em;
+        margin-right: 4em;
+        width: 60%;
+    }
 }
 
 
 .imageElement--imspecial{
     margin-top: -3px;
 }
+.infoCardContainer--mainCarousel{
+padding: 0;
+height: 593px;
+justify-content: flex-start;
+border-bottom: 0;
+
+}
+
+.infoCardCallActionContainer--mainCarousel{
+    margin-top: 2em;
+}
+
+.infoCardCallActionContainer--mainCarousel :global(.vtex-button){
+    background-color: #0079C8;
+    border-color: #0079C8;
+    font-weight: 700;
+    font-size: 16px;
+    height: 56px;
+    width: 246px;
+    text-transform: inherit;    
+}
+
+.infoCardCallActionContainer--mainCarousel :global(.vtex-button) :global(.vtex-button__label)::after{
+    content: url("/arquivos/arrowMainBanner.svg");
+    margin-left: 12px;
+    margin-right: -12px;
+}
+.infoCardCallActionContainer--mainCarousel :global(.vtex-button) :global(.vtex-button__label){
+    margin-left: -10px;
+}
+
+
+
+.infoCardHeadline--mainCarousel{
+    color: #0D1846;
+    font-weight: 700;
+    font-size: 38px;
+    text-align: left;
+}
+
+.infoCardSubhead--mainCarousel{
+    color: #0D1846;
+    font-weight: 400;
+font-size: 24px;
+text-align: left;
+}
+
 
 
 
@@ -155,11 +207,6 @@ line-height: 26px;
     color: black
 }
 
-:global(.vtex-dropdown__container) {
-    background-color: #EFEFEF;
-    border-radius: 0px;
-    border-color: #EFEFEF;
-}
 
 .price_sellingPriceContainer--pdp {
     color: #6929C4;
@@ -228,7 +275,9 @@ line-height: 26px;
 }
 
 
-
+.imageElement--image-sucess-form{
+    margin-left: 41%;
+}
 
 
 :global(.vtex-product-list-0-x-productVariationsContainer) {
@@ -241,13 +290,7 @@ line-height: 26px;
     font-weight: 600;
 }
 
-:global(.vtex-dropdown__container):hover {
-    border-color: #ED6F00 !important;
-}
 
-:global(.vtex-dropdown__container) {
-    border-color: #eb9659 !important;
-}
 
 :global(.vtex-styleguide-9-x-popup) {
     background-color: #FFC700 !important;
@@ -257,10 +300,7 @@ line-height: 26px;
     color: #000;
 }
 
-:global(.vtex-dropdown__button) {
-    background-color: #FDEEEB;
 
-}
 
 .productDescriptionText {
     font-weight: 300;
@@ -371,6 +411,8 @@ line-height: 26px;
         height: 218px;
         margin-bottom: 3em;
     }
+
+   
 
     :global(.vtex-mega-menu-2-x-styledLinkText--mega-menu), :global(.vtex-mega-menu-2-x-submenuContainerTitle--mega-menu), :global(.vtex-mega-menu-2-x-collapsibleHeaderText--mega-menu), :global(.vtex-mega-menu-2-x-departmentsTitle--mega-menu) {
         color: white;

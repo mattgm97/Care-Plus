@@ -10,7 +10,7 @@
 }
 
 .containerNormal--default-prod-shelf{
-  max-width: 423px !important;
+  max-width: 419px !important;
 }
 
 .containerNormal :global(.vtex-button) {
@@ -24,6 +24,7 @@
     font-size: 16px;
     max-width: 192px;
     height: 56px;
+    margin-bottom: 30px;
   }
 
   .containerNormal :global(.vtex-button) :global(.vtex-button__label){
@@ -36,11 +37,12 @@
   .nameContainer{
       padding-right: 1em;
       justify-content: flex-start;
+      padding: 1em 2em 1em 2em;
   }
 
   .element--default-prod-shelf{
     background-color: white;
-    padding: 2em;
+   
     padding-top: 0;
   }
 

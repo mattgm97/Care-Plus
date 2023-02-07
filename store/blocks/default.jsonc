@@ -52,7 +52,14 @@
   "product-summary-image": {
     "props": {
       "showBadge": false,
-      "height": 300
+      "height": {
+        "desktop":246,
+        "mobile": 246
+      },
+      "width":{
+        "desktop":419,
+        "mobile": 419
+      }
     }
   },
 

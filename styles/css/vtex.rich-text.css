@@ -41,23 +41,23 @@
 }
 
 
-.paragraph--clinica-title{
+.paragraph--clinica-title {
     margin-bottom: 0;
 }
 
 .paragraph--about-us-content {
     font-size: 20px;
     margin: 0px 0px 15px 0px;
-    line-height: 24.38px;   
+    line-height: 24.38px;
 }
 
-.paragraph--prod-pretitle{
+.paragraph--prod-pretitle {
     font-weight: 500;
     font-size: 24px;
     color: #D3B9FF;
 }
 
-.paragraph--clinicas-content{
+.paragraph--clinicas-content {
     padding-right: 44px;
 }
 
@@ -69,12 +69,12 @@
     margin-bottom: 2.2em;
 }
 
-.paragraph--text-services{
-font-size: 14px;
+.paragraph--text-services {
+    font-size: 14px;
 }
 
 
-.paragraph--modal-link-pdp{
+.paragraph--modal-link-pdp {
     color: #0079C8;
     font-weight: 600;
     font-size: 18px;
@@ -82,8 +82,14 @@ font-size: 14px;
     text-decoration: underline;
 }
 
-.paragraph--subtext{
+.paragraph--subtext {
     font-size: 11px;
+}
+
+.paragraph--titulo-contato {
+    color: #00335B;
+    font-weight: 700;
+    font-size: 28px;
 }
 
 
@@ -229,6 +235,15 @@ font-size: 14px;
 
 .paragraph--copyright__text {
     color: #fff;
+}
+
+
+
+.paragraph--sucessContato {
+    color: #9E9E9E;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 64px;
 }
 
 @media (max-width: 760px) {
