@@ -1,0 +1,75 @@
+.selectorField ul li {
+    list-style-type: none;
+}
+
+.selectorField ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.prodBlock {
+    width: 500px;
+    height: 128px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    padding: 14px 30px;
+    display: flex;
+    margin: 53px 24px;
+    border: 2px solid #fff;
+}
+
+
+.prodBlock.selected, .prodBlock:hover {
+    border: 2px solid #0079C8;
+}
+
+.mainTitle {
+    font-weight: 600;
+}
+
+.mainTitle, .properName {
+    color: #21272A;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.prodBlock .name {
+    width: 57%;
+    margin: auto;
+}
+
+.price {
+    display: contents;
+}
+
+.price span {
+    margin: auto;
+    color: #6929C4;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+}
+
+.price span::after {
+    content: "/mês";
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    top: 28px;
+    left: -34px;
+
+}
+
+.price span::before {
+    content: "R$";
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    top: -14px;
+    left: -10px;
+
+}

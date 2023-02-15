@@ -1,5 +1,8 @@
 {
     "store.custom#contato": {
         "path": "/contato"
+      },
+      "store.custom#comparador": {
+        "path": "/comparador"
       }
 }

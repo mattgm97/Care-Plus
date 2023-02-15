@@ -20,5 +20,8 @@
   },
   "ContactCards": {
     "component": "ContactCards"
+  },
+  "ProductCompare":{
+    "component": "ProductCompare"
   }
 }
