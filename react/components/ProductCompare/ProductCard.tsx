@@ -4,16 +4,21 @@ interface StorefrontFunctionComponentAvailableProps {
     productName: string;
     productPrice:number;
     addSelectedItem:Function;
-    RemoveSelectedItem:Function
+    RemoveSelectedItem:Function;
+    selectedProd:boolean
 }
 
-const ProductCard: StorefrontFunctionComponent<StorefrontFunctionComponentAvailableProps> = ({productName, productPrice, addSelectedItem }) => {
+const ProductCard: StorefrontFunctionComponent<StorefrontFunctionComponentAvailableProps> = ({productName, productPrice, addSelectedItem, RemoveSelectedItem, selectedProd }) => {
 
-    const [isSelected, setIsSelected] = useState(false)
+   
 
     const onSelectItem = ()=>{
-        setIsSelected(prev=>!prev);
-        addSelectedItem()
+        if(selectedProd){
+            RemoveSelectedItem()
+        } else{
+            addSelectedItem()
+        }
+        
     }
 
     let mainTitle = "";
@@ -34,7 +39,7 @@ const ProductCard: StorefrontFunctionComponent<StorefrontFunctionComponentAvaila
     }
 
   return (
-  <div className={`prodBlock ${isSelected? "selected": ""}`} onClick={onSelectItem}>
+  <div className={`prodBlock ${selectedProd? "selected": ""}`} onClick={onSelectItem}>
     <div className="name">
         <p className="mainTitle">
             {mainTitle}
