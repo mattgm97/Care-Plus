@@ -1,7 +1,42 @@
 {
-    "store.custom#comparador": {
+ 
+      "store.custom#comparador": {
         "blocks": [
-           "ProductCompare"
+            "flex-layout.row#compare",
+            "flex-layout.row#bannerarea2"
           ]
-      }
+},
+"flex-layout.row#compare":{
+    "children":["flex-layout.col#compare"],
+    "props":{
+        "blockClass":"prod-compare",
+        "paddingBottom": 9
+    }
+},
+
+"flex-layout.col#compare":{
+    "children":["rich-text#title-compare", "rich-text#subtitle-compare", "ProductCompare"]
+},
+
+"rich-text#title-compare": {
+    "title": "Compare os nossos planos",
+    "props": {
+      "text": "Compare os nossos planos",
+      "font": "t-heading-2",
+      "textPosition": "CENTER",
+      "textAlign": "CENTER",
+      "blockClass": "CompareTitle"
+    }
+  },
+
+  "rich-text#subtitle-compare": {
+    "title": "Selecione até quatro planos para comparar.",
+    "props": {
+      "text": "Selecione até quatro planos para comparar.",
+      "font": "t-heading-4",
+      "textPosition": "CENTER",
+      "textAlign": "CENTER",
+      "blockClass": "CompareSubTitle"
+    }
+  }
 }

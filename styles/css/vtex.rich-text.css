@@ -246,11 +246,30 @@
     margin-bottom: 64px;
 }
 
+.paragraph--CompareSubTitle{
+    color: #000000;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 3em;
+}
+
+.paragraph--CompareTitle{
+    color: #0D1846;
+    font-size: 38px;
+    margin-bottom: 0;
+
+}
+
 @media (max-width: 760px) {
     .container--footer-sobre {
         justify-content: center;
         margin-top: 1.5em;
         text-align: center;
     }
+
+    .paragraph--CompareTitle,.paragraph--CompareSubTitle{
+        text-align: center;
+    }
+
 
 }

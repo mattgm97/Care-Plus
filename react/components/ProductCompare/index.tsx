@@ -11,6 +11,25 @@ const ProductCompare: StorefrontFunctionComponent<
   const [productsAvailable, setProductsAvailable] = useState<any[]>([]);
   const [productsSelected, setProductsSelected] = useState<any[]>([]);
   const [selectionScreen, setSelectionScreen] = useState<boolean>(true);
+  const caracteristicas = [
+   /* "Múltiplo Reembolso",
+    "Valor de Reembolso da Consulta",
+    "Care Plus Clinic",*/
+    "Clareamento dentário",
+    "Clínica Geral / Diagnóstico",
+    "Urgência e Emergência",
+    "Prevenção",
+    "Odontopediatria",
+    /*"Pacientes Especiais",*/
+    "Dentística",
+    "Periodontia",
+    "Cirurgia",
+    "Endodontia",
+    "Radiologia",
+    "Ortodontia",
+    "Prótese"/*,
+    "Implante (a partir de 30 dias)"*/
+  ];
 
   useEffect(() => {
     fetch("/api/io/_v/api/intelligent-search/product_search")
@@ -83,9 +102,12 @@ const ProductCompare: StorefrontFunctionComponent<
           })}
         </ul>
 
-        <span className="cleanAll" onClick={() => setProductsSelected([])}>
+<div className="cleanAllDiv">
+<span className="cleanAll" onClick={() => setProductsSelected([])}>
           Desmarcar todos os itens
         </span>
+</div>
+        
 
         <button
           className="submitSelectedProds"
@@ -131,63 +153,55 @@ const ProductCompare: StorefrontFunctionComponent<
                   <span className="title-header-secondary">{properName}</span>
                   <span className="price-header">{element.price} </span>
                   <span className="mensalidade-header">por mês</span>
-                  <a className="linkProduct-header" target="_blank" href={element.link}>Contratar plano</a>
+                  <a
+                    className="linkProduct-header"
+                    target="_blank"
+                    href={element.link}
+                  >
+                    Contratar plano
+                  </a>
                 </th>
               );
             })}
           </tr>
-          <tr>
-            <td>Múltiplo Reembolso</td>
-          </tr>
-          <tr>
-            <td>Valor de Reembolso da Consulta </td>
-          </tr>
-          <tr>
-            <td>Care Plus Clinic</td>
-          </tr>
-          <tr>
-            <td>Clareamento dentário</td>
-          </tr>
-          <tr>
-            <td>Clínica Geral / Diagnóstico</td>
-          </tr>
-          <tr>
-            <td>Urgência e Emergência</td>
-          </tr>
-          <tr>
-            <td>Prevenção</td>
-          </tr>
-          <tr>
-            <td>Odontopediatria</td>
-          </tr>
-          <tr>
-            <td>Pacientes Especiais</td>
-          </tr>
-          <tr>
-            <td>Dentística</td>
-          </tr>
-          <tr>
-            <td>Periondotia</td>
-          </tr>
-          <tr>
-            <td>Cirurgia </td>
-          </tr>
-          <tr>
-            <td>Endodontia</td>
-          </tr>
-          <tr>
-            <td>Radiologia</td>
-          </tr>
-          <tr>
-            <td>Ortodontia</td>
-          </tr>
-          <tr>
-            <td>Prótese</td>
-          </tr>
-          <tr>
-            <td>Prótese Implante (a partir de 30 dias)</td>
-          </tr>
+
+          {
+            caracteristicas.map(caracteristica=>{
+              return(
+                <tr>
+                  <td>{caracteristica}</td>
+                 { productsSelected.map(element=>{
+                 
+                  let included = false;
+                  
+                  element.specs.forEach((el:any)=>{
+                    if(caracteristica.includes(el)){
+                      included = true
+                    }
+                  })
+                  if(included){
+                    return(<td><img src="/arquivos/ok-verde.svg"/></td>)
+                  } else{
+                    return(<td><img src="/arquivos/doesntHave.svg"/></td>)
+                  }
+                 })}
+                  
+                </tr>
+              )
+            })
+          }
+          
         </table>
+        <button
+          className="returnToSelect"
+          onClick={() => {
+            setSelectionScreen(true);
+            setProductsSelected([]);
+          }}
+        >
+          Comparar outros planos
+        </button>
+
       </div>
     );
   };
