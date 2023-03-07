@@ -31,19 +31,31 @@ const ProductCompare: StorefrontFunctionComponent<
     "Implante (a partir de 30 dias)"*/
   ];
 
+  const sortProds = (a:any, b:any)=>{
+    if (a.priceRange.sellingPrice.highPrice > b.priceRange.sellingPrice.highPrice) {
+      return 1;
+    }
+    if (a.priceRange.sellingPrice.highPrice < b.priceRange.sellingPrice.highPrice) {
+      return -1;
+    }
+    // a must be equal to b
+    return 0;
+  }
+
   useEffect(() => {
     fetch("/api/io/_v/api/intelligent-search/product_search")
       .then((res) => {
         return res.json();
       })
       .then((r) => {
+
+        r.products.sort(sortProds)
+
         setProductsAvailable(r.products);
       });
   }, []);
 
-  useEffect(() => {
-    console.log(productsSelected);
-  }, [productsSelected]);
+
 
   const onSelectItem = (itemData: any, command: string = "") => {
     if (command === "remove") {
@@ -60,12 +72,29 @@ const ProductCompare: StorefrontFunctionComponent<
         alert("Não é possível escolher mais que 4 produtos");
       }
     }
+
+  
+
   };
+  
   const renderProductList = () => {
+
+  productsSelected.sort((a:any, b:any)=>{
+      if (a.price > b.price) {
+        return 1;
+      }
+      if (a.price < b.price) {
+        return -1;
+      }
+      // a must be equal to b
+      return 0;
+    })
+    
     return (
       <div className="selectorField">
         <ul>
-          {productsAvailable.map((element) => {
+          {
+          productsAvailable.map((element) => {
             let isSelected = productsSelected.some(
               (item) => item.id === element.productId
             );
@@ -134,16 +163,20 @@ const ProductCompare: StorefrontFunctionComponent<
             {productsSelected.map((element) => {
               let mainTitle = "";
               let properName = "";
+              let whatColor = "";
 
               if (element.name.includes("Dental Pro10")) {
                 mainTitle = "Dental Pro10";
                 properName = element.name.split("Dental Pro10 ")[1];
+                whatColor = "pro"
               } else if (element.name.includes("Dental Pro20")) {
                 mainTitle = "Dental Pro20";
                 properName = element.name.split("Dental Pro20 ")[1];
+                whatColor = "pro"
               } else if (element.name.includes("Dental Lite")) {
                 mainTitle = "Dental Lite";
                 properName = element.name.split("Dental Lite ")[1];
+                whatColor = "lite"
               }
               return (
                 <th>
@@ -151,8 +184,8 @@ const ProductCompare: StorefrontFunctionComponent<
                     {mainTitle} {properName == undefined ? "" : "+"}
                   </span>
                   <span className="title-header-secondary">{properName}</span>
-                  <span className="price-header">{element.price} </span>
-                  <span className="mensalidade-header">por mês</span>
+                  <span className={`price-header ${whatColor}`}>{element.price} </span>
+                  <span className={`mensalidade-header ${whatColor}`}>por mês</span>
                   <a
                     className="linkProduct-header"
                     target="_blank"
@@ -197,6 +230,7 @@ const ProductCompare: StorefrontFunctionComponent<
           onClick={() => {
             setSelectionScreen(true);
             setProductsSelected([]);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
         >
           Comparar outros planos

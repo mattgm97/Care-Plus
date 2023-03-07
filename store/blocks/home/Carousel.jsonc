@@ -135,6 +135,49 @@
     }
   },
 
+
+  "slider-layout#quadrado-mob": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false,
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots": "never",
+      "blockClass": ["carousel-quad", "quad-mob"]
+    },
+    "children": [
+      "image#quadrado1a",
+      "image#quadrado1b",
+      "image#quadrado2a",
+      "image#quadrado2b",
+      "image#quadrado3a",
+      "image#quadrado3b",
+      "image#quadrado4a",
+      "image#quadrado2b"
+    ]
+  },
+
+  "slider-layout#banners-home-end-mob": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false,
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots": "never",
+      "blockClass": "banners-home-end-mob"
+    },
+    "children": [
+      "image#banners-home1",
+      "image#banners-home2"
+    ]
+  },
+
   "slider-layout#banners-main": {
     "props": {
       "itemsPerPage": {
@@ -143,7 +186,8 @@
         "phone": 1
       },
       "infinite": true,
-      "showNavigationArrows": "always",
+      "showPaginationDots": "mobileOnly",
+      "showNavigationArrows": "desktopOnly",
       "autoplay": {
         "timeout": /*3000,*/ 30000,
         "stopOnHover": true

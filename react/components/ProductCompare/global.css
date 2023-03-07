@@ -54,9 +54,21 @@
     display: contents;
 }
 
-.price span, .price-header {
+.price.lite span, .price-header {
     margin: auto;
     color: #6929C4;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+}
+
+.price-header.pro{
+    color: #1B883C;
+}
+
+.price.pro{
+    color: #1B883C;
+    margin: auto;
     font-weight: 700;
     font-size: 38px;
     line-height: 46px;
@@ -94,6 +106,7 @@ font-size: 18px;
 line-height: 16px;
 color: #0079C8;
 text-decoration: underline;
+cursor: pointer;
 }
 
 .submitSelectedProds, .returnToSelect{
@@ -110,6 +123,7 @@ padding: 16px 24px;
 width: 384px;
 height: 56px;
 border: none;
+cursor:pointer
 }
 
 .returnToSelect{
@@ -140,6 +154,10 @@ height: 40px;
     font-weight: 400;
     color: #6929C4;
     display: block;
+}
+
+.mensalidade-header.pro{
+    color: #1B883C;
 }
 
 .price-header::before{
@@ -215,6 +233,7 @@ height: 40px;
     width: 78%;
     margin-top: 16px;
     border: none;
+    cursor: pointer;
 }
 
 

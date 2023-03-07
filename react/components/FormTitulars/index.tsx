@@ -205,22 +205,22 @@ let whichContract:any;
 
 switch(selectedItem.itemId){
   case "12":
-    whichContract = <a href="/arquivos/Contrato_Dental_Lite_CG.pdf" target="_blank" className="linkPolicies" rel="noopener noreferrer">Contrato Dental Lite</a>
+    whichContract = <a href="/arquivos/Contrato_Dental_Lite_CG_atualizado.pdf" target="_blank" className="linkPolicies" rel="noopener noreferrer">Contrato Dental Lite</a>
   break;
   case "7":
-    whichContract = <a href="/arquivos/Contrato_Dental_Lite_CG_ORTO_PRÓTESE.pdf" target="_blank" className="linkPolicies" rel="noopener noreferrer">Contrato Dental Lite Ortodontia e Prótese</a>
+    whichContract = <a href="/arquivos/Contrato_Dental_Lite_CG_ORTO_PRÓTESE_atualizado.pdf" target="_blank" className="linkPolicies" rel="noopener noreferrer">Contrato Dental Lite Ortodontia e Prótese</a>
   break;
   case "5":
-    whichContract = <a href="/arquivos/Contrato_Dental_Lite_CG_ORTO.pdf" target="_blank" className="linkPolicies" rel="noopener noreferrer">Contrato Dental Lite Ortodontia</a>
+    whichContract = <a href="/arquivos/Contrato_Dental_Lite_CG_ORTO_atualizado.pdf" target="_blank" className="linkPolicies" rel="noopener noreferrer">Contrato Dental Lite Ortodontia</a>
   break;
   case "13":
-    whichContract = <a href="/arquivos/Contrato_Dental_Pro_10_CG.pdf" target="_blank" className="linkPolicies" rel="noopener noreferrer">Contrato Dental Pro 10</a>
+    whichContract = <a href="/arquivos/Contrato_Dental_Pro_10_CG_atualizado.pdf" target="_blank" className="linkPolicies" rel="noopener noreferrer">Contrato Dental Pro 10</a>
   break;
   case "11":
-    whichContract =   <a href="/arquivos/Contrato_Dental_Pro_20_CG_ORTO_ALINHADORES.pdf" target="_blank" className="linkPolicies" rel="noopener noreferrer">Contrato Dental Pro20 Ortodontia e Alinhador Estético</a>
+    whichContract =   <a href="/arquivos/Contrato_Dental_Pro_20_CG_ORTO_ALINHADORES_atualizado.pdf" target="_blank" className="linkPolicies" rel="noopener noreferrer">Contrato Dental Pro20 Ortodontia e Alinhador Estético</a>
   break;
   case "9":
-    whichContract = <a href="/arquivos/Contrato_Dental_Pro_10_CG_ORTO_PRÓTESE.pdf" target="_blank" className="linkPolicies" rel="noopener noreferrer">Contrato Dental Pro10 Ortodontia e Prótese</a>
+    whichContract = <a href="/arquivos/Contrato_Dental_Pro_10_CG_ORTO_PRÓTESE_atualizado.pdf" target="_blank" className="linkPolicies" rel="noopener noreferrer">Contrato Dental Pro10 Ortodontia e Prótese</a>
   break;
 }
 

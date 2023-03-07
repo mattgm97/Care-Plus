@@ -49,7 +49,7 @@
 
 
 
-.sliderLeftArrow--carousel-quad{
+.sliderLeftArrow--carousel-quad, .sliderLeftArrow--banners-home-end-mob{
     border: 1px solid #0079C8;
     background-color: white !important;
     border-radius: 2px;
@@ -61,30 +61,30 @@
 
 }
 
-.sliderLeftArrow--carousel-quad:disabled, .sliderRightArrow--carousel-quad:disabled{
+.sliderLeftArrow--carousel-quad:disabled, .sliderRightArrow--carousel-quad:disabled, .sliderRightArrow--banners-home-end-mob:disabled, .sliderLeftArrow--banners-home-end-mob:disabled{
     border: 1px solid #929BA2;
 
 }
 
-.sliderLeftArrow--carousel-quad:disabled::before{
+.sliderLeftArrow--carousel-quad:disabled::before, .sliderLeftArrow--banners-home-end-mob:disabled::before{
     content:url('/arquivos/trad-arrow-left-muted.svg');
     transform: rotate(360deg);
 
 }
 
-.sliderRightArrow--carousel-quad:disabled::before{
+.sliderRightArrow--carousel-quad:disabled::before, .sliderRightArrow--banners-home-end-mob:disabled::before{
     content:url('/arquivos/trad-arrow-left-muted.svg');
     transform: rotate(180deg);
 }
 
-.sliderLeftArrow--carousel-quad::before{
+.sliderLeftArrow--carousel-quad::before, .sliderLeftArrow--banners-home-end-mob::before{
     content:url('/arquivos/trad-arrow-right.svg');
     transform: rotate(180deg);
     position: relative;
     left: -2px;
 }
 
-.sliderRightArrow--carousel-quad{
+.sliderRightArrow--carousel-quad, .sliderRightArrow--banners-home-end-mob{
     border: 1px solid #0079C8;
     background-color: white !important;
     border-radius: 2px;
@@ -95,7 +95,7 @@
     margin-right: -6px;
 }
 
-.sliderRightArrow--carousel-quad::before{
+.sliderRightArrow--carousel-quad::before, .sliderRightArrow--banners-home-end-mob::before{
     content:url('/arquivos/trad-arrow-right.svg');
     position: relative;
     left: 1px;
@@ -128,7 +128,39 @@
 }
 
 @media screen and (max-width: 768px) {
-    .slide--slider-shelf--default{
-        margin: 0px 10px;
+    .paginationDotsContainer--secondaryCarousel{
+      display: none;
     }
+    .sliderLayoutContainer--sellingConditions-mob{
+        background-color: #E5F2FA;
+    }
+
+    .sliderLayoutContainer--quad-mob{
+        margin-bottom: 6em;
+    }
+    .sliderLayoutContainer--banners-home-end-mob{
+        margin-bottom: 3em;
+    }
+
+    .sliderRightArrow--carousel-quad{
+        margin-top: 95%;
+        margin-right: 8%;
+    }
+
+    .sliderLeftArrow--carousel-quad{
+        margin-top: 95%;
+        margin-left: 68%;
+    }
+    .sliderRightArrow--banners-home-end-mob{
+        margin-top: 74%;
+        margin-right: 12%;
+    
+    }
+
+    .sliderLeftArrow--banners-home-end-mob{
+        margin-top: 74%;
+        margin-left: 62%;
+    }
+
+
 }

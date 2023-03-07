@@ -35,3 +35,14 @@
     box-shadow: 0px 4px 15px rgb(0 0 0 / 16%);
     border-radius: 4px;
   }
+
+
+  /*MUDANÇAS DE CSS QUE A LOJA NAO DEIXA FAZER*/
+
+.vtex-product-list-0-x-inputContainer input {
+  color: white;
+}
+
+.vtex-product-list-0-x-inputContainer span {
+  color: white;
+}

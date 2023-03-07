@@ -49,9 +49,7 @@
 
 
   @media (max-width: 1000px) {
-    .containerNormal :global(.vtex-button) {
-        display: none;
-      }
+   
     
 
 }

@@ -27,8 +27,8 @@
       "blockClass": ["slider-shelf--default"],
       "itemsPerPage": {
         "desktop": 4,
-        "tablet": 3,
-        "phone": 2
+        "tablet": 2,
+        "phone": 1
       },
       "infinite": true,
       "showPaginationDots": "never"

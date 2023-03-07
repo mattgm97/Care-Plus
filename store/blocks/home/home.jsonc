@@ -3,11 +3,14 @@
     "blocks": [
       "flex-layout.row#bannerarea",
       "responsive-layout.desktop#sellingConditions",
+      "responsive-layout.mobile#sellingConditions",
       "__fold__",
       "flex-layout.row#firstContent",
-      "flex-layout.row#nossas-clinicas",
+      "responsive-layout.desktop#nossas-clinicas",
+      "responsive-layout.mobile#nossas-clinicas",
       "flex-layout.row#passoApasso",
-      "flex-layout.row#banners-home",
+      "responsive-layout.desktop#banners-home-end",
+      "responsive-layout.mobile#banners-home-end",
       "__fold__",
       "flex-layout.row#bannerarea2",
       "flex-layout.row#about-us"
@@ -19,7 +22,9 @@
   },
 
   "flex-layout.col#bannerarea": {
-    "children": [/*"list-context.image-list#bannersprincipais", */"slider-layout#banners-main"]
+    "children": [
+      /*"list-context.image-list#bannersprincipais", */ "slider-layout#banners-main"
+    ]
   },
   "list-context.image-list#bannersprincipais": {
     "title": "banner principal",
@@ -54,6 +59,81 @@
       },
       "blockClass": "mainCarousel"
     }
+  },
+
+  "responsive-layout.mobile#sellingConditions": {
+    "children": ["slider-layout#sellingConditions"]
+  },
+
+  "slider-layout#sellingConditions": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 3,
+        "phone": 5
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
+      "blockClass":"sellingConditions-mob"
+    },
+    "children": [
+      "flex-layout.row#sellingConditions1",
+      "flex-layout.row#sellingConditions2",
+      "flex-layout.row#sellingConditions3",
+      "flex-layout.row#sellingConditions4",
+      "flex-layout.row#sellingConditions5",
+      "flex-layout.row#sellingConditions6",
+      "flex-layout.row#sellingConditions7",
+      "flex-layout.row#sellingConditions8",
+      "flex-layout.row#sellingConditions9"
+    ]
+  },
+
+  "flex-layout.row#sellingConditions1": {
+    "children": [
+      "flex-layout.col#clinica-geral"
+    ]
+  },
+  "flex-layout.row#sellingConditions2": {
+    "children": [
+      "flex-layout.col#emergencia"
+    ]
+  },
+  "flex-layout.row#sellingConditions3": {
+    "children": [
+      "flex-layout.col#prevencao"
+    ]
+  },
+  "flex-layout.row#sellingConditions4": {
+    "children": [
+      "flex-layout.col#Odontopediatria"
+    ]
+  },
+  "flex-layout.row#sellingConditions5": {
+    "children": [
+      "flex-layout.col#Dentistica"
+    ]
+  },
+  "flex-layout.row#sellingConditions6": {
+    "children": [
+      "flex-layout.col#Periodontia"
+    ]
+  },
+  "flex-layout.row#sellingConditions7": {
+    "children": [
+      "flex-layout.col#Cirurgia"
+    ]
+  },
+  "flex-layout.row#sellingConditions8": {
+    "children": [
+      "flex-layout.col#Endodontia"
+    ]
+  },
+  "flex-layout.row#sellingConditions9": {
+    "children": [
+      "flex-layout.col#Radiologia"
+    ]
   },
 
   "responsive-layout.desktop#sellingConditions": {
@@ -118,7 +198,8 @@
     ],
     "props": {
       "blockClass": "services-list",
-      "horizontalAlign": "around"
+      "horizontalAlign": "around",
+      "preserveLayoutOnMobile": true
     }
   },
 
@@ -156,10 +237,36 @@
     }
   },
 
+  "responsive-layout.desktop#nossas-clinicas":{
+    "children": [
+      "flex-layout.row#nossas-clinicas"
+      
+    ]
+  },
+
+  "responsive-layout.mobile#nossas-clinicas":{
+    "children": [
+      "flex-layout.row#nossas-clinicas-mob"
+    ]
+  },
+
   "flex-layout.row#nossas-clinicas": {
     "children": [
       "flex-layout.col#nossas-clinicas",
       "flex-layout.col#nossas-clinicas2"
+    ],
+    "props": {
+      "marginTop": 9,
+      "marginBottom": 7,
+      "colGap": 5
+    }
+  },
+
+  "flex-layout.row#nossas-clinicas-mob":{
+    "children": [
+      "flex-layout.col#nossas-clinicas2-mob",
+      "flex-layout.col#nossas-clinicas"
+      
     ],
     "props": {
       "marginTop": 9,
@@ -181,7 +288,7 @@
     }
   },
 
-  "rich-text#clinicas-title":{
+  "rich-text#clinicas-title": {
     "props": {
       "text": "Conheça nossas Clínicas",
       "font": "t-heading-1",
@@ -191,7 +298,7 @@
     }
   },
 
-  "rich-text#clinicas-subtitle":{
+  "rich-text#clinicas-subtitle": {
     "props": {
       "text": "Foco em oferecer o que há de mais moderno em medicina e odontologia.",
       "textPosition": "LEFT",
@@ -200,7 +307,7 @@
     }
   },
 
-  "rich-text#clinicas-content":{
+  "rich-text#clinicas-content": {
     "props": {
       "text": "Por sermos uma clínica multidisciplinar, reunimos em um só local as especialidades de medicina ocupacional, dermatologia clínica e cosmiatria, odontologia, nutrição e psicologia.",
       "textPosition": "LEFT",
@@ -218,10 +325,24 @@
     }
   },
 
-  "flex-layout.col#nossas-clinicas2":{
+  "responsive-layout.mobile#nossas-clinicas-col":{
+    "children":[
+      "flex-layout.col#nossas-clinicas2-mob"
+    ]
+  },
+
+
+  "flex-layout.col#nossas-clinicas2-mob": {
+    "children": ["slider-layout#quadrado-mob"]
+  },
+
+
+
+
+  "flex-layout.col#nossas-clinicas2": {
     "children": ["slider-layout#quadrado"],
-    "props":{
-      "marginLeft":8
+    "props": {
+      "marginLeft": 8
     }
   },
 
@@ -238,12 +359,23 @@
     "children": [
       "rich-text#passoApassoSmall",
       "rich-text#passoApassoBig",
-      "image#passoapasso",
+      "responsive-layout.desktop#passoapasso",
+      "responsive-layout.mobile#passoapasso",
       "link#buttonPassoAPasso"
     ],
     "props": {
       "horizontalAlign": "center"
     }
+  },
+
+
+
+  "responsive-layout.desktop#passoapasso": {
+    "children": ["image#passoapasso"]
+  },
+
+  "responsive-layout.mobile#passoapasso": {
+    "children": ["image#passoapassomob"]
   },
 
   "rich-text#passoApassoSmall": {
@@ -272,6 +404,12 @@
     }
   },
 
+  "image#passoapassomob": {
+    "props": {
+      "src": "assets/banners/passoapasso2mob2.png"
+    }
+  },
+
   "link#buttonPassoAPasso": {
     "props": {
       "href": "/",
@@ -281,7 +419,32 @@
     }
   },
 
-  "flex-layout.row#banners-home": {
+  "responsive-layout.desktop#banners-home-end":{
+"children":[
+  "flex-layout.row#banners-home-end"
+]
+  },
+
+  "responsive-layout.mobile#banners-home-end":{
+    "children":[
+      "flex-layout.row#banners-home-end-mob"
+    ]
+  },
+
+  "flex-layout.row#banners-home-end-mob": {
+    "children": [
+      "slider-layout#banners-home-end-mob"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "marginTop": 8,
+      "marginBottom": 9,
+      "preventHorizontalStretch": true,
+      "colGap": 7
+    }
+  },
+
+  "flex-layout.row#banners-home-end": {
     "children": [
       "flex-layout.col#banners-home1",
       "flex-layout.col#banners-home2"
@@ -355,11 +518,11 @@
       "images": [
         {
           "image": "assets/banners/banola.png",
-          "mobileImage": "assets/banners/banola.png"
+          "mobileImage": "assets/banners/banola-mob.png"
         },
         {
           "image": "assets/banners/banola.png",
-          "mobileImage": "assets/banners/banola.png"
+          "mobileImage": "assets/banners/banola-mob.png"
         }
       ]
     }

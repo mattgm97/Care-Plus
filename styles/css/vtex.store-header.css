@@ -92,5 +92,10 @@
     padding-top: 1em;
   }
 
+  :global(.vtex-menu-2-x-menuContainerNav--mainMenu)
+  :global(.vtex-menu-2-x-menuContainer--mainMenu) {
+  display: block;
+}
+
 }
 

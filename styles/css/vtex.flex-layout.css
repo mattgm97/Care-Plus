@@ -195,6 +195,24 @@ border-top: solid 5px #0079C8;
 
 }
 
+@media (max-width: 900px) {
+.flexRowContent--services-list{
+    width: 1253px;
+    overflow-x: scroll;
+}
+
+.flexRowContent--products-offered{
+    padding-top: 0;
+}
+
+.flexRow--products-offered{
+    margin-top: 0;
+}
+}
+
+
+
+
 
 @media (min-width: 1125px) {
     :global(.vtex-flex-layout-0-x-flexCol--filterCol) {

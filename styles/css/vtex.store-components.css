@@ -434,8 +434,8 @@ line-height: 26px;
     }
 
     :global(.vtex-login-2-x-container) {
-        display: block;
         float: initial;
+    margin-left: 1.2em;
     }
 
 }

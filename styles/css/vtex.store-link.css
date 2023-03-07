@@ -25,3 +25,22 @@
     font-size: 16px;
     font-weight: 700;
 }
+
+
+
+@media (max-width: 760px) {
+    .buttonLink--homeButtonFree{
+        padding: 0.9em 1.7em;
+    }
+
+    .buttonLink--homeButtonAboutUs{
+      
+        margin-top: 0;
+    }
+    .label--homeButtonAboutUs{
+        font-size: 14px;
+    }
+}
+
+
+

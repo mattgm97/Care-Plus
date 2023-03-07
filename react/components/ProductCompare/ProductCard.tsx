@@ -24,18 +24,23 @@ const ProductCard: StorefrontFunctionComponent<StorefrontFunctionComponentAvaila
     let mainTitle = "";
     let properName = "";
     let price = productPrice.toFixed(2).toString().replace(".", ",");
+    let whatColor = "";
 
     if(productName.includes("Dental Pro10")){
         mainTitle = "Dental Pro10";
-        properName = productName.split("Dental Pro10 ")[1]
+        properName = productName.split("Dental Pro10 ")[1];
+        whatColor = "pro"
+
 
     }else if(productName.includes("Dental Pro20")){
         mainTitle = "Dental Pro20"
-        properName = productName.split("Dental Pro20 ")[1]
+        properName = productName.split("Dental Pro20 ")[1];
+        whatColor = "pro"
 
     } else if(productName.includes("Dental Lite")){
         mainTitle = "Dental Lite"
-        properName = productName.split("Dental Lite ")[1]
+        properName = productName.split("Dental Lite ")[1];
+        whatColor = "lite";
     }
 
   return (
@@ -48,7 +53,7 @@ const ProductCard: StorefrontFunctionComponent<StorefrontFunctionComponentAvaila
             {properName}
         </p>
         </div>
-        <div className="price">
+        <div className={`price ${whatColor}`}>
             
         <span>
         {price}

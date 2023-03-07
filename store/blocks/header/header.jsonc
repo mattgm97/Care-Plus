@@ -138,9 +138,9 @@
   },
   "header-row#1-mobile": {
     "children": [
-      "drawer#menu-mobile",
-      "header-spacer",
       "logo#mobile",
+      "header-spacer",
+      "drawer#menu-mobile",
       "header-spacer",
       /*  "drawer#search-bar",
         /*"rich-text#icon-link-natal",
@@ -185,7 +185,8 @@
   },
   "drawer#menu-mobile": {
     "children": [
-      "login#mob"
+      "login#mob",
+      "vtex.menu@2.x:menu#category-menu-01"
     ],
     "props": {
       "blockClass": "menu-mobile"
@@ -218,7 +219,7 @@
       // "providerPasswordButtonLabel": "Ingresar con mail y contraseña",
       "showIconProfile": true,
       "mirrorTooltipToRight": true,
-      "iconLabel": "Entrar",
+      "iconLabel": "ENTRE OU CADASTRE-SE",
       "labelClasses": "login__header"
       /* "accountOptionLinks": [
                   {
