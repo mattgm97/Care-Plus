@@ -37,14 +37,14 @@
 
 :global(.vtex-menu-2-x-menuItemInnerDiv--linkList-footer-toggle) {
     margin-bottom: 8px;
-    margin-top: 8px;
-    background-color: #F3F3F3
+    background-color: #0D1846
 }
 
 .styledLinkContent--linkList-footer-toggle {
     margin-top: 1em;
     font-weight: bold;
     margin-bottom: 1em;
+    color: white;
 }
 
 .styledLinkContent--submenu--inst{
@@ -128,6 +128,11 @@
         margin-top: 6px;
         margin-bottom: 6px;
 
+    }
+
+    .menuItem--centered-on-mob{
+        
+        margin: auto;
     }
 
     .styledLinkContent--menu-sobre-footer{

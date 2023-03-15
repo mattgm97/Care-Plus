@@ -173,6 +173,7 @@ border-top: solid 5px #0079C8;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 1em;
     }
 
     .flexRowContent--buy-area :global(.vtex-button) {
@@ -189,6 +190,10 @@ border-top: solid 5px #0079C8;
         width: 32% !important;
         margin-bottom: 1em;
 
+    }
+
+    .flexColChild--footer__content-col--mobile-2{
+        margin: auto;
     }
 
 
@@ -208,6 +213,8 @@ border-top: solid 5px #0079C8;
 .flexRow--products-offered{
     margin-top: 0;
 }
+
+
 }
 
 

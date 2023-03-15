@@ -4,8 +4,8 @@
       "blockClass": ["footer", "mobile"]
     },
     "children": [
-      "vtex.menu@2.x:menu#linkList-container-mobile",
       "vtex.menu@2.x:menu#linkList-container-mobile-2",
+      "vtex.menu@2.x:menu#linkList-container-mobile",
       "flex-layout.row#footer-container-0-mobile",
       "flex-layout.row#footer-container-1-mobile"
     ]
@@ -49,7 +49,7 @@
 
   "rich-text#sobre-footer":{
     "props": {
-      "text": "INSTITUCIONAL",
+      "text": "A Care Plus",
       "font": "t-heading-5",
       "textPosition": "CENTER",
       "textAlign": "CENTER",
@@ -59,7 +59,7 @@
 
   "flex-layout.col#footer-1-box-menu-3":{
     "children": [
-      "vtex.menu@2.x:menu#linkList-container-mobile-3"
+      "vtex.menu@2.x:menu#contact-footer-desktop-2"
     ],
     "props": {
         "blockClass": ["footer__content-col","footer__content-col--mobile-0"],
@@ -70,7 +70,10 @@
 
   "flex-layout.col#footer-1-box-2":{
     "children": [
-      "rich-text#social-footer"
+      "rich-text#social-footer",
+      "flex-layout.row#social-icons",
+      "rich-text#payment",
+      "flex-layout.row#payment-1"
     
     ],
     "props": {

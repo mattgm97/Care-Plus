@@ -588,7 +588,8 @@
   "image#our-numbers": {
     "props": {
       "src": "assets/banners/our-numbers-img.png",
-      "maxWidth": "450px"
+      "maxWidth": "450px",
+      "blockClass":"our-numbers-image"
     }
   },
 

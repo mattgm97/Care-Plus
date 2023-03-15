@@ -146,7 +146,7 @@
   "vtex.menu@2.x:menu#contact-footer-desktop-2": {
     "props": {
       "orientation": "vertical",
-      "blockClass": "menu-footer",
+      "blockClass": ["menu-footer", "centered-on-mob"],
       "items": [
         {
           "id": "footer-item-acc-0",

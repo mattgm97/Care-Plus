@@ -50,14 +50,14 @@
         "type": "internal",
         "noFollow": true,
         "tagTitle": "Institucional",
-        "text": "PAGAMENTO"
+        "text": "Planos"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu.accordion#listLink-footer-accordion-2"]
   },
 
   "vtex.menu@2.x:submenu.accordion#listLink-footer-accordion-2": {
-    "children": ["flex-layout.row#payment-1"]
+    "children": ["vtex.menu@2.x:menu#contact-footer-desktop-1"]
   },
 
   //SOBRE

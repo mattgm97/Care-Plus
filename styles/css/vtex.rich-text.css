@@ -295,4 +295,22 @@
         color: #000000;
     }
 
+    .paragraph--about-us-content{
+        margin:0px;
+        font-size: 14px;
+    }
+
+    .paragraph--redes-title {
+        margin-left: 0;
+    }
+
+    .paragraph--footer-sobre, .paragraph--seguranca-title {
+
+        font-size: 18px;
+    }
+
+    .paragraph--copyright__text{
+font-size: 12px;
+    }
+
 }

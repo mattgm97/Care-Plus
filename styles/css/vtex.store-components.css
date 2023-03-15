@@ -438,4 +438,21 @@ line-height: 26px;
     margin-left: 1.2em;
     }
 
+    .imageElement--our-numbers-image{
+        margin-top: 3em;
+        margin-bottom: 3em;
+        width: 100%;
+    }
+
+    :global(.vtex-menu-2-x-styledLinkContent--menu-footer) {
+        color: #000;
+        font-size: 14px;
+    }
+
+    :global(.vtex-menu-2-x-styledLinkContent--centered-on-mob){
+        color: white;
+    }
+
+    
+
 }
