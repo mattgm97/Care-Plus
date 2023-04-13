@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@react-google-maps/api": "^2.18.1",
     "axios": "0.26.0",
     "react-dom": "^18.2.0",
     "react-slick": "^0.29.0",

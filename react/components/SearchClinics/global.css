@@ -1,0 +1,58 @@
+.boxBody{
+  background-color: #0D1846;
+  border-left: solid 39px #0079C8;
+  border-right: solid 39px #0079C8;
+  padding: 39px 33px;
+}
+
+.boxBody h2{
+  color: #D3B9FF;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.boxBody p{
+ color: white;
+ font-size: 16px;
+ font-weight: 700;
+}
+
+.boxBody .inputContainer{
+  margin-top: 24px;
+ }
+
+
+.inputContainer form{
+display: flex;
+align-items: end;
+justify-content:space-between
+}
+
+.inputContainer form button{
+  background-color: #0D1846;
+    border: solid 2px white;
+    color: white;
+    padding: 10px 20px;
+    height: 48px;
+    font-family: 'Montserrat';
+    border-radius: 5px;
+  }
+
+  .inputContainer form button img{
+    margin-top: 2px;
+    margin-left: 0.5em;
+  }
+
+.field label{
+  display: block;
+  margin-bottom: 14px;
+  color: white;
+  font-weight: 700;
+}
+
+.field input, .field select{
+ width: 501px;
+ height: 48px;
+ padding: 14px;
+}

@@ -23,5 +23,8 @@
   },
   "ProductCompare":{
     "component": "ProductCompare"
+  },
+  "SearchClinics":{
+    "component": "SearchClinics"
   }
 }

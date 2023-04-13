@@ -6,6 +6,7 @@
       "responsive-layout.mobile#sellingConditions",
       "__fold__",
       "flex-layout.row#firstContent",
+      "flex-layout.row#SearchClinics",
       "responsive-layout.desktop#nossas-clinicas",
       "responsive-layout.mobile#nossas-clinicas",
       "flex-layout.row#passoApasso",
@@ -201,6 +202,19 @@
       "horizontalAlign": "around",
       "preserveLayoutOnMobile": true
     }
+  },
+
+  "flex-layout.row#SearchClinics": {
+    "children": ["flex-layout.col#SearchClinics"],
+    "props": {
+      "paddingTop": 5,
+      "blockClass": "searchClinic"
+    }
+  },
+  "flex-layout.col#SearchClinics": {
+    "children": [
+      "SearchClinics"
+    ]
   },
 
   "flex-layout.row#firstContent": {
