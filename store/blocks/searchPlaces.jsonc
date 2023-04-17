@@ -1,0 +1,18 @@
+{
+    "store.custom#search-places": {
+        "blocks": [
+            "flex-layout.row#appContainer"
+          ]
+      },
+      "flex-layout.row#appContainer":{
+        "children":["flex-layout.col#appContainer"],
+        "props":{
+            "blockClass":"appContainer",
+            "paddingBottom": 9,
+            "paddingTop": 9
+        }
+    },
+    "flex-layout.col#appContainer":{
+        "children":["SearchClinicsFull"]
+    }
+}

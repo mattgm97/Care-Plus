@@ -26,5 +26,8 @@
   },
   "SearchClinics":{
     "component": "SearchClinics"
+  },
+  "SearchClinicsFull":{
+    "component": "SearchClinicsFull"
   }
 }

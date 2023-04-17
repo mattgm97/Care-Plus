@@ -4,5 +4,8 @@
       },
       "store.custom#comparador": {
         "path": "/comparador"
+      },
+      "store.custom#search-places": {
+        "path": "/buscafranquia"
       }
 }

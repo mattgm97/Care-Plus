@@ -54,5 +54,37 @@ justify-content:space-between
 .field input, .field select{
  width: 501px;
  height: 48px;
- padding: 14px;
+ padding-left: 14px;
+}
+
+
+@media (max-width: 820px) {
+  .boxBody{
+    border-left: solid 5px #0079C8;
+    border-right: solid 5px #0079C8;
+  }
+
+  .boxBody h2{
+font-size: 16px;
+  }
+  .boxBody p{
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .field label{
+    font-size: 10px;
+  }
+
+  .inputContainer form{
+    display: block;
+  }
+
+  form .field{
+    margin-bottom: 24px;
+  }
+
+  .field input, .field select{
+    width: 100%;
+    height: 38px;
+  }
 }
