@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect } from "react";
 import "./global.css";
 import { useJsApiLoader, Autocomplete } from "@react-google-maps/api";
 import ReactPaginate from 'react-paginate';
+import ClinicInfos from "./ClinicInfos";
+import DetailedInfo from "./DetailedInfo";
 interface ProductAvailableProps {
   // children: any;
 }
@@ -12,8 +14,14 @@ const SearchClinicsFull: StorefrontFunctionComponent<
   const [cidade, setCidade] = useState<any>("");
   const [estado, setEstado] = useState<any>("");
   const [bairro, setBairro] = useState<any>("");
+  const [shouldShow, setShouldShow] = useState<boolean>(false);
+  const [detailedComponentData, setDetailedComponentData] = useState<any>({});
   const [especialidade, setEspecialidade] = useState<any>("");
-  const [searchResults, setSearchResults] = useState<any>();
+  const [searchResults, setSearchResults] = useState<any>([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage] = useState(10);
+  const indexOfLastPost = currentPage * postsPerPage;
+	const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const cityRef = useRef<HTMLInputElement>(null);
   const bairroRef = useRef<HTMLInputElement>(null);
   const { isLoaded } = useJsApiLoader({
@@ -21,6 +29,24 @@ const SearchClinicsFull: StorefrontFunctionComponent<
     googleMapsApiKey: "AIzaSyDGmRxjv6Vzll4z0ObpWtu-ZdIfAFLDSaM",
     libraries: ["places"],
   });
+
+
+
+ 
+
+  const paginate = ({ selected }:any) => {
+		setCurrentPage(selected + 1);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+	};
+
+  const setDetailsComponent = (current:any) => {
+    setShouldShow((prev:any)=>!prev);
+    setDetailedComponentData(current)
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+	};
+
+
 
   useEffect(() => {
     if (
@@ -78,19 +104,25 @@ const SearchClinicsFull: StorefrontFunctionComponent<
     setEstado(event.target.value);
   };
 
+  const closeDetail = () => {
+    setShouldShow(false);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+ 
   const submitForm = (e: any) => {
     e.preventDefault();
 
-   
+    setShouldShow(false);
     fetch(`/api/dataentities/BR/search?county=${cidade}&uf=${estado}&neighborhood${bairro}&specialty=${especialidade}&_fields=address,ans,businessname,cnpj,corporatename,county,establishment,latitude,longitude,namefantasy,neighborhood,postalcode,provider,specialty,uf&_sort=provider ASC`)
     .then((res:any) => res.json())
     .then((data:any)=>{
       setSearchResults(data)
-      console.log(data)
     })
 
 
   };
+
+  const currentPosts = searchResults.slice(indexOfFirstPost, indexOfLastPost)
 
   if (!isLoaded) {
     return (
@@ -101,6 +133,7 @@ const SearchClinicsFull: StorefrontFunctionComponent<
   }
   return (
     <>
+    
     <div className="boxBodyFull">
       <h2>Escolha abaixo:</h2>
 
@@ -197,14 +230,70 @@ const SearchClinicsFull: StorefrontFunctionComponent<
       </div>
 
     </div>
+
+    {!shouldShow && (
+      <div className="resultsList">
     {
-      searchResults &&(
+      searchResults.length > 0 &&(
         <div className="resultsTable">
-    asasa
+          <div className="tableFields">
+            <h3>Nome Comercial do Plano</h3>
+            <h3>Registro ANS</h3>
+            <h3>Prestador</h3>
+            <h3>Especialidade</h3>
+          </div>
+          <ul className="resultsList">
+          {
+    currentPosts.map((clinic:any)=>{
+     return (
+      <ClinicInfos dados={clinic} selector={setDetailsComponent}/>
+      )
+    })
+  }
+          </ul>
+
+
+
+    <ReactPaginate
+						onPageChange={paginate}
+						pageCount={Math.ceil(searchResults.length / postsPerPage)}
+						previousLabel={'Anterior'}
+						nextLabel={'Próxima'}
+						containerClassName={'pagination'}
+						pageLinkClassName={'page-number'}
+						previousLinkClassName={'page-number'}
+						nextLinkClassName={'page-number'}
+						activeLinkClassName={'active'}
+					/>
         </div>
       )
     
     }
+    </div>
+    )}
+    
+    <DetailedInfo show={shouldShow} data={detailedComponentData} closeDetail={closeDetail}/>
+   <div className="legendaQuali">
+    <h3>Legenda Qualificações</h3>
+    <div className="row">
+      <ul>
+        <li><strong>A</strong> Programa de Acreditação</li>
+        <li><strong>P</strong> Profissional com Especialização</li>
+        <li><strong>E</strong> Título de Especialista</li>
+        <li><strong>G</strong> Certificações de Entidades Gestoras de Outros Programas de Qualidade</li>
+        <li><strong>D</strong> Profissional com Doutorado ou Pós-Doutorado</li>
+      </ul>
+      <ul>
+        <li><strong>N</strong> Comunicação de Eventos Adversos</li>
+        <li><strong>R</strong> Profissional com Residência</li>
+        <li><strong>Q</strong> Qualidade Monitorada</li>
+        <li><strong>I</strong> Certificação ISO 9001</li>
+        <li><strong>M</strong> Profissional com Mestrado</li>
+      </ul>
+    </div>
+   </div>
+
+
     </>
   );
 };

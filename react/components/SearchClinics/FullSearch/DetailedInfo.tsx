@@ -1,0 +1,120 @@
+import React from "react";
+import "./global.css";
+import { GoogleMap, Marker } from "@react-google-maps/api";
+
+function DetailedInfo({ data, show, closeDetail }: any) {
+
+    const mq = window.matchMedia("(max-width: 820px)");
+    let containerStyle = {
+        width: "100%",
+        height: "815px",
+      };
+    if(!mq.matches){
+        containerStyle = {
+            width: "895px",
+            height: "815px",
+          };
+    }
+ 
+
+  const lat = parseFloat(data.latitude);
+  const lng = parseFloat(data.longitude)
+  const center = {
+    lat: lat,
+    lng: lng,
+  };
+
+  if (!show) {
+    return <></>;
+  }
+
+  return (
+    <div className="detailedComponent">
+        <span className="closeDetails" onClick={closeDetail}><img src="/arquivos/Xbranco.svg" alt="" /></span>
+      <div className="dataPlace">
+        <h2>{data.corporatename}</h2>
+        <div className="infoBlock">
+          <span className="infoTitle">Nome Comercial do Plano:</span>
+          <span className="infoContent">{data.businessname}</span>
+        </div>
+        <div className="infoBlock">
+          <span className="infoTitle">Registro ANS:</span>
+          <span className="infoContent">{data.ans}</span>
+        </div>
+        <div className="infoBlock">
+          <span className="infoTitle">Prestador:</span>
+          <span className="infoContent">{data.provider}</span>
+        </div>
+
+        <div className="iconLine withicon">
+          <div className="telefone">
+            <img src="/arquivos/headset-search.svg" alt="" />
+            <span>XX XXXX-XXXX</span>
+          </div>
+
+          <div className="moreInfo">
+            <img src="/arquivos/list-icon.svg" alt="" />
+            <span>Ver planos atendidos</span>
+          </div>
+        </div>
+
+        <hr />
+
+        <div className="infoBlock">
+          <span className="infoTitle">Nome Fantasia:</span>
+          <span className="infoContent">{data.namefantasy}</span>
+        </div>
+
+        <div className="infoBlock">
+          <span className="infoTitle">Razão Social:</span>
+          <span className="infoContent">{data.corporatename}</span>
+        </div>
+        <div className="infoBlock">
+          <span className="infoTitle">CNPJ:</span>
+          <span className="infoContent">{data.cnpj}</span>
+        </div>
+        <div className="infoBlock">
+          <span className="infoTitle">Tipo de Estabelecimento:</span>
+          <span className="infoContent">{data.establishment}</span>
+        </div>
+
+        <div className="infoBlock">
+          <span className="infoTitle">Endereço:</span>
+          <span className="infoContent">{data.address}</span>
+        </div>
+
+        <div className="iconLine">
+          <div className="infoBlock">
+            <span className="infoTitle">Bairro:</span>
+            <span className="infoContent">{data.neighborhood}</span>
+          </div>
+
+          <div className="infoBlock">
+            <span className="infoTitle">Município:</span>
+            <span className="infoContent">{data.county}</span>
+          </div>
+        </div>
+
+        <div className="iconLine">
+          <div className="infoBlock special">
+            <span className="infoTitle">UF:</span>
+            <span className="infoContent">{data.uf}</span>
+          </div>
+
+          <div className="infoBlock special">
+            <span className="infoTitle">CEP:</span>
+            <span className="infoContent">{data.postalcode}</span>
+          </div>
+        </div>
+      </div>
+      <div className="mapContainer">
+        <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={18}>
+          <Marker position={center} />
+          <></>
+        </GoogleMap>
+      </div>
+    </div>
+  );
+}
+
+export default DetailedInfo;
