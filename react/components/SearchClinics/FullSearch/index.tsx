@@ -114,7 +114,7 @@ const SearchClinicsFull: StorefrontFunctionComponent<
     e.preventDefault();
 
     setShouldShow(false);
-    fetch(`/api/dataentities/BR/search?county=${cidade}&uf=${estado}&neighborhood${bairro}&specialty=${especialidade}&_fields=address,ans,businessname,cnpj,corporatename,county,establishment,latitude,longitude,namefantasy,neighborhood,postalcode,provider,specialty,uf&_sort=provider ASC`)
+    fetch(`/api/dataentities/BR/search?county=${cidade}&uf=${estado}&neighborhood${bairro}&specialty=${especialidade}&_fields=address,ans,businessname,cnpj,corporatename,county,establishment,latitude,longitude,namefantasy,neighborhood,postalcode,provider,specialty,uf,phone&_sort=provider ASC`)
     .then((res:any) => res.json())
     .then((data:any)=>{
       setSearchResults(data)

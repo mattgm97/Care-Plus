@@ -66,7 +66,7 @@ function ClinicInfos({ dados, selector }: any) {
 
           <div className="complementaryActions">
             <div className="telefone">
-<img src="/arquivos/headset-search.svg" alt="" /><span>XX XXXX-XXXX</span>
+<img src="/arquivos/headset-search.svg" alt="" /><span>{dados.phone}</span>
             </div>
             <div className="mapa" onClick={()=>selector(dados)}>
             <img src="/arquivos/mapspin.svg" alt="" /><span>Ver no mapa</span>

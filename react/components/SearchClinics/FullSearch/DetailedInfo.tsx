@@ -68,7 +68,7 @@ useEffect(()=>{
         <div className="iconLine withicon">
           <div className="telefone">
             <img src="/arquivos/headset-search.svg" alt="" />
-            <span>XX XXXX-XXXX</span>
+            <span>{data.phone}</span>
           </div>
 
           <div className="moreInfo">
