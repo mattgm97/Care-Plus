@@ -16,9 +16,9 @@ useEffect(()=>{
   .geocode({address: data.address})
   .then((result) => {
     const { results } = result;
-    console.log(results)
+    /*console.log(results)
     console.log(results[0].geometry.location.lat)
-    console.log(results[0].geometry.location.lng)
+    console.log(results[0].geometry.location.lng)*/
     var latlng = results[0].geometry.location;
     setCenter(latlng)
   })
