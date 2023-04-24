@@ -18,6 +18,7 @@ const SearchClinicsFull: StorefrontFunctionComponent<
   const [detailedComponentData, setDetailedComponentData] = useState<any>({});
   const [especialidade, setEspecialidade] = useState<any>("");
   const [searchResults, setSearchResults] = useState<any>([]);
+  const [wasSearched, setWasSearched] = useState<boolean>(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(10);
   const indexOfLastPost = currentPage * postsPerPage;
@@ -117,6 +118,7 @@ const SearchClinicsFull: StorefrontFunctionComponent<
     .then((res:any) => res.json())
     .then((data:any)=>{
       setSearchResults(data)
+      setWasSearched(true)
     })
 
 
@@ -267,12 +269,18 @@ const SearchClinicsFull: StorefrontFunctionComponent<
 						activeLinkClassName={'active'}
 					/>
         </div>
+
+        
       )
+
+     
     
     }
+  
     </div>
     )}
-    
+     {searchResults.length <= 0  && wasSearched ?<h2 className="notFound">Não encontramos nenhum resultado</h2> : ""}
+
     <DetailedInfo show={shouldShow} data={detailedComponentData} closeDetail={closeDetail}/>
    <div className="legendaQuali">
     <h3>Legenda Qualificações</h3>

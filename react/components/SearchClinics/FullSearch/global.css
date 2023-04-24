@@ -323,7 +323,10 @@
     left: 94%;
     z-index: 99999;
 }
-
+.notFound{
+  text-align: center;
+  margin-top: 5em;
+}
 @media (max-width: 820px) {
 
   .fields{

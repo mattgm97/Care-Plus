@@ -1,8 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./global.css";
 import { GoogleMap, Marker } from "@react-google-maps/api";
 
 function DetailedInfo({ data, show, closeDetail }: any) {
+
+
+  const [center, setCenter] = useState<any>({
+    lat: 0,
+    lng: 0,
+  })
+
+  const geocoder = new google.maps.Geocoder();
+useEffect(()=>{
+  alert("hello")
+  geocoder
+  .geocode({address: data.address})
+  .then((result) => {
+    const { results } = result;
+    alert("abuble")
+    console.log(results)
+    console.log(results[0].geometry.location.lat)
+    console.log(results[0].geometry.location.lng)
+    var latlng = results[0].geometry.location;
+    setCenter(latlng)
+  })
+  .catch((e) => {
+    console.log("Geocode was not successful for the following reason: " + e);
+  });
+
+},[show])
+
+
 
     const mq = window.matchMedia("(max-width: 820px)");
     let containerStyle = {
@@ -16,13 +44,6 @@ function DetailedInfo({ data, show, closeDetail }: any) {
           };
     }
  
-
-  const lat = parseFloat(data.latitude);
-  const lng = parseFloat(data.longitude)
-  const center = {
-    lat: lat,
-    lng: lng,
-  };
 
   if (!show) {
     return <></>;
