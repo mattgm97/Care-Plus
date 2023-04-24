@@ -212,6 +212,7 @@ const SearchClinicsFull: StorefrontFunctionComponent<
                 name="especialidade"
                 id="especialidade"
                 onChange={especialidadeHandler}
+                value={especialidade}
               >
                  <option value="" disabled selected hidden>Especialidade Dental</option>
                 <option value="Laboremagna commodo">Laboremagna commodo</option>
