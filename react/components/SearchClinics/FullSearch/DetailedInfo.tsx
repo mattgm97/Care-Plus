@@ -12,12 +12,10 @@ function DetailedInfo({ data, show, closeDetail }: any) {
 
   const geocoder = new google.maps.Geocoder();
 useEffect(()=>{
-  alert("hello")
   geocoder
   .geocode({address: data.address})
   .then((result) => {
     const { results } = result;
-    alert("abuble")
     console.log(results)
     console.log(results[0].geometry.location.lat)
     console.log(results[0].geometry.location.lng)
