@@ -9,6 +9,10 @@ function ClinicInfos({ dados, selector }: any) {
     setWasClicked((prev) => !prev);
   };
 
+  useEffect(() => {
+    setWasClicked(false)
+}, [dados]);
+
   return (
     <li key={dados.cnpj}>
       <div className="mainInfos" onClick={clickHandler}>
@@ -66,7 +70,7 @@ function ClinicInfos({ dados, selector }: any) {
 
           <div className="complementaryActions">
             <div className="telefone">
-<img src="/arquivos/headset-search.svg" alt="" /><span>{dados.phone}</span>
+<img src="/arquivos/headset-search.svg" alt="" /> <a href={`tel:${dados.phone}`}>{dados.phone}</a>
             </div>
             <div className="mapa" onClick={()=>selector(dados)}>
             <img src="/arquivos/mapspin.svg" alt="" /><span>Ver no mapa</span>

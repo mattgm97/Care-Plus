@@ -68,13 +68,13 @@ useEffect(()=>{
         <div className="iconLine withicon">
           <div className="telefone">
             <img src="/arquivos/headset-search.svg" alt="" />
-            <span>{data.phone}</span>
+            <a href={`tel:${data.phone}`}>{data.phone}</a>
           </div>
 
-          <div className="moreInfo">
+          {/*<div className="moreInfo">
             <img src="/arquivos/list-icon.svg" alt="" />
             <span>Ver planos atendidos</span>
-          </div>
+  </div>*/}
         </div>
 
         <hr />
@@ -128,7 +128,7 @@ useEffect(()=>{
       </div>
       <div className="mapContainer">
         <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={18}>
-          <Marker position={center} />
+          <Marker position={center} icon={"/arquivos/pinCP.svg"}/>
           <></>
         </GoogleMap>
       </div>

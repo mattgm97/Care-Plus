@@ -61,6 +61,7 @@ const SearchClinicsFull: StorefrontFunctionComponent<
       setCidade(cidade);
       setEstado(estado);
       setEspecialidade(especialidade);
+      doSearch(cidade, estado, "", especialidade)
     }
   }, []);
 
@@ -109,10 +110,8 @@ const SearchClinicsFull: StorefrontFunctionComponent<
     setShouldShow(false);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
- 
-  const submitForm = (e: any) => {
-    e.preventDefault();
 
+  const doSearch = (cidade:any, estado:any, bairro:any, especialidade:any)=>{
     setShouldShow(false);
     fetch(`/api/dataentities/BR/search?county=${cidade}&uf=${estado}&neighborhood${bairro}&specialty=${especialidade}&_fields=address,ans,businessname,cnpj,corporatename,county,establishment,latitude,longitude,namefantasy,neighborhood,postalcode,provider,specialty,uf,phone&_sort=provider ASC`)
     .then((res:any) => res.json())
@@ -120,6 +119,13 @@ const SearchClinicsFull: StorefrontFunctionComponent<
       setSearchResults(data)
       setWasSearched(true)
     })
+  }
+
+ 
+  const submitForm = (e: any) => {
+    e.preventDefault();
+    doSearch(cidade, estado, bairro, especialidade)
+  
 
 
   };
