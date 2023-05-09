@@ -10,8 +10,8 @@ function ClinicInfos({ dados, selector }: any) {
   };
 
   useEffect(() => {
-    setWasClicked(false)
-}, [dados]);
+    setWasClicked(false);
+  }, [dados]);
 
   return (
     <li key={dados.cnpj}>
@@ -44,7 +44,7 @@ function ClinicInfos({ dados, selector }: any) {
               </div>
             </div>
             <div className="row">
-            <div className="infoBlock">
+              <div className="infoBlock">
                 <span className="infoTitle">Endereço:</span>
                 <span className="infoContent">{dados.address}</span>
               </div>
@@ -70,13 +70,16 @@ function ClinicInfos({ dados, selector }: any) {
 
           <div className="complementaryActions">
             <div className="telefone">
-<img src="/arquivos/headset-search.svg" alt="" /> <a href={`tel:${dados.phone}`}>{dados.phone}</a>
+              <img src="/arquivos/headset-search.svg" alt="" />{" "}
+              <a href={`tel:${dados.phone}`}>{dados.phone}</a>
             </div>
-            <div className="mapa" onClick={()=>selector(dados)}>
-            <img src="/arquivos/mapspin.svg" alt="" /><span>Ver no mapa</span>
+            <div className="mapa" onClick={() => selector(dados)}>
+              <img src="/arquivos/mapspin.svg" alt="" />
+              <span>Ver no mapa</span>
             </div>
-            <div className="moreInfo" onClick={()=>selector(dados)}>
-            <img src="/arquivos/list-icon.svg" alt="" /><span>Veja mais informações</span>
+            <div className="moreInfo" onClick={() => selector(dados)}>
+              <img src="/arquivos/list-icon.svg" alt="" />
+              <span>Veja mais informações</span>
             </div>
           </div>
         </>
