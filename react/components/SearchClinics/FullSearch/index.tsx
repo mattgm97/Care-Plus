@@ -56,6 +56,8 @@ const SearchClinicsFull: StorefrontFunctionComponent<
       for(let i = 0; i < data.length; i++){
         myOptions.push(data[i].specialty)
       }
+
+      //Set faz a filtragem de dados automaticamente pra mim
       let uniqueItems = [...new Set(myOptions)];
       setEspecialidadeLista(uniqueItems)
     })
