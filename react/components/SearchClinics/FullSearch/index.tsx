@@ -21,6 +21,7 @@ const SearchClinicsFull: StorefrontFunctionComponent<
   const [wasSearched, setWasSearched] = useState<boolean>(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(10);
+  const [especialidateLista, setEspecialidadeLista] = useState<any>([])
   const indexOfLastPost = currentPage * postsPerPage;
 	const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const cityRef = useRef<HTMLInputElement>(null);
@@ -47,7 +48,18 @@ const SearchClinicsFull: StorefrontFunctionComponent<
 
 	};
 
-
+  useEffect(()=>{
+    fetch(`/api/dataentities/BR/search?_fields=specialty&_sort=specialty ASC`)
+    .then((res:any) => res.json())
+    .then((data:any)=>{
+      let myOptions = []
+      for(let i = 0; i < data.length; i++){
+        myOptions.push(data[i].specialty)
+      }
+      let uniqueItems = [...new Set(myOptions)];
+      setEspecialidadeLista(uniqueItems)
+    })
+  },[])
 
   useEffect(() => {
     if (
@@ -113,7 +125,7 @@ const SearchClinicsFull: StorefrontFunctionComponent<
 
   const doSearch = (cidade:any, estado:any, bairro:any, especialidade:any)=>{
     setShouldShow(false);
-    fetch(`/api/dataentities/BR/search?county=${cidade}&uf=${estado}&neighborhood${bairro}&specialty=${especialidade}&_fields=address,ans,businessname,cnpj,corporatename,county,establishment,latitude,longitude,namefantasy,neighborhood,postalcode,provider,specialty,uf,phone&_sort=provider ASC`)
+    fetch(`/api/dataentities/BR/search?county=${cidade}&uf=${estado}&neighborhood=${bairro}&specialty=${especialidade}&_fields=address,ans,businessname,cnpj,corporatename,county,establishment,latitude,longitude,namefantasy,neighborhood,postalcode,provider,specialty,uf,phone&_sort=provider ASC`)
     .then((res:any) => res.json())
     .then((data:any)=>{
       setSearchResults(data)
@@ -223,10 +235,11 @@ const SearchClinicsFull: StorefrontFunctionComponent<
                 value={especialidade}
               >
                  <option value="" disabled selected hidden>Especialidade Dental</option>
-                <option value="Laboremagna commodo">Laboremagna commodo</option>
-                <option value="Teste2">TESTE 2</option>
-                <option value="Teste3">TESTE 3</option>
-                <option value="Teste4">TESTE 4</option>
+                 {especialidateLista.map((el:any)=>{
+                  return (
+                    <option value={el}>{el}</option>
+                  )
+                })}
               </select>
             </div>
           </div>

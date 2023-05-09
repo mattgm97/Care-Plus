@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./global.css";
 import { useJsApiLoader, Autocomplete } from "@react-google-maps/api";
 interface ProductAvailableProps {
@@ -11,12 +11,26 @@ const SearchClinics: StorefrontFunctionComponent<
   const [cidade, setCidade] = useState<string>("");
   const [estado, setEstado] = useState<string>("");
   const [especialidade, setEspecialidade] = useState<string>("");
+  const [especialidateLista, setEspecialidadeLista] = useState<any>([])
   const cityRef = useRef<HTMLInputElement>(null);
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
     googleMapsApiKey: "AIzaSyDGmRxjv6Vzll4z0ObpWtu-ZdIfAFLDSaM",
     libraries: ["places"],
   });
+
+  useEffect(()=>{
+    fetch(`/api/dataentities/BR/search?_fields=specialty&_sort=specialty ASC`)
+    .then((res:any) => res.json())
+    .then((data:any)=>{
+      let myOptions = []
+      for(let i = 0; i < data.length; i++){
+        myOptions.push(data[i].specialty)
+      }
+      let uniqueItems = [...new Set(myOptions)];
+      setEspecialidadeLista(uniqueItems)
+    })
+  },[])
 
   const onPlaceChanged = () => {
     console.log(cityRef.current?.value);
@@ -91,10 +105,11 @@ const SearchClinics: StorefrontFunctionComponent<
                 onChange={especialidadeHandler}
               >
                   <option value="" disabled selected hidden>Especialidade Dental</option>
-                <option value="Laboremagna commodo">Laboremagna commodo</option>
-                <option value="Teste2">TESTE 2</option>
-                <option value="Teste3">TESTE 3</option>
-                <option value="Teste4">TESTE 4</option>
+                {especialidateLista.map((el:any)=>{
+                  return (
+                    <option value={el}>{el}</option>
+                  )
+                })}
               </select>
             </div>
             <button type="submit">
