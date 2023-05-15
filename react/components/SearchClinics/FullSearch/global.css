@@ -46,7 +46,7 @@
   padding: 10px 40px;
   height: 56px;
   font-family: 'Montserrat';
-  border-radius: 2px;
+  border-radius: 6px;
 }
 
 .inputContainerFull form button img {
@@ -64,7 +64,7 @@
 }
 
 .field input, .field select {
-  width: 232px;
+  width: 280px;
   height: 56px;
   padding-left: 14px;
   border: 1px solid #7F7F7F !important;
@@ -116,6 +116,7 @@
   justify-content: space-between;
   padding-bottom: 23px;
   padding-top: 17px;
+  cursor: pointer;
 }
 
 .mainInfos span {
@@ -125,7 +126,7 @@
 }
 
 .complementaryInfos {
-  padding: 31px 17px;
+  padding: 31px 0px;
   border-top: 1px solid #C9C9C9;
   border-bottom: 1px solid #C9C9C9;
 

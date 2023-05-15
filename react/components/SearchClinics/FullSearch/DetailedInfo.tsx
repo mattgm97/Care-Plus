@@ -126,7 +126,7 @@ function DetailedInfo({ data, show, closeDetail }: any) {
       </div>
       <div className="mapContainer">
         <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={18}>
-          <Marker position={center} icon={"/arquivos/pinCP.svg"} />
+          <Marker position={center} icon={"/arquivos/pinCPmin.png"} />
           <></>
         </GoogleMap>
       </div>
