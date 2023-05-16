@@ -327,6 +327,7 @@
     position: absolute;
     left: 94%;
     z-index: 9;
+    cursor: pointer;
 }
 .notFound{
   text-align: center;

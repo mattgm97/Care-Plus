@@ -248,7 +248,7 @@ const SearchClinicsFull: StorefrontFunctionComponent<
             </div>
 
             <div className="fields submit">
-              <button type="submit">BUSCAR</button>
+              <button type="submit">Buscar</button>
             </div>
           </form>
         </div>
