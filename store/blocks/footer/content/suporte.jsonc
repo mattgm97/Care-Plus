@@ -29,7 +29,7 @@
       "orientation": "vertical",
       "blockClass": "menu-footer",
       "items": [
-        {
+       /* {
           "id": "footer-item-acc-6",
           "blockClass": "footer-sobre__menu-item",
           "type": "custom",
@@ -42,7 +42,7 @@
             "tagTitle": "WhatsApp",
             "text": "WhatsApp"
           }
-        },
+        },*/
         {
           "id": "footer-item-acc-7",
           "blockClass": "footer-sobre__menu-item",
