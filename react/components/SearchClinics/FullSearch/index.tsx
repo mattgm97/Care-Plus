@@ -28,7 +28,7 @@ const SearchClinicsFull: StorefrontFunctionComponent<
   const bairroRef = useRef<HTMLInputElement>(null);
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "AIzaSyDGmRxjv6Vzll4z0ObpWtu-ZdIfAFLDSaM",
+    googleMapsApiKey: "AIzaSyDGmRxjv6Vzll4z0ObpWtu-ZdIfAFLDSaM", //temp key
     libraries: ["places"],
   });
 
